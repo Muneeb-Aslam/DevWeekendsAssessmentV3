@@ -72,6 +72,7 @@
 @layer base {
   html {
     color-scheme: light;
+    overflow-x: clip;
   }
 
   * {
@@ -80,5 +81,7 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: clip;
+    max-width: 100%;
   }
 }

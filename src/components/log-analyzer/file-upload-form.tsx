@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, type ReactElement } from "react";
 import { CloudUpload, FileText, Loader2, Upload, X } from "lucide-react";
 import { toast } from "sonner";
 
@@ -25,9 +25,10 @@ const ACCEPTED_FILE_TYPES =
 type FileUploadFormProps = {
   onAnalyze?: (file: File) => void;
   isLoading?: boolean;
+  compact?: boolean;
 };
 
-function resetFileInput(input: HTMLInputElement | null) {
+function resetFileInput(input: HTMLInputElement | null): void {
   if (input) {
     input.value = "";
   }
@@ -36,12 +37,13 @@ function resetFileInput(input: HTMLInputElement | null) {
 export function FileUploadForm({
   onAnalyze,
   isLoading = false,
-}: FileUploadFormProps) {
+  compact = false,
+}: FileUploadFormProps): ReactElement {
   const inputRef = useRef<HTMLInputElement>(null);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
 
-  function processFile(file: File | undefined) {
+  function processFile(file: File | undefined): void {
     if (!file) {
       setSelectedFile(null);
       return;
@@ -59,11 +61,11 @@ export function FileUploadForm({
     setSelectedFile(result.file);
   }
 
-  function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
+  function handleFileChange(event: React.ChangeEvent<HTMLInputElement>): void {
     processFile(event.target.files?.[0]);
   }
 
-  function handleDragOver(event: React.DragEvent<HTMLDivElement>) {
+  function handleDragOver(event: React.DragEvent<HTMLDivElement>): void {
     event.preventDefault();
     event.stopPropagation();
     if (!isLoading) {
@@ -71,36 +73,35 @@ export function FileUploadForm({
     }
   }
 
-  function handleDragLeave(event: React.DragEvent<HTMLDivElement>) {
+  function handleDragLeave(event: React.DragEvent<HTMLDivElement>): void {
     event.preventDefault();
     event.stopPropagation();
     setIsDragging(false);
   }
 
-  function handleDrop(event: React.DragEvent<HTMLDivElement>) {
+  function handleDrop(event: React.DragEvent<HTMLDivElement>): void {
     event.preventDefault();
     event.stopPropagation();
     setIsDragging(false);
 
     if (isLoading) return;
 
-    const file = event.dataTransfer.files?.[0];
-    processFile(file);
+    processFile(event.dataTransfer.files?.[0]);
   }
 
-  function handleClearFile(event: React.MouseEvent) {
+  function handleClearFile(event: React.MouseEvent): void {
     event.stopPropagation();
     setSelectedFile(null);
     resetFileInput(inputRef.current);
   }
 
-  function handleBrowseClick() {
+  function handleBrowseClick(): void {
     if (!isLoading) {
       inputRef.current?.click();
     }
   }
 
-  function handleSubmit(event: React.FormEvent) {
+  function handleSubmit(event: React.FormEvent): void {
     event.preventDefault();
 
     const result = validateLogFile(selectedFile);
@@ -117,112 +118,127 @@ export function FileUploadForm({
     onAnalyze?.(result.file);
   }
 
+  const dropZoneClasses = cn(
+    "relative flex cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed text-center transition-colors",
+    compact ? "px-4 py-6" : "px-6 py-8",
+    isDragging
+      ? "border-primary bg-primary/5"
+      : "border-border bg-muted/30 hover:border-primary/50 hover:bg-muted/50",
+    selectedFile && "border-primary/40 bg-primary/5",
+    isLoading && "pointer-events-none opacity-60",
+  );
+
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Upload log file</CardTitle>
-        <CardDescription>
-          Drag and drop or browse for .log, .txt, .json, and .csv files up to{" "}
-          {formatMaxFileSize()}.
+    <Card className={cn("min-w-0", compact && "lg:sticky lg:top-4")}>
+      <CardHeader className={cn(compact && "pb-3")}>
+        <CardTitle className={compact ? "text-base" : undefined}>
+          Upload log file
+        </CardTitle>
+        <CardDescription className="text-xs sm:text-sm">
+          .log, .txt, .json, .csv — max {formatMaxFileSize()}
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div
-            role="button"
-            tabIndex={0}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" || event.key === " ") {
-                event.preventDefault();
-                handleBrowseClick();
-              }
-            }}
-            onClick={handleBrowseClick}
-            onDragOver={handleDragOver}
-            onDragLeave={handleDragLeave}
-            onDrop={handleDrop}
-            className={cn(
-              "relative flex cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed px-6 py-10 text-center transition-colors",
-              isDragging
-                ? "border-primary bg-primary/5"
-                : "border-border bg-muted/30 hover:border-primary/50 hover:bg-muted/50",
-              selectedFile && "border-primary/40 bg-primary/5",
-              isLoading && "pointer-events-none opacity-60",
-            )}
-          >
-            <input
-              ref={inputRef}
-              id="log-file"
-              type="file"
-              accept={ACCEPTED_FILE_TYPES}
-              onChange={handleFileChange}
-              disabled={isLoading}
-              className="sr-only"
-            />
+        <form onSubmit={handleSubmit} className="space-y-3">
+          <label htmlFor="log-file" className="sr-only">
+            Log file
+          </label>
 
-            {selectedFile ? (
-              <div className="flex w-full max-w-md flex-col items-center gap-3">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                  <FileText className="h-7 w-7 text-primary" />
+          {selectedFile ? (
+            <div
+              className={cn(
+                "rounded-lg border bg-muted/40 p-3",
+                compact && "space-y-2",
+              )}
+            >
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/10">
+                  <FileText className="h-5 w-5 text-primary" />
                 </div>
-                <div className="space-y-1">
-                  <p className="font-medium">{selectedFile.name}</p>
-                  <p className="text-sm text-muted-foreground">
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-sm font-medium">
+                    {selectedFile.name}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
                     {formatFileSize(selectedFile.size)}
                   </p>
                 </div>
                 <Button
                   type="button"
                   variant="ghost"
-                  size="sm"
+                  size="icon"
                   onClick={handleClearFile}
                   disabled={isLoading}
-                  className="text-muted-foreground hover:text-foreground"
+                  className="h-8 w-8 shrink-0"
+                  aria-label="Remove file"
                 >
                   <X className="h-4 w-4" />
-                  Remove file
                 </Button>
               </div>
-            ) : (
-              <div className="flex flex-col items-center gap-3">
-                <div
-                  className={cn(
-                    "flex h-14 w-14 items-center justify-center rounded-full bg-background shadow-sm ring-1 ring-border transition-colors",
-                    isDragging && "bg-primary/10 ring-primary/30",
-                  )}
+              {!compact && (
+                <button
+                  type="button"
+                  onClick={handleBrowseClick}
+                  className="text-xs text-primary hover:underline"
                 >
-                  <CloudUpload
-                    className={cn(
-                      "h-7 w-7 text-muted-foreground transition-colors",
-                      isDragging && "text-primary",
-                    )}
-                  />
-                </div>
-                <div className="space-y-1">
-                  <p className="text-sm font-medium">
-                    {isDragging
-                      ? "Drop your log file here"
-                      : "Drag and drop your log file here"}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    or{" "}
-                    <span className="font-medium text-primary underline-offset-4 hover:underline">
-                      browse
-                    </span>{" "}
-                    to choose a file
-                  </p>
-                </div>
-                <p className="text-xs text-muted-foreground">
-                  .log, .txt, .json, .csv — max {formatMaxFileSize()}
-                </p>
+                  Choose a different file
+                </button>
+              )}
+            </div>
+          ) : (
+            <div
+              role="button"
+              tabIndex={0}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  handleBrowseClick();
+                }
+              }}
+              onClick={handleBrowseClick}
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+              onDrop={handleDrop}
+              className={dropZoneClasses}
+            >
+              <div
+                className={cn(
+                  "mb-2 flex items-center justify-center rounded-full bg-background shadow-sm ring-1 ring-border",
+                  compact ? "h-10 w-10" : "h-12 w-12",
+                  isDragging && "bg-primary/10 ring-primary/30",
+                )}
+              >
+                <CloudUpload
+                  className={cn(
+                    "text-muted-foreground",
+                    compact ? "h-5 w-5" : "h-6 w-6",
+                    isDragging && "text-primary",
+                  )}
+                />
               </div>
-            )}
-          </div>
+              <p className="text-sm font-medium">
+                {isDragging ? "Drop file here" : "Drag & drop"}
+              </p>
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                or click to browse
+              </p>
+            </div>
+          )}
+
+          <input
+            ref={inputRef}
+            id="log-file"
+            type="file"
+            accept={ACCEPTED_FILE_TYPES}
+            onChange={handleFileChange}
+            disabled={isLoading}
+            className="sr-only"
+          />
 
           <Button
             type="submit"
             disabled={!selectedFile || isLoading}
-            className="w-full sm:w-auto"
+            className="w-full"
           >
             {isLoading ? (
               <>
