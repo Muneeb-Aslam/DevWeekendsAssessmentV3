@@ -1,0 +1,2526 @@
+2024-03-15T14:23:01Z 192.168.1.42 GET /api/users 200 142ms
+2024/03/15 14:23:02 10.0.0.7 POST /api/login 401 89ms
+15-Mar-2024 14:23:03 172.16.0.22 GET /api/users/12 200 53ms
+1710512581 192.168.1.42 GET /api/health 200 14ms
+  2024-03-15T14:23:04Z 192.168.1.42 GET /api/ping 200 11ms
+2024-03-15T14:23:05Z 10.0.0.7 GET /api/subsecond 200 0.142s
+2024-03-15T14:23:06Z 172.16.0.22 GET /api/bare-ms 200 142
+2024-03-15T14:23:07Z 192.168.1.42 POST /api/login - 76ms
+2024-03-15T14:23:08Z 10.0.0.7 GET /api/users 200 98ms "Mozilla/5.0 (Windows NT 10.0)" "https://app.example.com/dashboard"
+{"timestamp":"2024-03-15T14:23:09Z","method":"GET","path":"/api/json","status":200,"duration_ms":33,"ip":"10.0.0.7"}
+{"timestamp":"2024-03-15T14:23:10Z","http_method":"POST","url":"/api/orders","status_code":201,"response_time_ms":210}
+2024-03-15T14:23:11Z 192.168.1.42 GET /api/admin 403 41ms
+2024-03-15T14:23:12Z 10.0.0.7 POST /api/batch/process 504 2.104s
+2024-03-15T14:23:13Z 172.16.0.22 GET /api/reports/export 200 2847
+2024-03-15T14:23:14Z 192.168.1.42 GET /api/prod
+192.168.1.42 GET /api/broken 200 142ms
+totally malformed line !!!
+PARTIAL: 2024-03-15T16:00:18Z 172.16.
+Exception in thread "main" java.lang.RuntimeException: upstream timeout
+	at com.example.ApiGateway.route(ApiGateway.java:142)
+Caused by: java.net.SocketTimeoutException: Read timed out
+{"timestamp":"2024-03-15T16:00:20Z","method":"GET","path":"/api/metrics"
+DEBUG [main] org.example.Service - not an access log line
+2024-03-15T14:23:15Z 10.0.0.7 HEAD /api/health 200 8ms
+2024-03-15T14:23:16Z 172.16.0.22 OPTIONS /api/users 204 5ms
+
+2024-03-15T00:00:26Z 192.168.1.42 DELETE /api/dashboard 404 1599ms
+15-Mar-2024 00:00:27 172.16.0.22 DELETE /api/products 403 2.746s
+15-Mar-2024 00:00:28 172.16.0.22 GET /api/users/12 200 1250ms
+2024/03/15 00:00:29 10.0.0.7 HEAD /api/reports/export 504 239
+1710460830 172.16.0.22 POST /api/users/12 201 1472ms
+15-Mar-2024 00:00:31 192.168.1.42 GET /api/metrics 500 2118ms
+1710460832 172.16.0.22 GET /api/webhooks/stripe 404 600
+{"time":"2024-03-15T00:00:33Z","http_method":"PUT","url":"/api/products","status_code":504,"response_time_ms":480,"client_ip":"172.16.0.22"}
+15-Mar-2024 00:00:34 203.0.113.10 GET /api/login 200 1186ms
+1710460835 192.168.1.42 HEAD /api/health 401 1.264s
+PARTIAL: 2024-03-15T16:36
+2024-03-15T00:00:37Z 203.0.113.10 HEAD /api/products 504 138
+2024-03-15T00:00:38Z 10.0.0.7 DELETE /api/health 204 1.694s
+2024-03-15T00:00:39Z 10.0.0.7 GET /api/products - 1260ms
+2024-03-15T16:00:40Z 10.0.0.7 GET /api/truncated
+2024/03/15 00:00:41 10.0.0.7 DELETE /api/search 200 2693ms
+15-Mar-2024 00:00:42 192.168.1.42 POST /api/batch/process 403 2852ms
+2024-03-15T00:00:43Z 10.0.0.7 POST /api/checkout 500 1.736s
+	... 8 more
+1710460845 192.168.1.42 OPTIONS /api/dashboard 201 0.772s
+1710460846 10.0.0.7 PUT /api/reports/export 403 2766
+  2024/03/15 00:00:47 192.168.1.42 POST /api/users 403 1678ms
+  15-Mar-2024 00:00:48 172.16.0.22 POST /api/webhooks/stripe 500 2975ms
+
+1710460850 192.168.1.42 POST /api/products 502 2525ms
+1710460851 10.0.0.7 PATCH /api/health 204 2.874s
+1710460852 192.168.1.42 GET /api/orders 404 1985 "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:00:53 203.0.113.10 HEAD /api/search 404 1962ms
+1710460854 192.168.1.42 PATCH /api/orders 500 2.579s
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024-03-15T00:00:56Z 10.0.0.7 OPTIONS /api/reports/export 403 504
+1710460857 10.0.0.7 PATCH /api/billing 201 2519ms
+2024/03/15 00:00:58 172.16.0.22 POST /api/users/12 404 2039ms
+2024/03/15 00:00:59 203.0.113.10 PUT /api/users/12 403 347
+2024/03/15 00:01:00 172.16.0.22 DELETE /api/batch/process 204 2663ms "kube-probe/1.29"
+1710460861 203.0.113.10 HEAD /api/login 201 579ms
+{"time":"2024-03-15T00:01:02Z","http_method":"HEAD","url":"/api/dashboard","status_code":404,"response_time_ms":2247,"client_ip":"192.168.1.42"}
+15-Mar-2024 00:01:03 10.0.0.7 POST /api/billing 504 2890
+1710460864 10.0.0.7 DELETE /api/products 502 885ms
+2024/03/15 00:01:05 10.0.0.7 PUT /api/orders 403 1631 "kube-probe/1.29"
+2024-03-15T00:01:06Z 10.0.0.7 OPTIONS /api/users/12 401 1072ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710460867 172.16.0.22 POST /api/admin 200 923ms
+2024-03-15T00:01:08Z 203.0.113.10 PATCH /api/billing 200 2487
+{"timestamp":"2024-03-15T00:01:09Z","method":"PUT","path":"/api/admin","status":401,"duration_ms":1501,"ip":"203.0.113.10"}
+{"time":"2024-03-15T00:01:10Z","http_method":"POST","url":"/api/users","status_code":500,"response_time_ms":2778,"client_ip":"192.168.1.42"}
+Caused by: java.io.IOException: broken pipe
+1710460872 172.16.0.22 GET /api/admin 204 2427ms
+1710460873 10.0.0.7 HEAD /api/orders 204 636ms
+15-Mar-2024 00:01:14 192.168.1.42 PATCH /api/search 500 1.887s
+{"time":"2024-03-15T00:01:15Z","http_method":"PATCH","url":"/api/billing","status_code":504,"response_time_ms":537,"client_ip":"172.16.0.22"}
+2024/03/15 00:01:16 192.168.1.42 HEAD /api/checkout 204 1397ms
+15-Mar-2024 00:01:17 203.0.113.10 PUT /api/admin 502 667ms
+2024/03/15 00:01:18 10.0.0.7 POST /api/users 502 2678ms
+{"timestamp":"2024-03-15T00:01:19Z","method":"HEAD","path":"/api/batch/process","status":502,"duration_ms":2280,"ip":"172.16.0.22"}
+2024/03/15 00:01:20 192.168.1.42 PUT /api/users 504 2299ms
+totally malformed !!!
+15-Mar-2024 00:01:22 203.0.113.10 PATCH /api/billing 404 337ms
+2024/03/15 00:01:23 172.16.0.22 OPTIONS /api/search 403 1619ms
+1710460884 203.0.113.10 PATCH /api/batch/process 404 929ms
+15-Mar-2024 00:01:25 172.16.0.22 OPTIONS /api/admin 500 2292
+15-Mar-2024 00:01:26 192.168.1.42 GET /api/billing 401 2.494s
+15-Mar-2024 00:01:27 172.16.0.22 PUT /api/reports/export 401 2873ms
+1710460888 203.0.113.10 PUT /api/search 401 2814
+15-Mar-2024 00:01:29 192.168.1.42 OPTIONS /api/search 404 1446ms
+2024-03-15T00:01:30Z 203.0.113.10 PATCH /api/users - 1125
+15-Mar-2024 00:01:31 192.168.1.42 GET /api/checkout 500 2679ms
+1710460892 10.0.0.7 PATCH /api/batch/process 401 2970ms
+15-Mar-2024 00:01:33 192.168.1.42 OPTIONS /api/dashboard 502 865ms
+1710460894 203.0.113.10 POST /api/orders 502 1524ms
+15-Mar-2024 00:01:35 10.0.0.7 DELETE /api/users 403 2.775s
+2024-03-15T00:01:36Z 172.16.0.22 PATCH /api/users/12 200 1704ms
+15-Mar-2024 00:01:37 172.16.0.22 POST /api/admin 502 92ms
+{"time":"2024-03-15T00:01:38Z","http_method":"PATCH","url":"/api/products","status_code":502,"response_time_ms":2589,"client_ip":"10.0.0.7"}
+2024-03-15T00:01:39Z 10.0.0.7 GET /api/reports/export 500 1278ms
+2024-03-15T00:01:40Z 192.168.1.42 PATCH /api/dashboard 200 2555
+2024-03-15T00:01:41Z 203.0.113.10 GET /api/health - 551ms
+2024-03-15T00:01:42Z 10.0.0.7 OPTIONS /api/health 502 1.466s
+2024/03/15 00:01:43 192.168.1.42 POST /api/health 401 1.092s
+1710460904 192.168.1.42 DELETE /api/checkout 403 172ms
+2024-03-15T00:01:45Z 203.0.113.10 DELETE /api/reports/export 504 2.511s
+2024/03/15 00:01:46 172.16.0.22 GET /api/health 204 677ms
+  15-Mar-2024 00:01:47 172.16.0.22 OPTIONS /api/admin 502 1.796s
+15-Mar-2024 00:01:48 172.16.0.22 GET /api/search 500 2.939s
+2024/03/15 00:01:49 203.0.113.10 PATCH /api/users 204 0.043s
+2024/03/15 00:01:50 203.0.113.10 PUT /api/metrics 401 1270
+1710460911 192.168.1.42 HEAD /api/billing 502 13ms
+PARTIAL: 2024-03-15T16:52
+{"timestamp":"2024-03-15T00:01:53Z","method":"POST","path":"/api/orders","status":204,"duration_ms":1730,"ip":"192.168.1.42"}
+15-Mar-2024 00:01:54 10.0.0.7 HEAD /api/health - 1992ms
+2024/03/15 00:01:55 192.168.1.42 DELETE /api/dashboard 200 748
+15-Mar-2024 00:01:56 203.0.113.10 HEAD /api/users/12 404 1.641s
+15-Mar-2024 00:01:57 10.0.0.7 HEAD /api/webhooks/stripe 404 1240ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:01:58Z 10.0.0.7 DELETE /api/orders 200 2231ms
+1710460919 172.16.0.22 PUT /api/users 204 1.489s
+1710460920 203.0.113.10 DELETE /api/reports/export 201 1.228s
+1710460921 192.168.1.42 OPTIONS /api/metrics 404 1552ms
+15-Mar-2024 00:02:02 172.16.0.22 HEAD /api/reports/export 200 632
+2024-03-15T00:02:03Z 203.0.113.10 PATCH /api/search 204 569ms
+15-Mar-2024 00:02:04 10.0.0.7 GET /api/users/12 500 0.480s
+1710460925 10.0.0.7 GET /api/admin 401 1226
+1710460926 10.0.0.7 POST /api/webhooks/stripe 500 2465
+2024/03/15 00:02:07 192.168.1.42 POST /api/webhooks/stripe 500 2268
+  2024/03/15 00:02:08 203.0.113.10 OPTIONS /api/dashboard 201 705ms
+2024-03-15T00:02:09Z 203.0.113.10 HEAD /api/billing 200 1143
+2024-03-15T00:02:10Z 10.0.0.7 PATCH /api/reports/export 502 0.071s
+15-Mar-2024 00:02:11 192.168.1.42 POST /api/users/12 404 1.588s
+15-Mar-2024 00:02:12 192.168.1.42 PATCH /api/search 201 593ms
+2024/03/15 00:02:13 172.16.0.22 PUT /api/dashboard 201 1350ms
+  1710460934 203.0.113.10 GET /api/billing 500 2993ms
+2024-03-15T00:02:15Z 203.0.113.10 HEAD /api/checkout 401 2752ms
+  2024-03-15T00:02:16Z 10.0.0.7 GET /api/users/12 404 1.718s "curl/8.5.0"
+  2024-03-15T00:02:17Z 192.168.1.42 OPTIONS /api/health 504 0.048s
+2024-03-15T00:02:18Z 203.0.113.10 OPTIONS /api/reports/export 500 123ms
+{"time":"2024-03-15T00:02:19Z","http_method":"DELETE","url":"/api/dashboard","status_code":403,"response_time_ms":1429,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:02:20 10.0.0.7 GET /api/users 504 2637ms
+15-Mar-2024 00:02:21 192.168.1.42 POST /api/billing 401 2.532s
+15-Mar-2024 00:02:22 172.16.0.22 POST /api/admin 502 167ms
+  15-Mar-2024 00:02:23 192.168.1.42 POST /api/users 403 1837ms
+1710460944 172.16.0.22 PUT /api/webhooks/stripe 201 2237 "curl/8.5.0"
+{"time":"2024-03-15T00:02:25Z","http_method":"GET","url":"/api/metrics","status_code":204,"response_time_ms":1563,"client_ip":"10.0.0.7"}
+	... 8 more
+2024/03/15 00:02:27 172.16.0.22 GET /api/metrics 204 0.915s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:02:28 203.0.113.10 OPTIONS /api/search 502 2276
+2024/03/15 00:02:29 10.0.0.7 DELETE /api/health 200 41ms
+15-Mar-2024 00:02:30 203.0.113.10 PATCH /api/users 200 2742ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:02:31Z 172.16.0.22 OPTIONS /api/products 500 2.314s
+DEBUG not an access log
+
+2024/03/15 00:02:34 10.0.0.7 PUT /api/dashboard 504 47
+PARTIAL: 2024-03-15T16:35
+15-Mar-2024 00:02:36 203.0.113.10 DELETE /api/batch/process 204 0.417s
+15-Mar-2024 00:02:37 203.0.113.10 DELETE /api/batch/process 403 2723ms "kube-probe/1.29"
+2024-03-15T00:02:38Z 172.16.0.22 HEAD /api/users/12 204 1901
+15-Mar-2024 00:02:39 10.0.0.7 PATCH /api/metrics 500 375ms
+1710460960 203.0.113.10 OPTIONS /api/checkout 504 2503ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:02:41 203.0.113.10 OPTIONS /api/products 401 713
+1710460962 10.0.0.7 HEAD /api/users/12 200 1179ms
+  2024/03/15 00:02:43 192.168.1.42 GET /api/orders 204 1227ms
+2024/03/15 00:02:44 192.168.1.42 DELETE /api/login 504 2596ms
+15-Mar-2024 00:02:45 10.0.0.7 POST /api/login 403 2861ms
+2024/03/15 00:02:46 10.0.0.7 GET /api/users/12 504 1308
+1710460967 10.0.0.7 DELETE /api/login 404 1853
+1710460968 192.168.1.42 HEAD /api/billing 201 1578ms
+2024-03-15T00:02:49Z 203.0.113.10 OPTIONS /api/batch/process 504 2.681s
+	... 8 more
+2024-03-15T00:02:51Z 192.168.1.42 OPTIONS /api/dashboard 200 2559ms
+15-Mar-2024 00:02:52 172.16.0.22 OPTIONS /api/reports/export 401 2548ms
+1710460973 192.168.1.42 PUT /api/search 502 340ms
+2024-03-15T00:02:54Z 203.0.113.10 GET /api/admin 200 1.755s
+1710460975 203.0.113.10 PATCH /api/webhooks/stripe 403 2.484s
+1710460976 10.0.0.7 PATCH /api/checkout 502 2.713s
+15-Mar-2024 00:02:57 192.168.1.42 OPTIONS /api/users 200 1014
+{"timestamp":"2024-03-15T00:02:58Z","method":"POST","path":"/api/health","status":201,"duration_ms":796,"ip":"192.168.1.42"}
+Caused by: java.io.IOException: broken pipe
+2024/03/15 00:03:00 172.16.0.22 DELETE /api/checkout 204 0.150s
+1710460981 172.16.0.22 POST /api/reports/export 401 1611ms
+1710460982 203.0.113.10 PATCH /api/login - 2.472s
+15-Mar-2024 00:03:03 192.168.1.42 PUT /api/webhooks/stripe 403 1425
+{"timestamp":"2024-03-15T00:03:04Z","method":"PUT","path":"/api/users/12","status":504,"duration_ms":316,"ip":"203.0.113.10"}
+nginx: [error] upstream prematurely closed connection
+1710460986 172.16.0.22 GET /api/billing - 1813ms
+1710460987 10.0.0.7 DELETE /api/batch/process 504 2.880s "curl/8.5.0"
+2024/03/15 00:03:08 203.0.113.10 HEAD /api/users 200 1953ms
+15-Mar-2024 00:03:09 10.0.0.7 HEAD /api/metrics 502 1460
+15-Mar-2024 00:03:10 203.0.113.10 HEAD /api/login 502 347ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:03:11Z 172.16.0.22 DELETE /api/admin 201 2391ms
+2024-03-15T00:03:12Z 10.0.0.7 DELETE /api/metrics 403 1684ms "Mozilla/5.0 (Windows NT 10.0)"
+{"timestamp":"2024-03-15T00:03:13Z","method":"PUT","path":"/api/orders","status":504,"duration_ms":51,"ip":"10.0.0.7"}
+2024-03-15T00:03:14Z 192.168.1.42 PUT /api/webhooks/stripe - 1584
+15-Mar-2024 00:03:15 10.0.0.7 PATCH /api/webhooks/stripe 401 0.807s
+2024-03-15T00:03:16Z 203.0.113.10 PUT /api/batch/process 201 665ms
+{"timestamp":"2024-03-15T00:03:17Z","method":"DELETE","path":"/api/webhooks/stripe","status":500,"duration_ms":2503,"ip":"192.168.1.42"}
+  15-Mar-2024 00:03:18 192.168.1.42 GET /api/admin 200 428ms
+2024/03/15 00:03:19 192.168.1.42 GET /api/users/12 401 673ms
+15-Mar-2024 00:03:20 172.16.0.22 GET /api/health 200 1.338s
+2024/03/15 00:03:21 192.168.1.42 PUT /api/admin 201 2.929s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+	... 8 more
+2024/03/15 00:03:23 10.0.0.7 GET /api/checkout 502 1657ms
+15-Mar-2024 00:03:24 192.168.1.42 POST /api/batch/process 504 86ms
+15-Mar-2024 00:03:25 172.16.0.22 OPTIONS /api/orders 500 1767ms
+2024-03-15T00:03:26Z 192.168.1.42 HEAD /api/dashboard 204 2393 "kube-probe/1.29"
+1710461007 203.0.113.10 GET /api/health 201 1.995s
+PARTIAL: 2024-03-15T16:28
+2024-03-15T00:03:29Z 192.168.1.42 HEAD /api/batch/process 504 2316ms
+2024-03-15T00:03:30Z 172.16.0.22 OPTIONS /api/users 204 1758 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:03:31Z 10.0.0.7 GET /api/dashboard 504 2921ms
+2024/03/15 00:03:32 203.0.113.10 PUT /api/users/12 200 1096ms
+2024-03-15T00:03:33Z 192.168.1.42 OPTIONS /api/reports/export 403 2273ms
+2024-03-15T00:03:34Z 10.0.0.7 DELETE /api/products 502 1.636s
+2024-03-15T00:03:35Z 203.0.113.10 DELETE /api/orders 502 1570
+15-Mar-2024 00:03:36 192.168.1.42 HEAD /api/admin 504 374ms
+2024/03/15 00:03:37 172.16.0.22 PATCH /api/users 504 0.378s "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:03:38 192.168.1.42 PATCH /api/webhooks/stripe - 304ms
+2024-03-15T00:03:39Z 192.168.1.42 GET /api/orders 204 2.382s
+1710461020 10.0.0.7 POST /api/billing 401 2589ms
+{"timestamp":"2024-03-15T00:03:41Z","method":"HEAD","path":"/api/orders","status":401,"duration_ms":2894,"ip":"203.0.113.10"}
+2024/03/15 00:03:42 192.168.1.42 GET /api/login 404 1.777s
+1710461023 203.0.113.10 OPTIONS /api/batch/process 502 1826
+2024/03/15 00:03:44 172.16.0.22 OPTIONS /api/login 401 0.400s
+2024/03/15 00:03:45 192.168.1.42 PATCH /api/orders 403 684ms
+2024/03/15 00:03:46 172.16.0.22 DELETE /api/reports/export 504 967ms
+15-Mar-2024 00:03:47 192.168.1.42 PATCH /api/users/12 404 1.681s
+1710461028 203.0.113.10 DELETE /api/batch/process 401 2634
+1710461029 192.168.1.42 PATCH /api/checkout 502 2993ms
+2024/03/15 00:03:50 203.0.113.10 GET /api/login 201 1.187s
+15-Mar-2024 00:03:51 203.0.113.10 OPTIONS /api/admin 404 2398ms
+2024-03-15T00:03:52Z 172.16.0.22 HEAD /api/batch/process 500 881
+15-Mar-2024 00:03:53 10.0.0.7 GET /api/login 502 958ms
+2024-03-15T00:03:54Z 203.0.113.10 POST /api/admin 201 1.470s
+2024-03-15T00:03:55Z 203.0.113.10 PATCH /api/login 403 922
+2024/03/15 00:03:56 203.0.113.10 DELETE /api/login 201 1477
+2024-03-15T00:03:57Z 203.0.113.10 POST /api/billing 504 489 "kube-probe/1.29"
+{"timestamp":"2024-03-15T00:03:58Z","method":"OPTIONS","path":"/api/dashboard","status":204,"duration_ms":342,"ip":"192.168.1.42"}
+1710461039 10.0.0.7 HEAD /api/metrics 204 553ms
+15-Mar-2024 00:04:00 10.0.0.7 HEAD /api/billing - 2251ms
+15-Mar-2024 00:04:01 172.16.0.22 PATCH /api/dashboard 404 844ms
+1710461042 10.0.0.7 HEAD /api/search 404 1663ms
+2024-03-15T00:04:03Z 203.0.113.10 OPTIONS /api/dashboard 404 2272ms
+2024/03/15 00:04:04 203.0.113.10 POST /api/users/12 500 1205
+15-Mar-2024 00:04:05 10.0.0.7 PATCH /api/webhooks/stripe 201 396ms
+1710461046 192.168.1.42 GET /api/checkout 204 1340
+  15-Mar-2024 00:04:07 172.16.0.22 DELETE /api/health 204 1.037s
+1710461048 192.168.1.42 POST /api/metrics 504 2897ms "curl/8.5.0"
+	at com.example.Service.run(Service.java:42)
+Caused by: java.io.IOException: broken pipe
+1710461051 203.0.113.10 PATCH /api/search 200 2485ms
+	at com.example.Service.run(Service.java:42)
+{"time":"2024-03-15T00:04:13Z","http_method":"HEAD","url":"/api/products","status_code":201,"response_time_ms":92,"client_ip":"172.16.0.22"}
+
+2024-03-15T00:04:15Z 10.0.0.7 PATCH /api/dashboard 200 1006ms
+2024-03-15T00:04:16Z 172.16.0.22 DELETE /api/health 500 1741ms
+2024-03-15T00:04:17Z 203.0.113.10 POST /api/reports/export 504 0.859s
+15-Mar-2024 00:04:18 203.0.113.10 POST /api/users 404 2019ms
+{"time":"2024-03-15T00:04:19Z","http_method":"POST","url":"/api/admin","status_code":200,"response_time_ms":2391,"client_ip":"203.0.113.10"}
+15-Mar-2024 00:04:20 10.0.0.7 PATCH /api/metrics 403 2482ms
+2024/03/15 00:04:21 10.0.0.7 POST /api/admin 500 1803ms
+2024/03/15 00:04:22 172.16.0.22 DELETE /api/webhooks/stripe 204 2685ms
+2024/03/15 00:04:23 203.0.113.10 OPTIONS /api/products 403 1681ms
+15-Mar-2024 00:04:24 10.0.0.7 HEAD /api/reports/export 204 2192
+15-Mar-2024 00:04:25 192.168.1.42 POST /api/reports/export 200 2.059s "curl/8.5.0"
+2024-03-15T00:04:26Z 172.16.0.22 HEAD /api/login 504 1337ms "kube-probe/1.29"
+2024/03/15 00:04:27 10.0.0.7 PUT /api/health 504 902ms "kube-probe/1.29"
+1710461068 10.0.0.7 HEAD /api/orders 500 2.741s
+{"time":"2024-03-15T00:04:29Z","http_method":"HEAD","url":"/api/webhooks/stripe","status_code":204,"response_time_ms":345,"client_ip":"192.168.1.42"}
+Exception in thread "worker" java.lang.RuntimeException: boom
+{"timestamp":"2024-03-15T00:04:31Z","method":"GET","path":"/api/users/12","status":504,"duration_ms":535,"ip":"10.0.0.7"}
+nginx: [error] upstream prematurely closed connection
+2024/03/15 00:04:33 203.0.113.10 HEAD /api/admin 500 458ms
+1710461074 203.0.113.10 PATCH /api/batch/process 504 655
+15-Mar-2024 00:04:35 203.0.113.10 POST /api/orders 200 0.512s
+1710461076 203.0.113.10 DELETE /api/health 200 2.014s
+{"time":"2024-03-15T00:04:37Z","http_method":"GET","url":"/api/checkout","status_code":504,"response_time_ms":129,"client_ip":"10.0.0.7"}
+2024-03-15T00:04:38Z 203.0.113.10 POST /api/metrics 401 205ms "kube-probe/1.29"
+2024/03/15 00:04:39 203.0.113.10 POST /api/webhooks/stripe 204 1013ms
+2024-03-15T00:04:40Z 10.0.0.7 DELETE /api/search 404 180ms
+{"timestamp":"2024-03-15T00:04:41Z","method":"OPTIONS","path":"/api/orders","status":403,"duration_ms":2365,"ip":"10.0.0.7"}
+  2024-03-15T00:04:42Z 172.16.0.22 DELETE /api/billing 200 2155ms
+15-Mar-2024 00:04:43 172.16.0.22 PUT /api/dashboard 500 1355ms
+1710461084 10.0.0.7 PUT /api/checkout 200 1577ms
+  1710461085 172.16.0.22 DELETE /api/users 404 1.294s
+{"timestamp":"2024-03-15T12:00:46Z","method":"GET"
+2024-03-15T00:04:47Z 203.0.113.10 HEAD /api/checkout 401 1.671s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710461088 172.16.0.22 HEAD /api/metrics 500 1262
+2024/03/15 00:04:49 203.0.113.10 DELETE /api/dashboard 504 1220ms
+totally malformed !!!
+1710461091 172.16.0.22 HEAD /api/dashboard 200 1866ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:04:52 203.0.113.10 POST /api/checkout 504 0.458s "curl/8.5.0"
+PARTIAL: 2024-03-15T16:53
+  15-Mar-2024 00:04:54 203.0.113.10 PATCH /api/batch/process 401 330
+15-Mar-2024 00:04:55 192.168.1.42 GET /api/batch/process 401 395ms
+1710461096 192.168.1.42 PATCH /api/admin 403 685ms
+  1710461097 203.0.113.10 DELETE /api/admin 504 1712ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:04:58 203.0.113.10 OPTIONS /api/checkout 502 0.209s "kube-probe/1.29"
+2024/03/15 00:04:59 10.0.0.7 HEAD /api/dashboard - 1.024s
+1710461100 192.168.1.42 PUT /api/health 404 2.377s
+15-Mar-2024 00:05:01 203.0.113.10 HEAD /api/login 404 1196
+1710461102 203.0.113.10 PATCH /api/checkout 403 2927ms
+{"timestamp":"2024-03-15T00:05:03Z","method":"GET","path":"/api/health","status":403,"duration_ms":429,"ip":"172.16.0.22"}
+2024-03-15T00:05:04Z 10.0.0.7 DELETE /api/billing 404 325ms
+1710461105 10.0.0.7 HEAD /api/webhooks/stripe 201 568ms
+1710461106 172.16.0.22 PUT /api/metrics 204 354ms "curl/8.5.0"
+1710461107 172.16.0.22 DELETE /api/metrics 200 1230
+15-Mar-2024 00:05:08 203.0.113.10 OPTIONS /api/billing 201 2.987s
+15-Mar-2024 00:05:09 203.0.113.10 HEAD /api/users/12 404 2.696s
+15-Mar-2024 00:05:10 10.0.0.7 GET /api/webhooks/stripe 200 2040ms
+2024/03/15 00:05:11 192.168.1.42 OPTIONS /api/login 200 1.077s
+15-Mar-2024 00:05:12 203.0.113.10 DELETE /api/products - 1679ms
+2024/03/15 00:05:13 192.168.1.42 PUT /api/metrics 401 40ms "Mozilla/5.0 (Windows NT 10.0)"
+{"time":"2024-03-15T00:05:14Z","http_method":"HEAD","url":"/api/dashboard","status_code":502,"response_time_ms":2249,"client_ip":"192.168.1.42"}
+2024/03/15 00:05:15 203.0.113.10 OPTIONS /api/webhooks/stripe 201 1.717s
+2024/03/15 00:05:16 10.0.0.7 GET /api/dashboard - 1732ms
+{"timestamp":"2024-03-15T00:05:17Z","method":"PATCH","path":"/api/webhooks/stripe","status":500,"duration_ms":1876,"ip":"192.168.1.42"}
+15-Mar-2024 00:05:18 203.0.113.10 DELETE /api/billing 404 2.180s
+15-Mar-2024 00:05:19 192.168.1.42 PATCH /api/billing 200 482ms
+15-Mar-2024 00:05:20 192.168.1.42 OPTIONS /api/orders 201 1155ms
+1710461121 203.0.113.10 OPTIONS /api/users/12 500 2184ms
+1710461122 172.16.0.22 PATCH /api/orders 504 501
+  15-Mar-2024 00:05:23 10.0.0.7 DELETE /api/webhooks/stripe 401 2349ms
+1710461124 192.168.1.42 GET /api/webhooks/stripe 504 1782
+2024/03/15 00:05:25 172.16.0.22 HEAD /api/search 200 2662ms
+1710461126 192.168.1.42 PUT /api/health 204 2628ms
+{"timestamp":"2024-03-15T00:05:27Z","method":"HEAD","path":"/api/reports/export","status":504,"duration_ms":144,"ip":"172.16.0.22"}
+15-Mar-2024 00:05:28 192.168.1.42 DELETE /api/batch/process 401 584
+  2024-03-15T00:05:29Z 10.0.0.7 PATCH /api/login 201 2.273s
+15-Mar-2024 00:05:30 10.0.0.7 HEAD /api/health 504 914ms
+2024-03-15T00:05:31Z 10.0.0.7 HEAD /api/reports/export 201 2.171s
+  2024/03/15 00:05:32 172.16.0.22 PUT /api/webhooks/stripe 500 996ms
+1710461133 192.168.1.42 PATCH /api/health 500 1736
+2024-03-15T00:05:34Z 192.168.1.42 DELETE /api/billing 403 0.247s
+15-Mar-2024 00:05:35 10.0.0.7 POST /api/dashboard - 2653ms
+1710461136 203.0.113.10 PATCH /api/batch/process 403 1.440s
+2024-03-15T00:05:37Z 192.168.1.42 PATCH /api/login 404 1.978s "curl/8.5.0"
+{"timestamp":"2024-03-15T00:05:38Z","method":"PATCH","path":"/api/orders","status":500,"duration_ms":802,"ip":"10.0.0.7"}
+{"timestamp":"2024-03-15T00:05:39Z","method":"OPTIONS","path":"/api/webhooks/stripe","status":403,"duration_ms":1270,"ip":"10.0.0.7"}
+{"time":"2024-03-15T00:05:40Z","http_method":"PATCH","url":"/api/dashboard","status_code":502,"response_time_ms":2555,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:05:41 10.0.0.7 PATCH /api/batch/process 403 0.753s
+15-Mar-2024 00:05:42 203.0.113.10 PATCH /api/health 403 0.079s
+2024-03-15T00:05:43Z 203.0.113.10 PATCH /api/search 401 2459ms
+15-Mar-2024 00:05:44 192.168.1.42 OPTIONS /api/webhooks/stripe 200 587ms
+15-Mar-2024 00:05:45 203.0.113.10 PUT /api/users/12 401 650 "curl/8.5.0"
+15-Mar-2024 00:05:46 192.168.1.42 DELETE /api/metrics 403 2045ms
+2024-03-15T00:05:47Z 10.0.0.7 PUT /api/metrics 200 1520ms
+2024/03/15 00:05:48 203.0.113.10 DELETE /api/checkout 200 19ms
+2024/03/15 00:05:49 203.0.113.10 DELETE /api/batch/process 401 838ms
+1710461150 172.16.0.22 POST /api/webhooks/stripe 200 1084ms "curl/8.5.0"
+2024-03-15T00:05:51Z 172.16.0.22 PUT /api/checkout 204 24ms
+15-Mar-2024 00:05:52 203.0.113.10 PUT /api/reports/export 500 2721
+2024/03/15 00:05:53 192.168.1.42 GET /api/health 204 106ms "Mozilla/5.0 (Windows NT 10.0)"
+{"timestamp":"2024-03-15T00:05:54Z","method":"PUT","path":"/api/webhooks/stripe","status":500,"duration_ms":1647,"ip":"10.0.0.7"}
+15-Mar-2024 00:05:55 172.16.0.22 POST /api/batch/process 502 518
+2024/03/15 00:05:56 203.0.113.10 HEAD /api/admin 504 1806ms
+  15-Mar-2024 00:05:57 10.0.0.7 PUT /api/login 204 53ms
+1710461158 203.0.113.10 POST /api/products 404 0.347s
+2024-03-15T00:05:59Z 172.16.0.22 PATCH /api/metrics 403 0.082s
+15-Mar-2024 00:06:00 192.168.1.42 PUT /api/checkout - 2281ms
+1710461161 203.0.113.10 HEAD /api/batch/process 500 2.917s "kube-probe/1.29"
+
+1710461163 203.0.113.10 PUT /api/admin 502 2510
+15-Mar-2024 00:06:04 10.0.0.7 OPTIONS /api/users/12 201 356 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710461165 172.16.0.22 PATCH /api/login 500 2.985s
+2024-03-15T00:06:06Z 10.0.0.7 POST /api/reports/export - 955ms
+2024-03-15T00:06:07Z 10.0.0.7 DELETE /api/webhooks/stripe 201 1.930s "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:06:08 10.0.0.7 GET /api/checkout 200 2.752s
+2024/03/15 00:06:09 10.0.0.7 POST /api/dashboard 500 1091
+2024/03/15 00:06:10 192.168.1.42 POST /api/batch/process 504 666ms
+15-Mar-2024 00:06:11 192.168.1.42 POST /api/webhooks/stripe 504 1504
+15-Mar-2024 00:06:12 172.16.0.22 PATCH /api/admin - 420ms
+2024/03/15 00:06:13 192.168.1.42 GET /api/batch/process 404 2281ms
+
+1710461175 203.0.113.10 POST /api/users 502 0.759s
+2024/03/15 00:06:16 10.0.0.7 GET /api/login 200 1225ms
+2024-03-15T00:06:17Z 172.16.0.22 PATCH /api/billing 500 2164ms
+1710461178 192.168.1.42 PUT /api/metrics 504 995ms
+15-Mar-2024 00:06:19 203.0.113.10 PUT /api/login 500 2188ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710461181 172.16.0.22 HEAD /api/health 204 2050
+15-Mar-2024 00:06:22 172.16.0.22 DELETE /api/orders 403 1.745s
+2024/03/15 00:06:23 203.0.113.10 POST /api/users/12 504 1.786s
+2024-03-15T00:06:24Z 203.0.113.10 OPTIONS /api/login 404 1963ms
+1710461185 192.168.1.42 DELETE /api/users 204 2679ms
+2024-03-15T00:06:26Z 203.0.113.10 POST /api/batch/process 403 1551
+{"timestamp":"2024-03-15T12:00:27Z","method":"GET"
+1710461188 10.0.0.7 HEAD /api/login 500 508
+2024/03/15 00:06:29 203.0.113.10 GET /api/login 204 2412ms
+1710461190 172.16.0.22 PUT /api/metrics 201 1025ms "curl/8.5.0"
+2024/03/15 00:06:31 192.168.1.42 DELETE /api/orders 404 2368ms "curl/8.5.0"
+2024-03-15T00:06:32Z 10.0.0.7 PUT /api/metrics 500 2524ms "kube-probe/1.29"
+
+1710461194 192.168.1.42 OPTIONS /api/batch/process 201 1354
+1710461195 203.0.113.10 GET /api/search 500 2368ms
+15-Mar-2024 00:06:36 203.0.113.10 PUT /api/checkout 504 1608ms
+1710461197 203.0.113.10 PUT /api/metrics 504 2393ms "kube-probe/1.29"
+2024/03/15 00:06:38 172.16.0.22 POST /api/login 504 916ms
+2024-03-15T00:06:39Z 192.168.1.42 HEAD /api/search 404 2444ms
+2024-03-15T00:06:40Z 172.16.0.22 OPTIONS /api/login 403 1691
+1710461201 172.16.0.22 OPTIONS /api/login - 2.034s
+15-Mar-2024 00:06:42 192.168.1.42 GET /api/admin 500 96
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:06:44 10.0.0.7 DELETE /api/metrics 502 2.990s
+1710461205 203.0.113.10 PATCH /api/users 404 1304ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:06:46Z 172.16.0.22 OPTIONS /api/admin 401 2.585s
+15-Mar-2024 00:06:47 192.168.1.42 HEAD /api/admin 504 1221ms "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:06:48 192.168.1.42 HEAD /api/webhooks/stripe 502 1465ms
+{"time":"2024-03-15T00:06:49Z","http_method":"GET","url":"/api/search","status_code":403,"response_time_ms":2178,"client_ip":"203.0.113.10"}
+  15-Mar-2024 00:06:50 10.0.0.7 POST /api/admin 200 2495
+{"timestamp":"2024-03-15T00:06:51Z","method":"DELETE","path":"/api/admin","status":502,"duration_ms":2256,"ip":"10.0.0.7"}
+1710461212 172.16.0.22 POST /api/admin 204 979
+2024-03-15T00:06:53Z 172.16.0.22 DELETE /api/health 204 699ms
+	at com.example.Service.run(Service.java:42)
+15-Mar-2024 00:06:55 10.0.0.7 HEAD /api/search 504 941ms
+2024/03/15 00:06:56 10.0.0.7 PUT /api/reports/export 200 210 "kube-probe/1.29"
+1710461217 203.0.113.10 PUT /api/reports/export 500 2596ms
+{"timestamp":"2024-03-15T00:06:58Z","method":"GET","path":"/api/users/12","status":200,"duration_ms":2156,"ip":"10.0.0.7"}
+15-Mar-2024 00:06:59 10.0.0.7 DELETE /api/orders 204 2.551s
+15-Mar-2024 00:07:00 203.0.113.10 POST /api/webhooks/stripe 204 2145ms
+{"timestamp":"2024-03-15T00:07:01Z","method":"POST","path":"/api/orders","status":500,"duration_ms":2289,"ip":"203.0.113.10"}
+2024-03-15T00:07:02Z 172.16.0.22 PATCH /api/products 502 2763
+DEBUG not an access log
+2024/03/15 00:07:04 192.168.1.42 PUT /api/users 201 1903ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:07:05Z 203.0.113.10 DELETE /api/billing 200 1.331s "curl/8.5.0"
+2024-03-15T00:07:06Z 172.16.0.22 HEAD /api/checkout 404 1308ms "Mozilla/5.0 (Windows NT 10.0)"
+1710461227 10.0.0.7 PUT /api/login 500 693ms
+
+1710461229 203.0.113.10 POST /api/users/12 401 1414ms
+{"timestamp":"2024-03-15T12:00:10Z","method":"GET"
+2024/03/15 00:07:11 192.168.1.42 DELETE /api/orders 403 853ms
+15-Mar-2024 00:07:12 172.16.0.22 HEAD /api/metrics 401 1640
+2024-03-15T00:07:13Z 192.168.1.42 HEAD /api/search 204 1787ms
+2024/03/15 00:07:14 10.0.0.7 PATCH /api/health 204 1634ms
+15-Mar-2024 00:07:15 192.168.1.42 OPTIONS /api/orders 200 2635ms
+1710461236 192.168.1.42 POST /api/checkout 204 2553
+2024/03/15 00:07:17 10.0.0.7 GET /api/search - 1191
+15-Mar-2024 00:07:18 203.0.113.10 OPTIONS /api/orders 403 1.174s
+2024/03/15 00:07:19 172.16.0.22 PATCH /api/orders 502 745ms
+{"time":"2024-03-15T00:07:20Z","http_method":"POST","url":"/api/webhooks/stripe","status_code":502,"response_time_ms":1995,"client_ip":"10.0.0.7"}
+2024/03/15 00:07:21 203.0.113.10 HEAD /api/billing 200 539ms
+2024-03-15T00:07:22Z 10.0.0.7 POST /api/batch/process 403 2332ms
+2024/03/15 00:07:23 203.0.113.10 HEAD /api/admin 404 2.989s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:07:24 203.0.113.10 GET /api/users 500 1781ms
+{"timestamp":"2024-03-15T00:07:25Z","method":"HEAD","path":"/api/login","status":500,"duration_ms":2106,"ip":"172.16.0.22"}
+1710461246 172.16.0.22 OPTIONS /api/users 200 1.146s
+2024/03/15 00:07:27 172.16.0.22 OPTIONS /api/login 403 2029ms
+2024-03-15T00:07:28Z 192.168.1.42 HEAD /api/metrics 401 61ms
+{"time":"2024-03-15T00:07:29Z","http_method":"PATCH","url":"/api/login","status_code":401,"response_time_ms":2070,"client_ip":"192.168.1.42"}
+1710461250 10.0.0.7 POST /api/reports/export 201 1.908s "Mozilla/5.0 (Windows NT 10.0)"
+1710461251 192.168.1.42 OPTIONS /api/metrics 401 225ms
+2024/03/15 00:07:32 192.168.1.42 DELETE /api/billing 401 720
+DEBUG not an access log
+totally malformed !!!
+{"time":"2024-03-15T00:07:35Z","http_method":"PUT","url":"/api/webhooks/stripe","status_code":201,"response_time_ms":881,"client_ip":"172.16.0.22"}
+2024/03/15 00:07:36 10.0.0.7 OPTIONS /api/batch/process 504 2703
+1710461257 10.0.0.7 PUT /api/checkout 502 2.021s
+15-Mar-2024 00:07:38 192.168.1.42 DELETE /api/checkout 401 1365ms
+1710461259 203.0.113.10 DELETE /api/dashboard 403 1106ms
+2024-03-15T00:07:40Z 203.0.113.10 DELETE /api/metrics 200 0.536s
+2024-03-15T16:00:41Z 10.0.0.7 GET /api/truncated
+1710461262 10.0.0.7 GET /api/reports/export 204 1297
+15-Mar-2024 00:07:43 192.168.1.42 GET /api/users 504 2329 "curl/8.5.0"
+{"time":"2024-03-15T00:07:44Z","http_method":"PUT","url":"/api/metrics","status_code":500,"response_time_ms":1531,"client_ip":"203.0.113.10"}
+2024/03/15 00:07:45 203.0.113.10 HEAD /api/login 204 2.159s
+1710461266 203.0.113.10 OPTIONS /api/checkout 204 936ms
+15-Mar-2024 00:07:47 203.0.113.10 OPTIONS /api/products 500 885ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:07:48Z 10.0.0.7 HEAD /api/products 201 2441ms
+2024-03-15T00:07:49Z 10.0.0.7 POST /api/orders 504 2987ms
+2024-03-15T00:07:50Z 192.168.1.42 DELETE /api/users/12 502 2287ms
+1710461271 172.16.0.22 DELETE /api/batch/process 500 2166ms
+1710461272 192.168.1.42 POST /api/orders - 925ms
+2024/03/15 00:07:53 203.0.113.10 GET /api/metrics 504 222ms
+2024/03/15 00:07:54 192.168.1.42 OPTIONS /api/billing 403 2257ms
+2024/03/15 00:07:55 172.16.0.22 OPTIONS /api/health 201 1597
+1710461276 172.16.0.22 POST /api/metrics 401 80ms
+2024/03/15 00:07:57 172.16.0.22 HEAD /api/metrics - 432ms
+15-Mar-2024 00:07:58 192.168.1.42 GET /api/users 500 0.454s
+1710461279 192.168.1.42 HEAD /api/admin 401 783ms
+{"timestamp":"2024-03-15T00:08:00Z","method":"DELETE","path":"/api/admin","status":404,"duration_ms":2078,"ip":"172.16.0.22"}
+2024/03/15 00:08:01 192.168.1.42 HEAD /api/search 504 2.346s
+2024-03-15T00:08:02Z 10.0.0.7 HEAD /api/batch/process 502 1597ms
+{"time":"2024-03-15T00:08:03Z","http_method":"DELETE","url":"/api/search","status_code":401,"response_time_ms":2652,"client_ip":"192.168.1.42"}
+15-Mar-2024 00:08:04 203.0.113.10 PUT /api/health 502 1203
+15-Mar-2024 00:08:05 203.0.113.10 HEAD /api/billing 204 1033ms "kube-probe/1.29"
+2024/03/15 00:08:06 172.16.0.22 PUT /api/login 204 759ms
+{"timestamp":"2024-03-15T12:00:07Z","method":"GET"
+{"time":"2024-03-15T00:08:08Z","http_method":"GET","url":"/api/reports/export","status_code":204,"response_time_ms":1190,"client_ip":"192.168.1.42"}
+{"timestamp":"2024-03-15T00:08:09Z","method":"GET","path":"/api/checkout","status":502,"duration_ms":481,"ip":"203.0.113.10"}
+15-Mar-2024 00:08:10 172.16.0.22 POST /api/checkout 404 636ms
+1710461291 10.0.0.7 HEAD /api/reports/export 200 1030ms
+  2024-03-15T00:08:12Z 203.0.113.10 PATCH /api/health 500 1980ms
+15-Mar-2024 00:08:13 10.0.0.7 GET /api/reports/export - 2.256s
+1710461294 10.0.0.7 PUT /api/health 500 366ms
+
+15-Mar-2024 00:08:16 203.0.113.10 POST /api/login 404 460ms
+15-Mar-2024 00:08:17 192.168.1.42 PUT /api/admin 502 36ms
+DEBUG not an access log
+15-Mar-2024 00:08:19 192.168.1.42 PUT /api/health 200 2.313s
+1710461300 172.16.0.22 HEAD /api/users 404 1107ms
+1710461301 203.0.113.10 PUT /api/reports/export 404 1.926s
+{"timestamp":"2024-03-15T00:08:22Z","method":"GET","path":"/api/search","status":204,"duration_ms":2004,"ip":"203.0.113.10"}
+1710461303 10.0.0.7 GET /api/metrics 500 2.360s
+Exception in thread "worker" java.lang.RuntimeException: boom
+15-Mar-2024 00:08:25 192.168.1.42 HEAD /api/health 500 902ms
+1710461306 10.0.0.7 HEAD /api/admin 204 2.333s
+15-Mar-2024 00:08:27 203.0.113.10 PATCH /api/users 403 1.938s "kube-probe/1.29"
+15-Mar-2024 00:08:28 203.0.113.10 GET /api/dashboard 404 0.175s
+	at com.example.Service.run(Service.java:42)
+2024-03-15T00:08:30Z 172.16.0.22 PATCH /api/search 201 2929ms
+2024-03-15T00:08:31Z 203.0.113.10 HEAD /api/health 502 2.573s
+{"time":"2024-03-15T00:08:32Z","http_method":"POST","url":"/api/orders","status_code":403,"response_time_ms":70,"client_ip":"10.0.0.7"}
+1710461313 172.16.0.22 PATCH /api/webhooks/stripe 403 1496
+  2024/03/15 00:08:34 192.168.1.42 POST /api/webhooks/stripe 500 73ms "curl/8.5.0"
+2024-03-15T00:08:35Z 203.0.113.10 PATCH /api/metrics 200 116 "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:08:36 172.16.0.22 GET /api/users/12 502 1328ms
+2024-03-15T00:08:37Z 192.168.1.42 GET /api/batch/process 200 182
+15-Mar-2024 00:08:38 192.168.1.42 OPTIONS /api/webhooks/stripe 504 1.796s
+2024/03/15 00:08:39 10.0.0.7 POST /api/dashboard 201 275
+2024/03/15 00:08:40 172.16.0.22 POST /api/health 200 211 "curl/8.5.0"
+2024-03-15T00:08:41Z 172.16.0.22 PUT /api/products - 0.912s
+  1710461322 192.168.1.42 PATCH /api/login - 1.326s
+{"timestamp":"2024-03-15T12:00:43Z","method":"GET"
+1710461324 172.16.0.22 POST /api/dashboard - 2294
+	at com.example.Service.run(Service.java:42)
+  2024/03/15 00:08:46 192.168.1.42 OPTIONS /api/dashboard 200 2233
+1710461327 10.0.0.7 PATCH /api/orders 201 2820ms
+2024-03-15T00:08:48Z 172.16.0.22 DELETE /api/dashboard 500 566ms
+1710461329 203.0.113.10 GET /api/users 404 1419ms
+2024/03/15 00:08:50 203.0.113.10 GET /api/search 201 2.313s
+1710461331 203.0.113.10 GET /api/users 401 996ms
+2024-03-15T00:08:52Z 172.16.0.22 OPTIONS /api/dashboard 201 645
+2024/03/15 00:08:53 10.0.0.7 HEAD /api/products 500 2659ms
+{"timestamp":"2024-03-15T00:08:54Z","method":"PUT","path":"/api/orders","status":502,"duration_ms":501,"ip":"10.0.0.7"}
+15-Mar-2024 00:08:55 192.168.1.42 PATCH /api/checkout 504 2985ms
+{"timestamp":"2024-03-15T00:08:56Z","method":"PATCH","path":"/api/billing","status":502,"duration_ms":476,"ip":"192.168.1.42"}
+{"time":"2024-03-15T00:08:57Z","http_method":"POST","url":"/api/dashboard","status_code":200,"response_time_ms":1324,"client_ip":"192.168.1.42"}
+2024-03-15T00:08:58Z 192.168.1.42 HEAD /api/metrics 502 1390
+2024/03/15 00:08:59 192.168.1.42 DELETE /api/users 403 2612ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024-03-15T00:09:01Z 203.0.113.10 POST /api/users 500 1510
+15-Mar-2024 00:09:02 172.16.0.22 HEAD /api/metrics - 1829ms "kube-probe/1.29"
+{"time":"2024-03-15T00:09:03Z","http_method":"DELETE","url":"/api/users","status_code":500,"response_time_ms":1312,"client_ip":"172.16.0.22"}
+2024/03/15 00:09:04 203.0.113.10 PATCH /api/billing 401 300ms
+2024-03-15T00:09:05Z 203.0.113.10 OPTIONS /api/metrics 204 2005ms
+2024-03-15T00:09:06Z 10.0.0.7 PATCH /api/dashboard 403 644ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:09:07Z 10.0.0.7 POST /api/admin 502 1.491s
+2024/03/15 00:09:08 192.168.1.42 POST /api/health 204 1811 "curl/8.5.0"
+15-Mar-2024 00:09:09 203.0.113.10 GET /api/products 201 2271ms
+2024/03/15 00:09:10 10.0.0.7 PUT /api/metrics 504 2199ms
+2024-03-15T00:09:11Z 203.0.113.10 PUT /api/batch/process 204 789
+1710461352 172.16.0.22 POST /api/webhooks/stripe 404 466
+2024/03/15 00:09:13 192.168.1.42 POST /api/checkout 504 2.770s "kube-probe/1.29"
+  2024/03/15 00:09:14 192.168.1.42 PATCH /api/users/12 403 2929ms
+15-Mar-2024 00:09:15 192.168.1.42 HEAD /api/admin 201 2824ms
+2024/03/15 00:09:16 10.0.0.7 PATCH /api/billing 204 2.762s
+2024-03-15T00:09:17Z 172.16.0.22 GET /api/admin 504 2.763s
+{"timestamp":"2024-03-15T00:09:18Z","method":"PATCH","path":"/api/reports/export","status":504,"duration_ms":642,"ip":"172.16.0.22"}
+15-Mar-2024 00:09:19 10.0.0.7 OPTIONS /api/reports/export 502 1986ms
+2024-03-15T00:09:20Z 192.168.1.42 PATCH /api/admin 201 946ms
+1710461361 192.168.1.42 HEAD /api/orders 403 748ms
+{"timestamp":"2024-03-15T00:09:22Z","method":"PATCH","path":"/api/metrics","status":201,"duration_ms":2141,"ip":"172.16.0.22"}
+15-Mar-2024 00:09:23 10.0.0.7 PATCH /api/orders - 1260ms
+2024/03/15 00:09:24 10.0.0.7 POST /api/orders 504 1258ms
+2024/03/15 00:09:25 172.16.0.22 HEAD /api/checkout 401 2652ms
+1710461366 172.16.0.22 DELETE /api/search 404 0.978s
+2024/03/15 00:09:27 203.0.113.10 PUT /api/billing - 1411ms
+1710461368 172.16.0.22 PUT /api/batch/process 204 2506ms "kube-probe/1.29"
+2024/03/15 00:09:29 10.0.0.7 GET /api/health - 1.773s
+2024/03/15 00:09:30 10.0.0.7 GET /api/batch/process 404 0.095s
+{"time":"2024-03-15T00:09:31Z","http_method":"HEAD","url":"/api/metrics","status_code":404,"response_time_ms":1071,"client_ip":"192.168.1.42"}
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710461373 172.16.0.22 HEAD /api/admin 504 2095ms
+	... 8 more
+1710461375 192.168.1.42 PATCH /api/webhooks/stripe 201 2911 "curl/8.5.0"
+2024-03-15T00:09:36Z 10.0.0.7 POST /api/webhooks/stripe 403 698ms "Mozilla/5.0 (Windows NT 10.0)"
+
+2024-03-15T00:09:38Z 172.16.0.22 PUT /api/billing 401 1284ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:09:39Z 172.16.0.22 PUT /api/health 500 1717ms
+2024/03/15 00:09:40 10.0.0.7 HEAD /api/webhooks/stripe 201 687ms
+{"time":"2024-03-15T00:09:41Z","http_method":"POST","url":"/api/dashboard","status_code":401,"response_time_ms":1270,"client_ip":"172.16.0.22"}
+2024-03-15T00:09:42Z 10.0.0.7 GET /api/login 204 1365ms
+15-Mar-2024 00:09:43 203.0.113.10 PUT /api/reports/export 404 2118ms
+15-Mar-2024 00:09:44 203.0.113.10 DELETE /api/login 201 1139ms
+1710461385 172.16.0.22 PUT /api/products 200 2818
+15-Mar-2024 00:09:46 203.0.113.10 PUT /api/users - 147
+2024-03-15T00:09:47Z 10.0.0.7 PUT /api/users/12 204 0.561s
+1710461388 203.0.113.10 POST /api/reports/export 201 1584ms
+15-Mar-2024 00:09:49 10.0.0.7 PATCH /api/batch/process 504 1.543s
+2024-03-15T00:09:50Z 203.0.113.10 GET /api/login 500 2.722s "curl/8.5.0"
+15-Mar-2024 00:09:51 203.0.113.10 OPTIONS /api/search 403 1500
+{"timestamp":"2024-03-15T00:09:52Z","method":"GET","path":"/api/health","status":403,"duration_ms":1185,"ip":"203.0.113.10"}
+1710461393 172.16.0.22 OPTIONS /api/webhooks/stripe 201 0.736s
+15-Mar-2024 00:09:54 203.0.113.10 PATCH /api/dashboard - 675ms
+{"time":"2024-03-15T00:09:55Z","http_method":"DELETE","url":"/api/orders","status_code":500,"response_time_ms":859,"client_ip":"172.16.0.22"}
+1710461396 10.0.0.7 DELETE /api/webhooks/stripe - 2775ms
+15-Mar-2024 00:09:57 172.16.0.22 PATCH /api/batch/process 502 304
+1710461398 203.0.113.10 DELETE /api/login 404 2934ms
+1710461399 172.16.0.22 POST /api/webhooks/stripe 204 816ms
+2024/03/15 00:10:00 203.0.113.10 PATCH /api/users 201 411
+Caused by: java.io.IOException: broken pipe
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:10:03 203.0.113.10 PUT /api/reports/export 403 2671ms
+15-Mar-2024 00:10:04 203.0.113.10 PATCH /api/metrics 500 2666
+2024/03/15 00:10:05 10.0.0.7 OPTIONS /api/billing 401 1584ms
+1710461406 192.168.1.42 PUT /api/orders 200 2482
+2024/03/15 00:10:07 10.0.0.7 DELETE /api/orders 500 191ms
+2024/03/15 00:10:08 10.0.0.7 GET /api/reports/export 502 2.164s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:10:09Z 172.16.0.22 PATCH /api/dashboard 504 2916ms
+2024/03/15 00:10:10 172.16.0.22 POST /api/users/12 201 269ms
+2024/03/15 00:10:11 203.0.113.10 OPTIONS /api/users 502 2.743s
+2024/03/15 00:10:12 10.0.0.7 DELETE /api/login 401 1947ms
+2024/03/15 00:10:13 172.16.0.22 HEAD /api/reports/export 500 1755ms "kube-probe/1.29"
+2024/03/15 00:10:14 192.168.1.42 OPTIONS /api/checkout - 1077ms
+{"timestamp":"2024-03-15T00:10:15Z","method":"DELETE","path":"/api/admin","status":200,"duration_ms":1981,"ip":"192.168.1.42"}
+2024/03/15 00:10:16 203.0.113.10 POST /api/dashboard 401 1308 "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:10:17Z 203.0.113.10 POST /api/reports/export 200 2452
+2024/03/15 00:10:18 203.0.113.10 POST /api/metrics 404 2626ms
+{"time":"2024-03-15T00:10:19Z","http_method":"GET","url":"/api/health","status_code":504,"response_time_ms":2375,"client_ip":"203.0.113.10"}
+2024-03-15T00:10:20Z 10.0.0.7 PATCH /api/users 204 2470
+2024-03-15T00:10:21Z 10.0.0.7 GET /api/health 403 2327ms
+1710461422 172.16.0.22 POST /api/login 204 1014
+15-Mar-2024 00:10:23 172.16.0.22 DELETE /api/metrics - 0.436s
+2024/03/15 00:10:24 172.16.0.22 PATCH /api/users/12 403 2458ms
+{"time":"2024-03-15T00:10:25Z","http_method":"GET","url":"/api/admin","status_code":502,"response_time_ms":109,"client_ip":"10.0.0.7"}
+{"time":"2024-03-15T00:10:26Z","http_method":"HEAD","url":"/api/health","status_code":502,"response_time_ms":1029,"client_ip":"192.168.1.42"}
+PARTIAL: 2024-03-15T16:27
+1710461428 192.168.1.42 POST /api/checkout 204 920ms
+1710461429 172.16.0.22 OPTIONS /api/billing 504 2.305s
+2024-03-15T00:10:30Z 10.0.0.7 POST /api/users 201 1021ms
+2024-03-15T00:10:31Z 172.16.0.22 DELETE /api/billing 504 1359
+1710461432 10.0.0.7 DELETE /api/users 500 2269
+2024-03-15T00:10:33Z 172.16.0.22 POST /api/orders - 695ms
+1710461434 203.0.113.10 PUT /api/admin 404 1254
+2024-03-15T00:10:35Z 192.168.1.42 DELETE /api/orders - 2683ms
+2024/03/15 00:10:36 172.16.0.22 HEAD /api/checkout 404 2663 "kube-probe/1.29"
+2024/03/15 00:10:37 10.0.0.7 PATCH /api/reports/export 502 2523ms
+2024/03/15 00:10:38 203.0.113.10 DELETE /api/orders 204 924ms
+1710461439 203.0.113.10 POST /api/checkout 200 1692
+2024/03/15 00:10:40 192.168.1.42 PUT /api/users 200 1300ms
+15-Mar-2024 00:10:41 10.0.0.7 OPTIONS /api/batch/process 502 2568ms
+2024/03/15 00:10:42 172.16.0.22 PATCH /api/webhooks/stripe 504 1105
+2024-03-15T00:10:43Z 192.168.1.42 HEAD /api/batch/process - 2170ms
+  2024/03/15 00:10:44 172.16.0.22 PATCH /api/users 502 2907ms
+{"time":"2024-03-15T00:10:45Z","http_method":"OPTIONS","url":"/api/health","status_code":500,"response_time_ms":107,"client_ip":"203.0.113.10"}
+2024-03-15T00:10:46Z 10.0.0.7 POST /api/search 403 2.690s
+15-Mar-2024 00:10:47 172.16.0.22 OPTIONS /api/search 404 1168
+2024/03/15 00:10:48 203.0.113.10 OPTIONS /api/metrics 500 2692ms
+15-Mar-2024 00:10:49 192.168.1.42 POST /api/login 204 2.534s
+2024/03/15 00:10:50 192.168.1.42 GET /api/products 401 1624
+2024-03-15T00:10:51Z 172.16.0.22 GET /api/users 201 466ms
+2024/03/15 00:10:52 203.0.113.10 PUT /api/health 403 1342ms
+15-Mar-2024 00:10:53 203.0.113.10 HEAD /api/products 401 2747
+2024-03-15T00:10:54Z 192.168.1.42 GET /api/search 201 1207
+1710461455 10.0.0.7 OPTIONS /api/users/12 500 880ms
+2024/03/15 00:10:56 10.0.0.7 OPTIONS /api/metrics 204 2708
+2024/03/15 00:10:57 192.168.1.42 HEAD /api/checkout 204 0.424s
+15-Mar-2024 00:10:58 192.168.1.42 PUT /api/users 500 1545
+15-Mar-2024 00:10:59 10.0.0.7 PATCH /api/orders 200 1137ms
+2024/03/15 00:11:00 192.168.1.42 HEAD /api/users/12 - 1750ms
+2024-03-15T00:11:01Z 172.16.0.22 POST /api/reports/export 502 2.933s
+1710461462 192.168.1.42 GET /api/reports/export 500 921ms
+2024/03/15 00:11:03 10.0.0.7 PUT /api/admin 201 2445ms
+	... 8 more
+15-Mar-2024 00:11:05 10.0.0.7 GET /api/users/12 502 712ms
+2024/03/15 00:11:06 192.168.1.42 HEAD /api/batch/process 502 97ms
+2024-03-15T00:11:07Z 10.0.0.7 POST /api/users 401 1312ms
+15-Mar-2024 00:11:08 10.0.0.7 HEAD /api/batch/process 403 0.091s
+2024/03/15 00:11:09 10.0.0.7 POST /api/search 404 0.676s
+	... 8 more
+15-Mar-2024 00:11:11 10.0.0.7 OPTIONS /api/billing - 848ms
+2024-03-15T00:11:12Z 192.168.1.42 DELETE /api/users/12 502 2098ms
+{"time":"2024-03-15T00:11:13Z","http_method":"POST","url":"/api/health","status_code":204,"response_time_ms":544,"client_ip":"10.0.0.7"}
+1710461474 192.168.1.42 POST /api/admin 500 479ms
+1710461475 203.0.113.10 HEAD /api/dashboard 500 1329ms
+nginx: [error] upstream prematurely closed connection
+2024/03/15 00:11:17 203.0.113.10 POST /api/users 500 1279
+15-Mar-2024 00:11:18 192.168.1.42 PATCH /api/webhooks/stripe 500 1045ms
+{"timestamp":"2024-03-15T00:11:19Z","method":"OPTIONS","path":"/api/users","status":500,"duration_ms":2591,"ip":"10.0.0.7"}
+15-Mar-2024 00:11:20 203.0.113.10 OPTIONS /api/checkout 404 2553ms
+  2024/03/15 00:11:21 192.168.1.42 PUT /api/metrics 201 2707ms
+2024/03/15 00:11:22 10.0.0.7 HEAD /api/admin 502 764ms
+totally malformed !!!
+15-Mar-2024 00:11:24 10.0.0.7 OPTIONS /api/admin 201 2244ms
+2024/03/15 00:11:25 172.16.0.22 PATCH /api/admin 502 1589ms
+2024/03/15 00:11:26 10.0.0.7 HEAD /api/products 200 2207ms
+1710461487 10.0.0.7 DELETE /api/reports/export 500 0.220s
+{"time":"2024-03-15T00:11:28Z","http_method":"OPTIONS","url":"/api/reports/export","status_code":404,"response_time_ms":1120,"client_ip":"192.168.1.42"}
+2024/03/15 00:11:29 172.16.0.22 POST /api/search 201 445ms "curl/8.5.0"
+  15-Mar-2024 00:11:30 172.16.0.22 HEAD /api/metrics 502 2857ms
+1710461491 192.168.1.42 HEAD /api/metrics 401 1014
+2024/03/15 00:11:32 172.16.0.22 OPTIONS /api/billing 201 38ms
+1710461493 10.0.0.7 GET /api/users/12 404 0.774s
+2024/03/15 00:11:34 172.16.0.22 DELETE /api/billing 201 2587ms
+15-Mar-2024 00:11:35 172.16.0.22 PATCH /api/users/12 200 2.166s
+2024/03/15 00:11:36 192.168.1.42 HEAD /api/webhooks/stripe 200 113ms
+2024-03-15T00:11:37Z 203.0.113.10 DELETE /api/users 403 1778
+15-Mar-2024 00:11:38 203.0.113.10 HEAD /api/login 500 0.620s
+2024-03-15T00:11:39Z 192.168.1.42 DELETE /api/reports/export 504 2903
+15-Mar-2024 00:11:40 192.168.1.42 GET /api/reports/export 500 0.130s
+2024-03-15T00:11:41Z 192.168.1.42 GET /api/users 500 2396ms
+{"timestamp":"2024-03-15T00:11:42Z","method":"DELETE","path":"/api/health","status":502,"duration_ms":842,"ip":"172.16.0.22"}
+2024/03/15 00:11:43 203.0.113.10 GET /api/orders 500 2.566s "curl/8.5.0"
+2024-03-15T00:11:44Z 10.0.0.7 OPTIONS /api/health 500 2508ms
+15-Mar-2024 00:11:45 203.0.113.10 PATCH /api/admin 204 1804
+15-Mar-2024 00:11:46 203.0.113.10 POST /api/search 500 2255ms
+{"timestamp":"2024-03-15T00:11:47Z","method":"HEAD","path":"/api/billing","status":201,"duration_ms":2400,"ip":"203.0.113.10"}
+1710461508 10.0.0.7 DELETE /api/checkout 404 1585ms "kube-probe/1.29"
+2024/03/15 00:11:49 192.168.1.42 GET /api/users 200 0.725s
+{"timestamp":"2024-03-15T00:11:50Z","method":"HEAD","path":"/api/billing","status":403,"duration_ms":2991,"ip":"203.0.113.10"}
+2024-03-15T00:11:51Z 172.16.0.22 PUT /api/products 500 406ms "kube-probe/1.29"
+2024-03-15T00:11:52Z 172.16.0.22 OPTIONS /api/checkout 204 699ms "curl/8.5.0"
+1710461513 192.168.1.42 OPTIONS /api/batch/process 502 1128
+15-Mar-2024 00:11:54 10.0.0.7 HEAD /api/admin 401 252ms
+2024/03/15 00:11:55 10.0.0.7 GET /api/billing 403 1616ms
+totally malformed !!!
+2024/03/15 00:11:57 10.0.0.7 OPTIONS /api/checkout 504 2.117s
+2024/03/15 00:11:58 10.0.0.7 OPTIONS /api/dashboard 200 0.517s
+  2024-03-15T00:11:59Z 172.16.0.22 POST /api/search 404 2.473s
+2024/03/15 00:12:00 203.0.113.10 POST /api/metrics 502 2731ms
+15-Mar-2024 00:12:01 192.168.1.42 POST /api/reports/export 200 2204ms
+15-Mar-2024 00:12:02 10.0.0.7 HEAD /api/products 201 1094 "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:12:03 10.0.0.7 DELETE /api/webhooks/stripe 200 55ms
+  1710461524 172.16.0.22 HEAD /api/checkout 500 2689ms
+2024/03/15 00:12:05 192.168.1.42 POST /api/login 502 906ms
+2024/03/15 00:12:06 203.0.113.10 PUT /api/billing 403 174
+2024-03-15T00:12:07Z 203.0.113.10 GET /api/metrics - 2.620s
+{"time":"2024-03-15T00:12:08Z","http_method":"DELETE","url":"/api/health","status_code":200,"response_time_ms":930,"client_ip":"172.16.0.22"}
+2024/03/15 00:12:09 203.0.113.10 POST /api/billing 204 2.450s
+15-Mar-2024 00:12:10 192.168.1.42 GET /api/users/12 500 944ms
+2024/03/15 00:12:11 10.0.0.7 PUT /api/batch/process 403 0.889s
+{"time":"2024-03-15T00:12:12Z","http_method":"OPTIONS","url":"/api/users","status_code":404,"response_time_ms":1702,"client_ip":"172.16.0.22"}
+1710461533 172.16.0.22 DELETE /api/admin 404 2559ms
+15-Mar-2024 00:12:14 172.16.0.22 PUT /api/products 504 2.070s
+15-Mar-2024 00:12:15 203.0.113.10 PATCH /api/reports/export 204 1650ms
+15-Mar-2024 00:12:16 10.0.0.7 PUT /api/batch/process 204 966ms
+2024-03-15T00:12:17Z 10.0.0.7 GET /api/products 200 1640
+15-Mar-2024 00:12:18 10.0.0.7 PUT /api/search 504 1.233s
+15-Mar-2024 00:12:19 10.0.0.7 DELETE /api/dashboard 403 2239 "kube-probe/1.29"
+2024-03-15T00:12:20Z 172.16.0.22 GET /api/checkout 204 41ms "curl/8.5.0"
+1710461541 192.168.1.42 HEAD /api/billing 502 1179ms
+2024/03/15 00:12:22 203.0.113.10 OPTIONS /api/admin 201 0.493s
+{"timestamp":"2024-03-15T12:00:23Z","method":"GET"
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:12:25 203.0.113.10 DELETE /api/webhooks/stripe 500 276ms
+{"time":"2024-03-15T00:12:26Z","http_method":"GET","url":"/api/login","status_code":404,"response_time_ms":1152,"client_ip":"203.0.113.10"}
+1710461547 203.0.113.10 POST /api/users 504 1523ms
+2024-03-15T00:12:28Z 172.16.0.22 HEAD /api/products 200 1.301s
+1710461549 203.0.113.10 POST /api/checkout 204 477ms
+{"time":"2024-03-15T00:12:30Z","http_method":"PUT","url":"/api/checkout","status_code":502,"response_time_ms":1372,"client_ip":"192.168.1.42"}
+15-Mar-2024 00:12:31 192.168.1.42 DELETE /api/admin 201 2178
+2024-03-15T00:12:32Z 10.0.0.7 GET /api/search 500 174
+  2024/03/15 00:12:33 172.16.0.22 PATCH /api/webhooks/stripe 404 2.022s
+2024-03-15T00:12:34Z 203.0.113.10 POST /api/checkout 502 2031ms
+2024-03-15T00:12:35Z 172.16.0.22 POST /api/reports/export 502 1236ms
+2024/03/15 00:12:36 172.16.0.22 PATCH /api/search - 951ms
+15-Mar-2024 00:12:37 203.0.113.10 HEAD /api/billing 204 1575
+15-Mar-2024 00:12:38 192.168.1.42 PATCH /api/billing 401 2555ms
+{"timestamp":"2024-03-15T00:12:39Z","method":"GET","path":"/api/admin","status":404,"duration_ms":1575,"ip":"172.16.0.22"}
+2024-03-15T00:12:40Z 172.16.0.22 POST /api/orders 403 2821ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710461562 172.16.0.22 GET /api/login 204 2951ms
+2024/03/15 00:12:43 192.168.1.42 POST /api/batch/process - 0.777s
+15-Mar-2024 00:12:44 10.0.0.7 HEAD /api/login 401 1.107s
+15-Mar-2024 00:12:45 10.0.0.7 HEAD /api/metrics 201 581
+2024-03-15T00:12:46Z 192.168.1.42 PUT /api/search 502 969
+2024/03/15 00:12:47 203.0.113.10 POST /api/webhooks/stripe 204 1.605s
+2024/03/15 00:12:48 203.0.113.10 POST /api/checkout 504 2595ms
+1710461569 203.0.113.10 GET /api/users 200 2914ms
+2024-03-15T16:00:50Z 10.0.0.7 GET /api/truncated
+15-Mar-2024 00:12:51 10.0.0.7 GET /api/batch/process 504 0.493s
+
+{"timestamp":"2024-03-15T00:12:53Z","method":"DELETE","path":"/api/batch/process","status":204,"duration_ms":737,"ip":"192.168.1.42"}
+{"time":"2024-03-15T00:12:54Z","http_method":"PUT","url":"/api/dashboard","status_code":401,"response_time_ms":1335,"client_ip":"10.0.0.7"}
+1710461575 203.0.113.10 PATCH /api/reports/export 401 949ms
+2024/03/15 00:12:56 192.168.1.42 DELETE /api/admin 502 1146ms
+  15-Mar-2024 00:12:57 192.168.1.42 HEAD /api/billing 204 1218ms
+2024-03-15T00:12:58Z 192.168.1.42 HEAD /api/admin 200 2205ms
+{"time":"2024-03-15T00:12:59Z","http_method":"POST","url":"/api/users","status_code":200,"response_time_ms":2696,"client_ip":"192.168.1.42"}
+2024-03-15T00:13:00Z 172.16.0.22 POST /api/products 404 2501ms
+	at com.example.Service.run(Service.java:42)
+PARTIAL: 2024-03-15T16:02
+2024-03-15T00:13:03Z 192.168.1.42 DELETE /api/metrics 204 1599ms
+15-Mar-2024 00:13:04 172.16.0.22 GET /api/health 403 1408ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:13:05 192.168.1.42 PATCH /api/users 404 2.434s "kube-probe/1.29"
+15-Mar-2024 00:13:06 192.168.1.42 GET /api/reports/export 502 33ms
+1710461587 192.168.1.42 HEAD /api/orders 403 111ms
+2024/03/15 00:13:08 192.168.1.42 PATCH /api/metrics 504 2757
+1710461589 10.0.0.7 POST /api/reports/export 404 62
+1710461590 172.16.0.22 PATCH /api/users/12 504 2294
+1710461591 10.0.0.7 DELETE /api/billing 404 1772ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:13:12 203.0.113.10 PUT /api/dashboard 502 2.062s
+15-Mar-2024 00:13:13 203.0.113.10 POST /api/products 204 824
+2024/03/15 00:13:14 172.16.0.22 POST /api/billing 500 1703ms
+1710461595 203.0.113.10 PUT /api/metrics 201 984ms
+2024-03-15T16:00:16Z 10.0.0.7 GET /api/truncated
+15-Mar-2024 00:13:17 192.168.1.42 POST /api/webhooks/stripe 201 1.486s "kube-probe/1.29"
+2024/03/15 00:13:18 192.168.1.42 PATCH /api/metrics 204 2545ms
+2024-03-15T00:13:19Z 192.168.1.42 PATCH /api/login 200 2.179s
+2024/03/15 00:13:20 192.168.1.42 HEAD /api/batch/process 200 2.783s
+Caused by: java.io.IOException: broken pipe
+1710461602 10.0.0.7 POST /api/login 404 1127ms
+totally malformed !!!
+15-Mar-2024 00:13:24 203.0.113.10 HEAD /api/webhooks/stripe 502 45ms
+2024/03/15 00:13:25 10.0.0.7 POST /api/admin 204 43ms
+	... 8 more
+2024-03-15T00:13:27Z 172.16.0.22 DELETE /api/webhooks/stripe 201 1978ms
+2024/03/15 00:13:28 10.0.0.7 HEAD /api/users 504 0.196s
+2024-03-15T00:13:29Z 172.16.0.22 OPTIONS /api/users 200 699ms
+2024-03-15T00:13:30Z 192.168.1.42 PUT /api/login 201 1861ms
+2024-03-15T00:13:31Z 10.0.0.7 PUT /api/batch/process 401 0.612s
+15-Mar-2024 00:13:32 10.0.0.7 PUT /api/checkout 500 1987ms
+2024-03-15T00:13:33Z 10.0.0.7 DELETE /api/billing 502 2730ms
+2024-03-15T00:13:34Z 192.168.1.42 HEAD /api/batch/process 500 2706ms
+	... 8 more
+2024-03-15T00:13:36Z 203.0.113.10 DELETE /api/checkout 200 0.197s
+1710461617 10.0.0.7 GET /api/admin - 1831ms
+1710461618 10.0.0.7 HEAD /api/products 504 45ms
+1710461619 10.0.0.7 GET /api/orders 401 453ms
+15-Mar-2024 00:13:40 10.0.0.7 POST /api/users 500 2.016s
+	... 8 more
+15-Mar-2024 00:13:42 203.0.113.10 OPTIONS /api/admin 504 1395
+{"time":"2024-03-15T00:13:43Z","http_method":"OPTIONS","url":"/api/dashboard","status_code":401,"response_time_ms":599,"client_ip":"10.0.0.7"}
+1710461624 10.0.0.7 POST /api/webhooks/stripe 201 497ms
+1710461625 172.16.0.22 OPTIONS /api/search 200 389ms
+1710461626 203.0.113.10 PUT /api/billing 401 1.083s "curl/8.5.0"
+15-Mar-2024 00:13:47 10.0.0.7 PUT /api/products 401 1720ms
+15-Mar-2024 00:13:48 192.168.1.42 PATCH /api/users 204 1.991s "kube-probe/1.29"
+  2024/03/15 00:13:49 192.168.1.42 PUT /api/orders - 265ms
+1710461630 172.16.0.22 POST /api/health 404 2163ms
+1710461631 203.0.113.10 DELETE /api/orders 200 597ms
+{"timestamp":"2024-03-15T12:00:52Z","method":"GET"
+2024-03-15T00:13:53Z 203.0.113.10 PATCH /api/batch/process 201 0.622s
+2024/03/15 00:13:54 10.0.0.7 OPTIONS /api/metrics 403 178ms
+
+1710461636 10.0.0.7 DELETE /api/checkout 403 1612ms
+2024-03-15T00:13:57Z 172.16.0.22 OPTIONS /api/search 504 1.035s
+2024/03/15 00:13:58 203.0.113.10 PUT /api/users 403 1288ms
+1710461639 192.168.1.42 GET /api/metrics 500 1.252s
+1710461640 203.0.113.10 GET /api/billing 500 1767ms "curl/8.5.0"
+2024-03-15T00:14:01Z 172.16.0.22 POST /api/search 502 2560ms
+1710461642 172.16.0.22 GET /api/metrics 403 0.578s "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:14:03 203.0.113.10 OPTIONS /api/batch/process 201 0.345s
+2024-03-15T00:14:04Z 203.0.113.10 HEAD /api/search 401 2633ms
+	... 8 more
+{"timestamp":"2024-03-15T00:14:06Z","method":"PUT","path":"/api/admin","status":403,"duration_ms":2028,"ip":"172.16.0.22"}
+2024-03-15T00:14:07Z 10.0.0.7 DELETE /api/login 404 1.821s
+2024-03-15T00:14:08Z 203.0.113.10 HEAD /api/billing 204 1974ms
+1710461649 172.16.0.22 HEAD /api/products 404 2140ms
+2024-03-15T00:14:10Z 203.0.113.10 HEAD /api/reports/export 401 925
+1710461651 203.0.113.10 GET /api/health - 1.405s
+15-Mar-2024 00:14:12 203.0.113.10 POST /api/batch/process 200 834
+2024/03/15 00:14:13 172.16.0.22 GET /api/search 404 2752ms
+  15-Mar-2024 00:14:14 10.0.0.7 PATCH /api/batch/process 201 1194ms
+{"timestamp":"2024-03-15T12:00:15Z","method":"GET"
+2024/03/15 00:14:16 172.16.0.22 PATCH /api/webhooks/stripe 404 149ms
+15-Mar-2024 00:14:17 10.0.0.7 OPTIONS /api/users/12 401 1310
+PARTIAL: 2024-03-15T16:18
+
+15-Mar-2024 00:14:20 172.16.0.22 PUT /api/search 502 1922
+1710461661 172.16.0.22 DELETE /api/reports/export 201 1803
+2024/03/15 00:14:22 172.16.0.22 PATCH /api/billing 200 0.378s
+2024-03-15T00:14:23Z 192.168.1.42 POST /api/products 500 2.550s
+  1710461664 203.0.113.10 OPTIONS /api/login 404 1878ms "curl/8.5.0"
+2024/03/15 00:14:25 192.168.1.42 DELETE /api/products 201 944ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710461666 192.168.1.42 PATCH /api/health 204 324ms
+{"timestamp":"2024-03-15T00:14:27Z","method":"PATCH","path":"/api/users","status":201,"duration_ms":2239,"ip":"203.0.113.10"}
+2024-03-15T00:14:28Z 203.0.113.10 HEAD /api/users 500 1926ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+{"timestamp":"2024-03-15T00:14:29Z","method":"PUT","path":"/api/login","status":200,"duration_ms":2491,"ip":"192.168.1.42"}
+15-Mar-2024 00:14:30 10.0.0.7 PUT /api/login 502 656ms
+1710461671 203.0.113.10 POST /api/admin 401 2613
+2024/03/15 00:14:32 192.168.1.42 OPTIONS /api/login 403 2488
+	at com.example.Service.run(Service.java:42)
+2024/03/15 00:14:34 172.16.0.22 PUT /api/login 502 1940ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:14:36 192.168.1.42 PUT /api/products 204 1.448s
+15-Mar-2024 00:14:37 172.16.0.22 GET /api/batch/process 500 2373ms
+Caused by: java.io.IOException: broken pipe
+15-Mar-2024 00:14:39 10.0.0.7 GET /api/billing 204 1128ms
+2024-03-15T00:14:40Z 172.16.0.22 OPTIONS /api/users 500 2862
+1710461681 192.168.1.42 PATCH /api/admin 500 1862ms
+15-Mar-2024 00:14:42 203.0.113.10 POST /api/reports/export 504 1843ms "kube-probe/1.29"
+15-Mar-2024 00:14:43 192.168.1.42 PUT /api/health - 488ms
+  2024/03/15 00:14:44 172.16.0.22 DELETE /api/health 201 369
+15-Mar-2024 00:14:45 10.0.0.7 OPTIONS /api/checkout 500 1.740s
+1710461686 192.168.1.42 OPTIONS /api/login 504 579ms
+15-Mar-2024 00:14:47 10.0.0.7 HEAD /api/batch/process 200 2086ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710461689 10.0.0.7 POST /api/products 201 1352ms
+1710461690 10.0.0.7 POST /api/search 401 257ms
+15-Mar-2024 00:14:51 10.0.0.7 OPTIONS /api/orders 403 1835
+
+2024/03/15 00:14:53 203.0.113.10 HEAD /api/users 200 290
+  15-Mar-2024 00:14:54 192.168.1.42 HEAD /api/metrics 204 2561ms
+DEBUG not an access log
+15-Mar-2024 00:14:56 10.0.0.7 GET /api/webhooks/stripe 502 2279ms
+  2024-03-15T00:14:57Z 192.168.1.42 DELETE /api/products 200 666
+1710461698 203.0.113.10 PUT /api/dashboard - 1820
+2024-03-15T00:14:59Z 172.16.0.22 PATCH /api/batch/process 500 0.314s
+15-Mar-2024 00:15:00 203.0.113.10 OPTIONS /api/users/12 500 2213ms "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:15:01 203.0.113.10 GET /api/dashboard 200 1.505s
+1710461702 203.0.113.10 PUT /api/search 201 0.802s
+15-Mar-2024 00:15:03 203.0.113.10 OPTIONS /api/dashboard 403 2015ms "kube-probe/1.29"
+2024-03-15T00:15:04Z 192.168.1.42 PATCH /api/dashboard 200 733 "curl/8.5.0"
+2024-03-15T00:15:05Z 203.0.113.10 OPTIONS /api/search 504 728ms
+1710461706 192.168.1.42 DELETE /api/users/12 - 1.384s
+2024-03-15T00:15:07Z 203.0.113.10 PATCH /api/webhooks/stripe 404 2709ms
+PARTIAL: 2024-03-15T16:08
+1710461709 10.0.0.7 PATCH /api/users 500 0.733s
+15-Mar-2024 00:15:10 203.0.113.10 DELETE /api/users/12 201 2687
+15-Mar-2024 00:15:11 172.16.0.22 PATCH /api/users/12 403 0.660s
+  1710461712 203.0.113.10 PUT /api/metrics 500 1800ms
+1710461713 172.16.0.22 OPTIONS /api/users/12 404 1720ms
+15-Mar-2024 00:15:14 10.0.0.7 GET /api/health 401 1.020s
+1710461715 172.16.0.22 OPTIONS /api/health 502 1943ms
+2024/03/15 00:15:16 192.168.1.42 PUT /api/orders 500 209ms
+{"time":"2024-03-15T00:15:17Z","http_method":"GET","url":"/api/orders","status_code":500,"response_time_ms":748,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:15:18 172.16.0.22 PUT /api/products 500 2757
+2024-03-15T00:15:19Z 10.0.0.7 POST /api/search 401 2.228s "curl/8.5.0"
+2024-03-15T00:15:20Z 172.16.0.22 PATCH /api/metrics 403 2388ms
+15-Mar-2024 00:15:21 172.16.0.22 POST /api/users 404 421ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:15:22 10.0.0.7 GET /api/reports/export 502 2.531s
+2024-03-15T00:15:23Z 172.16.0.22 PATCH /api/admin 504 2223ms
+15-Mar-2024 00:15:24 192.168.1.42 OPTIONS /api/dashboard 500 905
+1710461725 172.16.0.22 PUT /api/admin 401 2984ms
+15-Mar-2024 00:15:26 172.16.0.22 GET /api/billing 504 1561ms "Mozilla/5.0 (Windows NT 10.0)"
+{"time":"2024-03-15T00:15:27Z","http_method":"PUT","url":"/api/products","status_code":200,"response_time_ms":1056,"client_ip":"192.168.1.42"}
+2024-03-15T00:15:28Z 172.16.0.22 PATCH /api/users/12 500 3004ms
+1710461729 10.0.0.7 DELETE /api/billing 401 530ms
+1710461730 172.16.0.22 POST /api/users/12 201 0.404s
+{"timestamp":"2024-03-15T00:15:31Z","method":"POST","path":"/api/health","status":204,"duration_ms":127,"ip":"10.0.0.7"}
+  15-Mar-2024 00:15:32 172.16.0.22 HEAD /api/users 204 894ms "kube-probe/1.29"
+
+1710461734 10.0.0.7 PATCH /api/billing 500 1093ms
+15-Mar-2024 00:15:35 192.168.1.42 PATCH /api/batch/process 403 0.006s
+2024/03/15 00:15:36 172.16.0.22 OPTIONS /api/metrics 504 0.424s
+15-Mar-2024 00:15:37 172.16.0.22 GET /api/dashboard 500 2980ms
+2024/03/15 00:15:38 10.0.0.7 OPTIONS /api/reports/export 504 773
+{"timestamp":"2024-03-15T00:15:39Z","method":"HEAD","path":"/api/users","status":504,"duration_ms":1314,"ip":"192.168.1.42"}
+15-Mar-2024 00:15:40 192.168.1.42 POST /api/admin 201 206ms
+{"timestamp":"2024-03-15T12:00:41Z","method":"GET"
+{"timestamp":"2024-03-15T00:15:42Z","method":"POST","path":"/api/checkout","status":401,"duration_ms":1495,"ip":"172.16.0.22"}
+2024-03-15T00:15:43Z 192.168.1.42 GET /api/login - 155
+1710461744 192.168.1.42 GET /api/billing 504 1525ms
+	... 8 more
+{"timestamp":"2024-03-15T00:15:46Z","method":"DELETE","path":"/api/login","status":201,"duration_ms":681,"ip":"172.16.0.22"}
+2024/03/15 00:15:47 10.0.0.7 PATCH /api/login 204 1347ms
+2024-03-15T00:15:48Z 10.0.0.7 DELETE /api/orders 403 843ms
+2024-03-15T00:15:49Z 192.168.1.42 HEAD /api/search 200 1.436s
+15-Mar-2024 00:15:50 203.0.113.10 DELETE /api/billing 500 2720ms
+1710461751 172.16.0.22 DELETE /api/billing 504 46ms
+1710461752 192.168.1.42 PUT /api/search 200 1.209s
+15-Mar-2024 00:15:53 10.0.0.7 OPTIONS /api/reports/export 500 2024ms
+1710461754 192.168.1.42 HEAD /api/login 502 2.214s
+{"timestamp":"2024-03-15T00:15:55Z","method":"OPTIONS","path":"/api/checkout","status":500,"duration_ms":1427,"ip":"172.16.0.22"}
+2024/03/15 00:15:56 203.0.113.10 PUT /api/webhooks/stripe 502 1.952s
+15-Mar-2024 00:15:57 10.0.0.7 OPTIONS /api/reports/export 502 2.703s
+15-Mar-2024 00:15:58 172.16.0.22 OPTIONS /api/health 204 676
+{"time":"2024-03-15T00:15:59Z","http_method":"PUT","url":"/api/login","status_code":204,"response_time_ms":2820,"client_ip":"203.0.113.10"}
+1710461760 203.0.113.10 POST /api/search 502 432
+2024-03-15T00:16:01Z 203.0.113.10 HEAD /api/orders 204 246ms
+2024/03/15 00:16:02 192.168.1.42 PATCH /api/webhooks/stripe - 0.733s
+{"timestamp":"2024-03-15T00:16:03Z","method":"DELETE","path":"/api/health","status":401,"duration_ms":725,"ip":"203.0.113.10"}
+15-Mar-2024 00:16:04 192.168.1.42 DELETE /api/webhooks/stripe 204 1947ms "Mozilla/5.0 (Windows NT 10.0)"
+1710461765 203.0.113.10 GET /api/dashboard 504 2.073s
+2024-03-15T00:16:06Z 172.16.0.22 POST /api/metrics - 2.123s
+15-Mar-2024 00:16:07 172.16.0.22 PUT /api/products 404 1.781s
+	... 8 more
+1710461769 10.0.0.7 DELETE /api/dashboard 404 2840ms "kube-probe/1.29"
+2024/03/15 00:16:10 192.168.1.42 DELETE /api/health 201 944ms
+2024-03-15T00:16:11Z 192.168.1.42 HEAD /api/reports/export 403 72ms
+2024-03-15T00:16:12Z 172.16.0.22 POST /api/login 204 2110ms
+1710461773 203.0.113.10 POST /api/dashboard 403 64ms
+2024-03-15T00:16:14Z 172.16.0.22 POST /api/dashboard 200 701ms
+2024-03-15T00:16:15Z 192.168.1.42 PUT /api/admin 403 1.639s
+1710461776 172.16.0.22 HEAD /api/search - 2236ms "curl/8.5.0"
+2024/03/15 00:16:17 203.0.113.10 PUT /api/billing 200 327ms
+1710461778 172.16.0.22 DELETE /api/checkout 201 1477ms
+2024/03/15 00:16:19 172.16.0.22 GET /api/metrics 200 372ms
+1710461780 172.16.0.22 DELETE /api/billing 404 449ms
+{"time":"2024-03-15T00:16:21Z","http_method":"HEAD","url":"/api/billing","status_code":404,"response_time_ms":1088,"client_ip":"172.16.0.22"}
+1710461782 10.0.0.7 PATCH /api/batch/process 401 2.804s
+2024/03/15 00:16:23 192.168.1.42 OPTIONS /api/users/12 - 2.377s
+2024/03/15 00:16:24 203.0.113.10 GET /api/dashboard 403 1482
+2024-03-15T00:16:25Z 10.0.0.7 OPTIONS /api/products 500 2424ms
+1710461786 192.168.1.42 POST /api/orders 204 1083ms "kube-probe/1.29"
+2024-03-15T00:16:27Z 203.0.113.10 GET /api/webhooks/stripe 502 2311
+Caused by: java.io.IOException: broken pipe
+1710461789 203.0.113.10 PATCH /api/billing - 1987ms
+	... 8 more
+2024/03/15 00:16:31 10.0.0.7 PUT /api/users/12 404 2576ms
+2024-03-15T00:16:32Z 172.16.0.22 HEAD /api/reports/export 403 163ms
+{"timestamp":"2024-03-15T00:16:33Z","method":"OPTIONS","path":"/api/users/12","status":401,"duration_ms":187,"ip":"192.168.1.42"}
+1710461794 192.168.1.42 POST /api/admin 201 2665
+{"timestamp":"2024-03-15T00:16:35Z","method":"POST","path":"/api/orders","status":404,"duration_ms":2723,"ip":"10.0.0.7"}
+1710461796 172.16.0.22 GET /api/users 500 2654ms
+2024-03-15T00:16:37Z 10.0.0.7 POST /api/billing 204 1880ms
+2024/03/15 00:16:38 172.16.0.22 PUT /api/checkout 403 0.452s
+1710461799 192.168.1.42 GET /api/login 403 2259 "curl/8.5.0"
+	at com.example.Service.run(Service.java:42)
+15-Mar-2024 00:16:41 172.16.0.22 HEAD /api/users/12 204 1374
+15-Mar-2024 00:16:42 172.16.0.22 GET /api/products 404 1410ms
+2024/03/15 00:16:43 10.0.0.7 PATCH /api/admin 403 0.307s
+{"timestamp":"2024-03-15T00:16:44Z","method":"OPTIONS","path":"/api/users/12","status":403,"duration_ms":2371,"ip":"172.16.0.22"}
+2024/03/15 00:16:45 192.168.1.42 GET /api/login 401 1.313s "kube-probe/1.29"
+2024/03/15 00:16:46 172.16.0.22 PUT /api/search 500 317ms
+2024/03/15 00:16:47 203.0.113.10 HEAD /api/batch/process 204 1994
+2024/03/15 00:16:48 172.16.0.22 DELETE /api/billing 502 1554ms
+2024-03-15T00:16:49Z 10.0.0.7 PUT /api/admin 401 2165ms
+2024/03/15 00:16:50 192.168.1.42 DELETE /api/login 201 1271ms
+2024/03/15 00:16:51 203.0.113.10 DELETE /api/metrics - 1.356s
+15-Mar-2024 00:16:52 192.168.1.42 DELETE /api/products 504 1598ms "curl/8.5.0"
+1710461813 10.0.0.7 DELETE /api/orders 404 2844ms
+2024/03/15 00:16:54 203.0.113.10 DELETE /api/products 403 2611ms
+{"time":"2024-03-15T00:16:55Z","http_method":"DELETE","url":"/api/batch/process","status_code":502,"response_time_ms":2218,"client_ip":"10.0.0.7"}
+2024-03-15T00:16:56Z 192.168.1.42 GET /api/products 404 390 "Mozilla/5.0 (Windows NT 10.0)"
+1710461817 172.16.0.22 OPTIONS /api/health 504 206ms "kube-probe/1.29"
+2024/03/15 00:16:58 172.16.0.22 POST /api/reports/export 404 168ms
+1710461819 192.168.1.42 GET /api/metrics 502 2267ms
+  15-Mar-2024 00:17:00 172.16.0.22 DELETE /api/batch/process 404 98ms
+15-Mar-2024 00:17:01 172.16.0.22 PUT /api/webhooks/stripe 504 2495
+2024-03-15T00:17:02Z 203.0.113.10 OPTIONS /api/metrics 502 2355ms
+{"time":"2024-03-15T00:17:03Z","http_method":"PUT","url":"/api/login","status_code":401,"response_time_ms":1689,"client_ip":"10.0.0.7"}
+2024/03/15 00:17:04 192.168.1.42 POST /api/admin 204 2571ms
+15-Mar-2024 00:17:05 172.16.0.22 POST /api/billing 403 3003ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:17:06Z 10.0.0.7 GET /api/billing 500 1250ms
+2024/03/15 00:17:07 192.168.1.42 PUT /api/health 502 2644ms
+15-Mar-2024 00:17:08 10.0.0.7 HEAD /api/health 201 0.906s
+1710461829 172.16.0.22 POST /api/billing 201 1.247s "kube-probe/1.29"
+2024-03-15T00:17:10Z 203.0.113.10 PATCH /api/webhooks/stripe 200 2.480s
+	at com.example.Service.run(Service.java:42)
+1710461832 172.16.0.22 POST /api/users 401 1.208s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:17:13 10.0.0.7 PATCH /api/products 502 1731ms
+15-Mar-2024 00:17:14 192.168.1.42 GET /api/login 201 200ms
+1710461835 172.16.0.22 POST /api/login 500 695ms
+1710461836 172.16.0.22 PATCH /api/users 401 2.395s
+2024/03/15 00:17:17 172.16.0.22 POST /api/batch/process 502 2303ms
+1710461838 192.168.1.42 DELETE /api/users 403 1.132s
+2024-03-15T00:17:19Z 172.16.0.22 OPTIONS /api/metrics 500 760ms
+{"time":"2024-03-15T00:17:20Z","http_method":"PATCH","url":"/api/users","status_code":404,"response_time_ms":257,"client_ip":"172.16.0.22"}
+{"time":"2024-03-15T00:17:21Z","http_method":"POST","url":"/api/billing","status_code":401,"response_time_ms":76,"client_ip":"172.16.0.22"}
+1710461842 192.168.1.42 OPTIONS /api/billing 403 2732ms
+2024-03-15T00:17:23Z 203.0.113.10 OPTIONS /api/health 403 2429
+15-Mar-2024 00:17:24 172.16.0.22 GET /api/billing - 490ms
+1710461845 203.0.113.10 OPTIONS /api/products 200 1016
+1710461846 203.0.113.10 PATCH /api/health - 0.953s
+{"time":"2024-03-15T00:17:27Z","http_method":"GET","url":"/api/webhooks/stripe","status_code":500,"response_time_ms":151,"client_ip":"192.168.1.42"}
+2024-03-15T00:17:28Z 10.0.0.7 DELETE /api/login 502 2358ms
+2024-03-15T00:17:29Z 172.16.0.22 PUT /api/metrics 204 1438
+1710461850 192.168.1.42 HEAD /api/health 504 1.211s
+2024/03/15 00:17:31 10.0.0.7 PATCH /api/products 502 1.379s
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024-03-15T00:17:33Z 10.0.0.7 HEAD /api/orders 401 1.005s
+PARTIAL: 2024-03-15T16:34
+15-Mar-2024 00:17:35 192.168.1.42 PUT /api/checkout 403 2.167s
+15-Mar-2024 00:17:36 203.0.113.10 PUT /api/dashboard 504 1484ms
+2024-03-15T00:17:37Z 172.16.0.22 DELETE /api/dashboard 504 667
+15-Mar-2024 00:17:38 10.0.0.7 POST /api/webhooks/stripe 502 2.625s "kube-probe/1.29"
+2024-03-15T00:17:39Z 172.16.0.22 PATCH /api/checkout 404 2607ms
+2024/03/15 00:17:40 203.0.113.10 PUT /api/search 504 1.053s
+15-Mar-2024 00:17:41 172.16.0.22 PATCH /api/admin 201 1.741s
+15-Mar-2024 00:17:42 192.168.1.42 PATCH /api/reports/export 504 1837ms
+15-Mar-2024 00:17:43 172.16.0.22 PUT /api/billing 500 0.436s
+2024-03-15T00:17:44Z 10.0.0.7 GET /api/users 403 414ms
+2024-03-15T00:17:45Z 172.16.0.22 POST /api/checkout 500 1.634s "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:17:46Z 10.0.0.7 POST /api/users/12 500 2850ms
+15-Mar-2024 00:17:47 192.168.1.42 POST /api/billing 403 2306
+{"time":"2024-03-15T00:17:48Z","http_method":"PATCH","url":"/api/login","status_code":504,"response_time_ms":2661,"client_ip":"10.0.0.7"}
+1710461869 10.0.0.7 HEAD /api/metrics 504 1476ms
+15-Mar-2024 00:17:50 172.16.0.22 DELETE /api/users 504 0.111s
+  1710461871 172.16.0.22 HEAD /api/users 204 633ms
+2024-03-15T00:17:52Z 192.168.1.42 DELETE /api/search 500 2856
+15-Mar-2024 00:17:53 192.168.1.42 OPTIONS /api/webhooks/stripe 404 1.482s "curl/8.5.0"
+1710461874 203.0.113.10 DELETE /api/users/12 502 1437ms
+2024-03-15T00:17:55Z 10.0.0.7 PUT /api/checkout 403 1358ms
+15-Mar-2024 00:17:56 203.0.113.10 PATCH /api/batch/process - 2205ms
+2024/03/15 00:17:57 10.0.0.7 PATCH /api/dashboard 401 958ms
+2024/03/15 00:17:58 192.168.1.42 PUT /api/metrics 200 732ms
+{"timestamp":"2024-03-15T00:17:59Z","method":"HEAD","path":"/api/admin","status":500,"duration_ms":967,"ip":"192.168.1.42"}
+2024/03/15 00:18:00 203.0.113.10 PATCH /api/search 401 1223
+1710461881 192.168.1.42 POST /api/users/12 403 1.409s
+{"timestamp":"2024-03-15T00:18:02Z","method":"PATCH","path":"/api/dashboard","status":204,"duration_ms":1190,"ip":"10.0.0.7"}
+PARTIAL: 2024-03-15T16:03
+2024-03-15T00:18:04Z 203.0.113.10 OPTIONS /api/login 502 1053
+15-Mar-2024 00:18:05 172.16.0.22 DELETE /api/search 502 499ms
+2024/03/15 00:18:06 203.0.113.10 PATCH /api/batch/process - 2719ms
+2024/03/15 00:18:07 203.0.113.10 POST /api/users 200 326
+1710461888 203.0.113.10 PUT /api/search 403 1506ms
+1710461889 203.0.113.10 PUT /api/search 500 319
+15-Mar-2024 00:18:10 203.0.113.10 PATCH /api/orders 201 1.024s
+  1710461891 203.0.113.10 OPTIONS /api/users 403 1573ms
+{"timestamp":"2024-03-15T00:18:12Z","method":"POST","path":"/api/login","status":201,"duration_ms":985,"ip":"203.0.113.10"}
+1710461893 172.16.0.22 GET /api/login 204 2520ms
+1710461894 203.0.113.10 PUT /api/metrics 403 777ms
+1710461895 192.168.1.42 GET /api/webhooks/stripe 404 0.140s
+15-Mar-2024 00:18:16 172.16.0.22 GET /api/users 201 1179ms
+2024/03/15 00:18:17 192.168.1.42 HEAD /api/batch/process 204 1177
+{"time":"2024-03-15T00:18:18Z","http_method":"POST","url":"/api/metrics","status_code":201,"response_time_ms":2659,"client_ip":"172.16.0.22"}
+2024-03-15T00:18:19Z 10.0.0.7 PATCH /api/webhooks/stripe 401 0.531s
+1710461900 203.0.113.10 HEAD /api/batch/process 404 1531ms
+1710461901 10.0.0.7 DELETE /api/users 500 1786
+{"timestamp":"2024-03-15T00:18:22Z","method":"PATCH","path":"/api/login","status":204,"duration_ms":1044,"ip":"172.16.0.22"}
+1710461903 203.0.113.10 PUT /api/health 200 119ms
+2024-03-15T16:00:24Z 10.0.0.7 GET /api/truncated
+{"timestamp":"2024-03-15T00:18:25Z","method":"PATCH","path":"/api/products","status":401,"duration_ms":867,"ip":"203.0.113.10"}
+2024-03-15T00:18:26Z 192.168.1.42 OPTIONS /api/reports/export 401 1796ms
+15-Mar-2024 00:18:27 203.0.113.10 PATCH /api/search 200 2233ms
+2024-03-15T00:18:28Z 192.168.1.42 HEAD /api/checkout 403 557ms "kube-probe/1.29"
+2024-03-15T16:00:29Z 10.0.0.7 GET /api/truncated
+15-Mar-2024 00:18:30 10.0.0.7 PATCH /api/users 504 2155ms "kube-probe/1.29"
+15-Mar-2024 00:18:31 172.16.0.22 POST /api/users/12 - 2554ms
+1710461912 172.16.0.22 PATCH /api/admin 201 2039
+15-Mar-2024 00:18:33 10.0.0.7 PUT /api/search 502 2861ms "kube-probe/1.29"
+15-Mar-2024 00:18:34 203.0.113.10 PUT /api/batch/process 500 1.474s
+2024/03/15 00:18:35 203.0.113.10 GET /api/users 403 146ms
+2024-03-15T00:18:36Z 192.168.1.42 OPTIONS /api/checkout 204 0.677s
+2024/03/15 00:18:37 203.0.113.10 GET /api/users/12 403 1565ms
+{"time":"2024-03-15T00:18:38Z","http_method":"PATCH","url":"/api/reports/export","status_code":200,"response_time_ms":1847,"client_ip":"10.0.0.7"}
+2024/03/15 00:18:39 203.0.113.10 POST /api/health 404 1.865s
+1710461920 172.16.0.22 OPTIONS /api/health 500 0.045s
+15-Mar-2024 00:18:41 203.0.113.10 GET /api/metrics 403 2.597s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+totally malformed !!!
+2024-03-15T00:18:43Z 172.16.0.22 POST /api/webhooks/stripe 200 1.652s
+15-Mar-2024 00:18:44 192.168.1.42 DELETE /api/health 500 2510ms
+2024/03/15 00:18:45 192.168.1.42 POST /api/users 500 1879ms
+totally malformed !!!
+2024/03/15 00:18:47 203.0.113.10 OPTIONS /api/search 500 566ms
+  2024-03-15T00:18:48Z 10.0.0.7 POST /api/users 504 0.831s
+1710461929 203.0.113.10 POST /api/billing 404 130ms
+{"time":"2024-03-15T00:18:50Z","http_method":"POST","url":"/api/checkout","status_code":404,"response_time_ms":208,"client_ip":"192.168.1.42"}
+15-Mar-2024 00:18:51 172.16.0.22 PUT /api/search 200 2.369s "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:18:52 172.16.0.22 OPTIONS /api/admin 403 2360
+1710461933 192.168.1.42 PUT /api/admin 404 2.277s
+15-Mar-2024 00:18:54 172.16.0.22 PUT /api/orders 500 2191ms
+2024-03-15T00:18:55Z 10.0.0.7 POST /api/admin 204 1927ms
+2024-03-15T00:18:56Z 10.0.0.7 POST /api/metrics 204 1129 "curl/8.5.0"
+1710461937 192.168.1.42 POST /api/admin 500 1858ms
+2024-03-15T00:18:58Z 172.16.0.22 POST /api/users/12 - 307ms
+  15-Mar-2024 00:18:59 192.168.1.42 PATCH /api/orders 401 104 "curl/8.5.0"
+1710461940 203.0.113.10 DELETE /api/reports/export - 1.684s
+2024-03-15T00:19:01Z 172.16.0.22 PUT /api/dashboard 500 1593ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:19:03 203.0.113.10 HEAD /api/users/12 - 1992ms "kube-probe/1.29"
+2024-03-15T00:19:04Z 10.0.0.7 GET /api/orders 200 2698ms
+2024-03-15T00:19:05Z 192.168.1.42 PATCH /api/admin 404 2270ms
+2024/03/15 00:19:06 203.0.113.10 PATCH /api/search 500 2219ms
+2024-03-15T00:19:07Z 10.0.0.7 POST /api/orders 403 769ms
+{"timestamp":"2024-03-15T00:19:08Z","method":"OPTIONS","path":"/api/billing","status":504,"duration_ms":3002,"ip":"192.168.1.42"}
+15-Mar-2024 00:19:09 192.168.1.42 POST /api/checkout 403 473ms
+{"timestamp":"2024-03-15T00:19:10Z","method":"GET","path":"/api/metrics","status":404,"duration_ms":3002,"ip":"203.0.113.10"}
+15-Mar-2024 00:19:11 10.0.0.7 PUT /api/search 404 0.925s
+15-Mar-2024 00:19:12 192.168.1.42 PATCH /api/reports/export 204 2835ms
+2024-03-15T00:19:13Z 172.16.0.22 PATCH /api/reports/export 404 2334ms
+2024-03-15T00:19:14Z 172.16.0.22 POST /api/users 504 842ms
+2024/03/15 00:19:15 172.16.0.22 PATCH /api/checkout 401 0.901s
+  2024-03-15T00:19:16Z 203.0.113.10 DELETE /api/search 204 1289ms
+15-Mar-2024 00:19:17 172.16.0.22 POST /api/reports/export 504 1117ms
+1710461958 10.0.0.7 PUT /api/products 200 1734ms
+1710461959 10.0.0.7 DELETE /api/login 201 1890ms
+{"timestamp":"2024-03-15T00:19:20Z","method":"PATCH","path":"/api/login","status":403,"duration_ms":1610,"ip":"203.0.113.10"}
+1710461961 10.0.0.7 HEAD /api/search 500 2355
+15-Mar-2024 00:19:22 203.0.113.10 PATCH /api/webhooks/stripe 500 485ms
+1710461963 172.16.0.22 GET /api/health 401 2727ms
+1710461964 10.0.0.7 PUT /api/batch/process 200 253ms
+1710461965 10.0.0.7 GET /api/admin 401 1829ms
+15-Mar-2024 00:19:26 10.0.0.7 POST /api/login 500 0.247s "kube-probe/1.29"
+
+2024/03/15 00:19:28 10.0.0.7 PATCH /api/reports/export 401 0.121s
+2024-03-15T00:19:29Z 203.0.113.10 HEAD /api/orders 403 1630ms
+2024/03/15 00:19:30 10.0.0.7 HEAD /api/billing 500 548ms
+2024-03-15T00:19:31Z 192.168.1.42 DELETE /api/products 500 2183
+1710461972 10.0.0.7 OPTIONS /api/orders 200 623ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710461973 192.168.1.42 GET /api/metrics 502 2.920s
+1710461974 10.0.0.7 GET /api/products - 1287ms
+PARTIAL: 2024-03-15T16:35
+{"time":"2024-03-15T00:19:36Z","http_method":"PATCH","url":"/api/batch/process","status_code":502,"response_time_ms":72,"client_ip":"172.16.0.22"}
+15-Mar-2024 00:19:37 10.0.0.7 POST /api/login 404 896ms
+15-Mar-2024 00:19:38 10.0.0.7 OPTIONS /api/reports/export 200 1.954s
+2024-03-15T00:19:39Z 192.168.1.42 GET /api/search 200 1214ms
+15-Mar-2024 00:19:40 192.168.1.42 PATCH /api/users 200 2.600s
+{"timestamp":"2024-03-15T00:19:41Z","method":"HEAD","path":"/api/users","status":204,"duration_ms":1635,"ip":"192.168.1.42"}
+1710461982 10.0.0.7 POST /api/dashboard 204 0.786s
+1710461983 172.16.0.22 GET /api/webhooks/stripe 401 2203
+2024-03-15T00:19:44Z 172.16.0.22 GET /api/orders 504 215
+2024-03-15T00:19:45Z 10.0.0.7 GET /api/dashboard 404 164ms
+{"timestamp":"2024-03-15T00:19:46Z","method":"PUT","path":"/api/checkout","status":404,"duration_ms":667,"ip":"172.16.0.22"}
+1710461987 203.0.113.10 POST /api/orders 504 2199 "kube-probe/1.29"
+2024-03-15T00:19:48Z 10.0.0.7 GET /api/health - 1967ms
+2024-03-15T00:19:49Z 10.0.0.7 PUT /api/billing 404 0.359s
+1710461990 192.168.1.42 OPTIONS /api/checkout 403 0.132s
+1710461991 172.16.0.22 OPTIONS /api/login 500 1358
+15-Mar-2024 00:19:52 203.0.113.10 DELETE /api/reports/export 201 1338
+15-Mar-2024 00:19:53 172.16.0.22 HEAD /api/health 504 2470ms
+15-Mar-2024 00:19:54 10.0.0.7 GET /api/metrics 201 2215
+{"timestamp":"2024-03-15T00:19:55Z","method":"PATCH","path":"/api/login","status":504,"duration_ms":535,"ip":"10.0.0.7"}
+1710461996 192.168.1.42 OPTIONS /api/billing - 957ms
+2024/03/15 00:19:57 10.0.0.7 GET /api/webhooks/stripe 502 1.722s "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:19:58 10.0.0.7 GET /api/users 200 1.335s
+{"timestamp":"2024-03-15T12:00:59Z","method":"GET"
+15-Mar-2024 00:20:00 172.16.0.22 DELETE /api/batch/process 502 652
+15-Mar-2024 00:20:01 192.168.1.42 DELETE /api/billing 500 1644ms
+2024/03/15 00:20:02 203.0.113.10 OPTIONS /api/products 403 1001ms
+2024/03/15 00:20:03 192.168.1.42 OPTIONS /api/metrics 404 856ms
+2024-03-15T00:20:04Z 172.16.0.22 PUT /api/batch/process 502 1546ms
+	... 8 more
+15-Mar-2024 00:20:06 203.0.113.10 PUT /api/checkout 403 28ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+{"time":"2024-03-15T00:20:07Z","http_method":"POST","url":"/api/batch/process","status_code":200,"response_time_ms":1048,"client_ip":"172.16.0.22"}
+2024-03-15T00:20:08Z 192.168.1.42 DELETE /api/users 200 2928ms
+1710462009 10.0.0.7 OPTIONS /api/orders 401 2.202s
+2024/03/15 00:20:10 172.16.0.22 DELETE /api/orders 200 777ms
+15-Mar-2024 00:20:11 203.0.113.10 OPTIONS /api/login 504 2465ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710462012 10.0.0.7 PATCH /api/webhooks/stripe 204 2440
+{"time":"2024-03-15T00:20:13Z","http_method":"PUT","url":"/api/search","status_code":401,"response_time_ms":481,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:20:14 203.0.113.10 GET /api/admin 404 1417ms
+2024/03/15 00:20:15 10.0.0.7 HEAD /api/checkout - 2239ms
+2024-03-15T00:20:16Z 192.168.1.42 OPTIONS /api/users 502 2.663s
+1710462017 172.16.0.22 HEAD /api/webhooks/stripe 504 2088
+2024/03/15 00:20:18 203.0.113.10 HEAD /api/orders 504 2040
+2024/03/15 00:20:19 203.0.113.10 PATCH /api/webhooks/stripe 502 1766ms
+
+1710462021 192.168.1.42 DELETE /api/batch/process 401 1603ms
+1710462022 203.0.113.10 DELETE /api/webhooks/stripe 504 1.262s
+15-Mar-2024 00:20:23 172.16.0.22 DELETE /api/users 201 0.224s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:20:24Z 192.168.1.42 HEAD /api/users 204 966
+1710462025 10.0.0.7 POST /api/products 403 169
+15-Mar-2024 00:20:26 172.16.0.22 OPTIONS /api/checkout 401 1.702s
+2024-03-15T00:20:27Z 172.16.0.22 OPTIONS /api/dashboard 502 869ms
+2024/03/15 00:20:28 203.0.113.10 PUT /api/products 500 1.179s
+{"time":"2024-03-15T00:20:29Z","http_method":"DELETE","url":"/api/batch/process","status_code":404,"response_time_ms":442,"client_ip":"172.16.0.22"}
+2024-03-15T00:20:30Z 192.168.1.42 PUT /api/orders 204 2466ms
+15-Mar-2024 00:20:31 172.16.0.22 GET /api/orders 401 2.767s
+2024-03-15T00:20:32Z 172.16.0.22 PATCH /api/webhooks/stripe 404 2234ms
+15-Mar-2024 00:20:33 172.16.0.22 POST /api/dashboard 500 1751ms "curl/8.5.0"
+{"time":"2024-03-15T00:20:34Z","http_method":"POST","url":"/api/users/12","status_code":504,"response_time_ms":254,"client_ip":"192.168.1.42"}
+1710462035 10.0.0.7 PUT /api/products 403 1.774s
+2024/03/15 00:20:36 10.0.0.7 DELETE /api/health 404 2133ms
+  2024-03-15T00:20:37Z 192.168.1.42 DELETE /api/login 200 824ms
+2024-03-15T00:20:38Z 203.0.113.10 PUT /api/batch/process 504 2396ms
+2024/03/15 00:20:39 203.0.113.10 HEAD /api/admin 504 882ms
+2024/03/15 00:20:40 10.0.0.7 HEAD /api/billing - 290ms
+
+1710462042 203.0.113.10 GET /api/login - 186ms
+  15-Mar-2024 00:20:43 172.16.0.22 OPTIONS /api/products 200 310 "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:20:44 10.0.0.7 PATCH /api/orders 200 1376ms
+{"timestamp":"2024-03-15T12:00:45Z","method":"GET"
+2024-03-15T00:20:46Z 192.168.1.42 GET /api/metrics - 542ms
+2024/03/15 00:20:47 172.16.0.22 POST /api/admin 401 2972ms
+15-Mar-2024 00:20:48 192.168.1.42 PATCH /api/login 204 1082ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+  2024/03/15 00:20:49 203.0.113.10 POST /api/metrics 201 1.513s "Mozilla/5.0 (Windows NT 10.0)"
+1710462050 10.0.0.7 GET /api/users 201 1514ms
+2024-03-15T00:20:51Z 10.0.0.7 OPTIONS /api/orders 204 2793ms
+15-Mar-2024 00:20:52 203.0.113.10 PUT /api/dashboard 500 2.202s
+15-Mar-2024 00:20:53 10.0.0.7 HEAD /api/checkout 200 2013ms
+1710462054 192.168.1.42 PATCH /api/metrics 403 1619
+15-Mar-2024 00:20:55 10.0.0.7 GET /api/admin 502 2.438s "kube-probe/1.29"
+15-Mar-2024 00:20:56 10.0.0.7 GET /api/search 504 1856
+2024-03-15T00:20:57Z 172.16.0.22 OPTIONS /api/health 200 2782ms
+  2024-03-15T00:20:58Z 172.16.0.22 PUT /api/batch/process 204 2.047s
+totally malformed !!!
+1710462060 10.0.0.7 GET /api/reports/export 502 520ms
+2024/03/15 00:21:01 203.0.113.10 PUT /api/search 404 1270 "kube-probe/1.29"
+2024/03/15 00:21:02 10.0.0.7 POST /api/billing 404 1197ms
+15-Mar-2024 00:21:03 203.0.113.10 POST /api/webhooks/stripe 200 2279ms
+2024/03/15 00:21:04 172.16.0.22 PATCH /api/dashboard 502 1273ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+15-Mar-2024 00:21:06 192.168.1.42 POST /api/webhooks/stripe 200 480ms
+2024-03-15T00:21:07Z 192.168.1.42 PUT /api/users/12 504 1890
+1710462068 203.0.113.10 POST /api/search 500 2541ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710462070 10.0.0.7 OPTIONS /api/checkout 500 0.241s
+1710462071 203.0.113.10 PATCH /api/users 500 323ms
+2024-03-15T00:21:12Z 172.16.0.22 POST /api/health 500 1140
+15-Mar-2024 00:21:13 10.0.0.7 OPTIONS /api/batch/process 500 2178ms
+2024/03/15 00:21:14 10.0.0.7 OPTIONS /api/webhooks/stripe 201 2.605s
+2024/03/15 00:21:15 172.16.0.22 OPTIONS /api/batch/process 404 0.977s
+2024-03-15T00:21:16Z 192.168.1.42 OPTIONS /api/billing 200 0.984s
+15-Mar-2024 00:21:17 10.0.0.7 PUT /api/checkout 500 799ms
+2024/03/15 00:21:18 203.0.113.10 PUT /api/batch/process 401 2.048s
+1710462079 10.0.0.7 OPTIONS /api/metrics 502 2494 "Mozilla/5.0 (Windows NT 10.0)"
+1710462080 203.0.113.10 OPTIONS /api/reports/export 200 430ms
+15-Mar-2024 00:21:21 10.0.0.7 GET /api/billing 201 67ms
+15-Mar-2024 00:21:22 172.16.0.22 GET /api/search 401 2100ms
+1710462083 172.16.0.22 GET /api/users 500 2017
+1710462084 192.168.1.42 DELETE /api/users/12 200 2557ms
+2024-03-15T00:21:25Z 192.168.1.42 GET /api/dashboard 504 2255ms
+15-Mar-2024 00:21:26 203.0.113.10 OPTIONS /api/webhooks/stripe 404 2210ms
+2024/03/15 00:21:27 192.168.1.42 PUT /api/health 401 1488
+{"time":"2024-03-15T00:21:28Z","http_method":"PUT","url":"/api/orders","status_code":401,"response_time_ms":998,"client_ip":"10.0.0.7"}
+2024-03-15T00:21:29Z 10.0.0.7 GET /api/dashboard 404 1639ms "kube-probe/1.29"
+1710462090 192.168.1.42 PATCH /api/search 404 0.051s
+1710462091 192.168.1.42 POST /api/search 204 737ms
+1710462092 203.0.113.10 GET /api/admin 204 214ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:21:33 192.168.1.42 PUT /api/webhooks/stripe 504 2170 "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:21:34 172.16.0.22 HEAD /api/dashboard 500 2.585s
+2024/03/15 00:21:35 172.16.0.22 PUT /api/reports/export 200 2485ms
+2024-03-15T00:21:36Z 10.0.0.7 POST /api/checkout 502 186ms "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:21:37 203.0.113.10 POST /api/health 500 1596ms
+2024/03/15 00:21:38 192.168.1.42 POST /api/admin 403 1084ms
+2024-03-15T00:21:39Z 192.168.1.42 GET /api/admin 403 182
+15-Mar-2024 00:21:40 192.168.1.42 DELETE /api/products 204 1.899s
+2024-03-15T00:21:41Z 203.0.113.10 POST /api/health 403 1400ms
+2024-03-15T00:21:42Z 203.0.113.10 GET /api/login - 1733ms
+2024/03/15 00:21:43 172.16.0.22 GET /api/batch/process 200 2888
+  2024/03/15 00:21:44 10.0.0.7 OPTIONS /api/health 504 767ms
+2024/03/15 00:21:45 203.0.113.10 PATCH /api/login 201 2083ms
+2024-03-15T00:21:46Z 172.16.0.22 HEAD /api/billing 504 2912ms
+2024-03-15T00:21:47Z 192.168.1.42 PATCH /api/login - 2459 "kube-probe/1.29"
+1710462108 172.16.0.22 PUT /api/users 404 2940ms
+15-Mar-2024 00:21:49 10.0.0.7 GET /api/admin 500 230
+1710462110 203.0.113.10 DELETE /api/checkout 502 141ms
+2024/03/15 00:21:51 10.0.0.7 GET /api/products 204 2387
+2024-03-15T00:21:52Z 172.16.0.22 PUT /api/metrics 404 903ms
+1710462113 203.0.113.10 OPTIONS /api/login 204 2728ms
+	at com.example.Service.run(Service.java:42)
+	at com.example.Service.run(Service.java:42)
+  2024/03/15 00:21:56 172.16.0.22 POST /api/orders 204 2199ms
+1710462117 203.0.113.10 OPTIONS /api/billing 401 2553ms
+DEBUG not an access log
+2024/03/15 00:21:59 10.0.0.7 GET /api/webhooks/stripe 204 1626
+2024/03/15 00:22:00 203.0.113.10 PUT /api/metrics 404 2160
+15-Mar-2024 00:22:01 172.16.0.22 PATCH /api/batch/process 200 2026
+1710462122 10.0.0.7 HEAD /api/admin - 2.781s
+DEBUG not an access log
+1710462124 192.168.1.42 HEAD /api/users/12 403 1.492s
+15-Mar-2024 00:22:05 10.0.0.7 POST /api/admin 403 0.185s
+  2024-03-15T00:22:06Z 172.16.0.22 HEAD /api/search 504 1056ms
+15-Mar-2024 00:22:07 10.0.0.7 HEAD /api/webhooks/stripe 403 1148ms
+1710462128 172.16.0.22 POST /api/health 502 624
+1710462129 10.0.0.7 PUT /api/health 401 0.986s
+{"time":"2024-03-15T00:22:10Z","http_method":"PATCH","url":"/api/billing","status_code":504,"response_time_ms":2054,"client_ip":"203.0.113.10"}
+15-Mar-2024 00:22:11 192.168.1.42 HEAD /api/webhooks/stripe 500 0.033s
+1710462132 203.0.113.10 PATCH /api/login 201 1346ms "curl/8.5.0"
+{"timestamp":"2024-03-15T12:00:13Z","method":"GET"
+2024/03/15 00:22:14 203.0.113.10 GET /api/metrics - 1015
+2024-03-15T00:22:15Z 172.16.0.22 POST /api/health 404 721 "curl/8.5.0"
+1710462136 203.0.113.10 PATCH /api/webhooks/stripe 502 1779ms
+2024/03/15 00:22:17 192.168.1.42 DELETE /api/users 502 1.337s
+2024/03/15 00:22:18 192.168.1.42 PUT /api/login 403 2848ms
+2024-03-15T00:22:19Z 192.168.1.42 GET /api/search 200 1550ms
+15-Mar-2024 00:22:20 203.0.113.10 PATCH /api/orders 404 2114ms
+15-Mar-2024 00:22:21 192.168.1.42 DELETE /api/billing 502 2055ms
+2024-03-15T00:22:22Z 203.0.113.10 GET /api/orders 504 2250ms
+{"timestamp":"2024-03-15T00:22:23Z","method":"DELETE","path":"/api/metrics","status":200,"duration_ms":263,"ip":"172.16.0.22"}
+2024/03/15 00:22:24 203.0.113.10 PATCH /api/products 500 2151
+2024/03/15 00:22:25 10.0.0.7 OPTIONS /api/billing 504 387ms
+2024-03-15T00:22:26Z 172.16.0.22 DELETE /api/batch/process 401 2985ms "curl/8.5.0"
+{"time":"2024-03-15T00:22:27Z","http_method":"GET","url":"/api/checkout","status_code":504,"response_time_ms":714,"client_ip":"172.16.0.22"}
+2024-03-15T00:22:28Z 203.0.113.10 PUT /api/reports/export - 1.668s
+1710462149 203.0.113.10 OPTIONS /api/health 500 1292ms "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:22:30 203.0.113.10 HEAD /api/billing 504 1840ms
+1710462151 10.0.0.7 POST /api/search 204 361ms
+2024-03-15T00:22:32Z 10.0.0.7 DELETE /api/users 504 1497
+15-Mar-2024 00:22:33 192.168.1.42 PATCH /api/reports/export 504 2.460s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:22:34 10.0.0.7 HEAD /api/dashboard 403 1384ms
+1710462155 203.0.113.10 GET /api/metrics 200 0.029s
+15-Mar-2024 00:22:36 10.0.0.7 OPTIONS /api/metrics 404 2.118s
+{"time":"2024-03-15T00:22:37Z","http_method":"POST","url":"/api/products","status_code":502,"response_time_ms":88,"client_ip":"10.0.0.7"}
+2024/03/15 00:22:38 192.168.1.42 PATCH /api/billing 504 1771ms
+{"time":"2024-03-15T00:22:39Z","http_method":"HEAD","url":"/api/dashboard","status_code":502,"response_time_ms":2999,"client_ip":"172.16.0.22"}
+
+1710462161 172.16.0.22 DELETE /api/admin - 2514ms
+1710462162 10.0.0.7 PATCH /api/search 403 2.358s
+15-Mar-2024 00:22:43 203.0.113.10 PUT /api/login 401 806ms
+2024/03/15 00:22:44 10.0.0.7 OPTIONS /api/admin 204 1.783s "curl/8.5.0"
+15-Mar-2024 00:22:45 172.16.0.22 OPTIONS /api/checkout 404 2756ms
+1710462166 203.0.113.10 OPTIONS /api/reports/export 502 2039ms
+1710462167 192.168.1.42 PATCH /api/login 204 2155
+1710462168 10.0.0.7 DELETE /api/checkout 500 1.971s "Mozilla/5.0 (Windows NT 10.0)"
+1710462169 203.0.113.10 PATCH /api/checkout 504 0.542s "kube-probe/1.29"
+15-Mar-2024 00:22:50 172.16.0.22 OPTIONS /api/webhooks/stripe - 0.224s
+15-Mar-2024 00:22:51 192.168.1.42 OPTIONS /api/reports/export 404 586ms
+15-Mar-2024 00:22:52 203.0.113.10 PATCH /api/products 403 2807 "kube-probe/1.29"
+1710462173 10.0.0.7 PUT /api/billing 401 2784ms
+DEBUG not an access log
+2024/03/15 00:22:55 203.0.113.10 POST /api/reports/export 404 2872 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:22:56 172.16.0.22 HEAD /api/batch/process 401 1220
+15-Mar-2024 00:22:57 192.168.1.42 PUT /api/products - 2014ms
+15-Mar-2024 00:22:58 192.168.1.42 HEAD /api/search 200 0.928s
+15-Mar-2024 00:22:59 172.16.0.22 DELETE /api/search 504 1447ms
+2024/03/15 00:23:00 10.0.0.7 OPTIONS /api/products 200 704ms
+2024-03-15T00:23:01Z 172.16.0.22 POST /api/orders 404 250ms
+1710462182 10.0.0.7 OPTIONS /api/batch/process - 2865ms
+2024/03/15 00:23:03 192.168.1.42 POST /api/batch/process 204 56
+2024/03/15 00:23:04 172.16.0.22 HEAD /api/users/12 504 1215ms
+  2024-03-15T00:23:05Z 172.16.0.22 GET /api/health 504 357ms "kube-probe/1.29"
+2024-03-15T00:23:06Z 172.16.0.22 OPTIONS /api/orders 403 2178
+15-Mar-2024 00:23:07 172.16.0.22 OPTIONS /api/users 200 1.461s
+2024-03-15T00:23:08Z 10.0.0.7 GET /api/health 403 275ms
+  15-Mar-2024 00:23:09 203.0.113.10 PUT /api/admin 204 596
+15-Mar-2024 00:23:10 203.0.113.10 OPTIONS /api/dashboard 201 0.504s
+{"timestamp":"2024-03-15T00:23:11Z","method":"PATCH","path":"/api/users/12","status":201,"duration_ms":1411,"ip":"10.0.0.7"}
+2024-03-15T00:23:12Z 192.168.1.42 POST /api/billing 200 2576ms
+{"timestamp":"2024-03-15T00:23:13Z","method":"GET","path":"/api/users","status":403,"duration_ms":1980,"ip":"10.0.0.7"}
+{"timestamp":"2024-03-15T00:23:14Z","method":"PATCH","path":"/api/login","status":201,"duration_ms":860,"ip":"192.168.1.42"}
+{"timestamp":"2024-03-15T00:23:15Z","method":"OPTIONS","path":"/api/login","status":201,"duration_ms":1984,"ip":"203.0.113.10"}
+15-Mar-2024 00:23:16 203.0.113.10 DELETE /api/metrics 200 2640ms
+1710462197 203.0.113.10 GET /api/health 403 1649ms
+2024/03/15 00:23:18 10.0.0.7 GET /api/users - 1004
+2024/03/15 00:23:19 192.168.1.42 HEAD /api/batch/process 504 1.857s
+2024-03-15T00:23:20Z 192.168.1.42 HEAD /api/search 504 763ms
+1710462201 172.16.0.22 POST /api/checkout 500 1825ms
+{"time":"2024-03-15T00:23:22Z","http_method":"PUT","url":"/api/dashboard","status_code":404,"response_time_ms":1853,"client_ip":"203.0.113.10"}
+15-Mar-2024 00:23:23 172.16.0.22 OPTIONS /api/orders 500 1940ms
+1710462204 192.168.1.42 DELETE /api/health 500 2308
+15-Mar-2024 00:23:25 10.0.0.7 PUT /api/webhooks/stripe 401 2682ms
+2024-03-15T00:23:26Z 192.168.1.42 PUT /api/dashboard 204 2854
+{"timestamp":"2024-03-15T00:23:27Z","method":"POST","path":"/api/search","status":204,"duration_ms":567,"ip":"203.0.113.10"}
+1710462208 192.168.1.42 HEAD /api/users/12 404 969ms
+2024/03/15 00:23:29 10.0.0.7 HEAD /api/search - 1733ms
+2024/03/15 00:23:30 172.16.0.22 PATCH /api/orders 504 560ms
+Caused by: java.io.IOException: broken pipe
+2024-03-15T00:23:32Z 172.16.0.22 PATCH /api/batch/process 403 2813
+1710462213 10.0.0.7 POST /api/login 201 158 "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:23:34Z 203.0.113.10 PUT /api/users/12 504 2.675s
+1710462215 203.0.113.10 DELETE /api/orders 403 0.822s
+2024/03/15 00:23:36 10.0.0.7 OPTIONS /api/health 502 2297ms
+1710462217 10.0.0.7 DELETE /api/checkout 504 1585ms
+15-Mar-2024 00:23:38 10.0.0.7 GET /api/orders 200 2.755s
+15-Mar-2024 00:23:39 192.168.1.42 POST /api/checkout 504 0.450s
+  2024/03/15 00:23:40 203.0.113.10 DELETE /api/orders 200 607ms
+1710462221 172.16.0.22 GET /api/metrics 504 273ms
+1710462222 10.0.0.7 DELETE /api/orders - 2969 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710462223 172.16.0.22 HEAD /api/products 403 2102ms
+2024-03-15T00:23:44Z 10.0.0.7 POST /api/checkout 204 1141ms
+1710462225 172.16.0.22 HEAD /api/health 204 0.193s
+2024/03/15 00:23:46 172.16.0.22 PUT /api/dashboard 200 1791ms
+{"time":"2024-03-15T00:23:47Z","http_method":"PUT","url":"/api/metrics","status_code":404,"response_time_ms":2219,"client_ip":"172.16.0.22"}
+2024/03/15 00:23:48 203.0.113.10 DELETE /api/search 403 1268
+15-Mar-2024 00:23:49 10.0.0.7 DELETE /api/search 201 1917ms
+2024/03/15 00:23:50 10.0.0.7 GET /api/dashboard 401 1201ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:23:51Z 10.0.0.7 OPTIONS /api/health 404 2853ms
+2024/03/15 00:23:52 172.16.0.22 GET /api/batch/process - 0.468s
+15-Mar-2024 00:23:53 192.168.1.42 DELETE /api/users/12 - 1.401s
+1710462234 172.16.0.22 PATCH /api/admin 204 1588ms
+2024-03-15T00:23:55Z 10.0.0.7 PUT /api/login 500 484ms
+1710462236 172.16.0.22 PUT /api/reports/export 201 1.482s
+2024/03/15 00:23:57 192.168.1.42 HEAD /api/login 500 2651ms
+1710462238 203.0.113.10 DELETE /api/admin 201 1204
+1710462239 203.0.113.10 PUT /api/checkout 201 2405 "Mozilla/5.0 (Windows NT 10.0)"
+1710462240 203.0.113.10 POST /api/webhooks/stripe 200 594ms
+2024/03/15 00:24:01 172.16.0.22 OPTIONS /api/reports/export 201 1.363s
+2024/03/15 00:24:02 203.0.113.10 PATCH /api/billing 502 2663
+2024/03/15 00:24:03 172.16.0.22 DELETE /api/orders 204 1325
+2024-03-15T00:24:04Z 192.168.1.42 POST /api/health 502 0.913s
+15-Mar-2024 00:24:05 10.0.0.7 DELETE /api/search 403 0.402s
+  1710462246 192.168.1.42 DELETE /api/webhooks/stripe 201 1616
+15-Mar-2024 00:24:07 172.16.0.22 PATCH /api/billing 204 2237
+1710462248 203.0.113.10 POST /api/dashboard 404 471ms
+  2024/03/15 00:24:09 172.16.0.22 POST /api/users/12 201 0.294s "curl/8.5.0"
+{"timestamp":"2024-03-15T00:24:10Z","method":"POST","path":"/api/products","status":504,"duration_ms":2047,"ip":"203.0.113.10"}
+2024/03/15 00:24:11 203.0.113.10 HEAD /api/reports/export 500 0.769s
+nginx: [error] upstream prematurely closed connection
+2024-03-15T00:24:13Z 203.0.113.10 OPTIONS /api/webhooks/stripe - 827
+2024-03-15T00:24:14Z 172.16.0.22 HEAD /api/batch/process 502 1.539s
+2024/03/15 00:24:15 172.16.0.22 DELETE /api/admin 200 1784
+15-Mar-2024 00:24:16 203.0.113.10 POST /api/batch/process 200 0.747s
+1710462257 10.0.0.7 GET /api/dashboard 201 2957ms
+2024-03-15T00:24:18Z 172.16.0.22 PATCH /api/search 500 1.726s
+2024-03-15T00:24:19Z 203.0.113.10 HEAD /api/batch/process 504 955ms
+2024-03-15T00:24:20Z 10.0.0.7 GET /api/users 204 2078ms
+2024-03-15T00:24:21Z 172.16.0.22 POST /api/login 201 1959ms
+2024/03/15 00:24:22 172.16.0.22 DELETE /api/admin 500 2.126s
+15-Mar-2024 00:24:23 172.16.0.22 HEAD /api/health 201 1447ms
+PARTIAL: 2024-03-15T16:24
+
+2024/03/15 00:24:26 10.0.0.7 HEAD /api/metrics 504 1492ms "kube-probe/1.29"
+1710462267 203.0.113.10 PATCH /api/login 500 1.317s "Mozilla/5.0 (Windows NT 10.0)"
+{"timestamp":"2024-03-15T12:00:28Z","method":"GET"
+2024/03/15 00:24:29 172.16.0.22 OPTIONS /api/admin 403 1974ms
+2024/03/15 00:24:30 172.16.0.22 PUT /api/orders 403 1882
+{"timestamp":"2024-03-15T00:24:31Z","method":"OPTIONS","path":"/api/metrics","status":200,"duration_ms":2279,"ip":"172.16.0.22"}
+15-Mar-2024 00:24:32 172.16.0.22 DELETE /api/billing 204 1.510s
+2024/03/15 00:24:33 203.0.113.10 PUT /api/checkout 200 147ms
+15-Mar-2024 00:24:34 10.0.0.7 DELETE /api/admin 201 40ms
+1710462275 192.168.1.42 PUT /api/batch/process 403 368ms
+
+{"timestamp":"2024-03-15T00:24:37Z","method":"GET","path":"/api/orders","status":404,"duration_ms":2409,"ip":"10.0.0.7"}
+2024-03-15T00:24:38Z 172.16.0.22 OPTIONS /api/dashboard 500 1.248s
+15-Mar-2024 00:24:39 203.0.113.10 PUT /api/billing 401 1.156s
+2024-03-15T00:24:40Z 203.0.113.10 HEAD /api/users 200 1568ms
+{"timestamp":"2024-03-15T12:00:41Z","method":"GET"
+15-Mar-2024 00:24:42 10.0.0.7 PATCH /api/login 401 0.841s
+1710462283 203.0.113.10 OPTIONS /api/checkout 404 1420ms
+2024-03-15T00:24:44Z 203.0.113.10 POST /api/webhooks/stripe 201 1662ms
+  15-Mar-2024 00:24:45 172.16.0.22 PUT /api/admin 401 1141
+2024/03/15 00:24:46 192.168.1.42 GET /api/reports/export 200 1310
+
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710462289 10.0.0.7 PUT /api/reports/export 204 328ms "curl/8.5.0"
+1710462290 203.0.113.10 OPTIONS /api/orders 403 1.168s
+15-Mar-2024 00:24:51 192.168.1.42 PATCH /api/checkout 504 1538ms
+{"time":"2024-03-15T00:24:52Z","http_method":"PATCH","url":"/api/search","status_code":201,"response_time_ms":1214,"client_ip":"192.168.1.42"}
+1710462293 10.0.0.7 PUT /api/login 502 1155ms
+1710462294 10.0.0.7 PUT /api/admin 403 2377ms
+{"timestamp":"2024-03-15T00:24:55Z","method":"PUT","path":"/api/billing","status":204,"duration_ms":1664,"ip":"203.0.113.10"}
+2024/03/15 00:24:56 10.0.0.7 POST /api/search 201 2.056s
+{"timestamp":"2024-03-15T00:24:57Z","method":"POST","path":"/api/reports/export","status":403,"duration_ms":1396,"ip":"172.16.0.22"}
+2024-03-15T00:24:58Z 203.0.113.10 GET /api/reports/export 403 622
+2024/03/15 00:24:59 192.168.1.42 OPTIONS /api/users/12 504 961ms
+nginx: [error] upstream prematurely closed connection
+1710462301 192.168.1.42 GET /api/admin 502 687ms
+15-Mar-2024 00:25:02 172.16.0.22 GET /api/search 204 2.364s
+1710462303 172.16.0.22 OPTIONS /api/orders 500 2419ms
+2024-03-15T00:25:04Z 10.0.0.7 POST /api/admin 401 2.891s
+2024/03/15 00:25:05 192.168.1.42 GET /api/users - 2.590s "kube-probe/1.29"
+15-Mar-2024 00:25:06 10.0.0.7 PUT /api/orders 403 2.837s "curl/8.5.0"
+2024/03/15 00:25:07 192.168.1.42 GET /api/login 200 1775ms
+  15-Mar-2024 00:25:08 10.0.0.7 GET /api/dashboard 502 509ms
+  1710462309 10.0.0.7 PUT /api/search 401 2231ms
+{"timestamp":"2024-03-15T00:25:10Z","method":"GET","path":"/api/dashboard","status":201,"duration_ms":114,"ip":"10.0.0.7"}
+2024-03-15T00:25:11Z 10.0.0.7 GET /api/billing 404 826ms
+2024/03/15 00:25:12 172.16.0.22 DELETE /api/admin 502 2513ms
+{"time":"2024-03-15T00:25:13Z","http_method":"DELETE","url":"/api/admin","status_code":502,"response_time_ms":379,"client_ip":"10.0.0.7"}
+2024-03-15T00:25:14Z 10.0.0.7 OPTIONS /api/metrics 403 2055 "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:25:15Z 203.0.113.10 DELETE /api/batch/process 502 575
+1710462316 192.168.1.42 PUT /api/orders 401 1.620s
+1710462317 203.0.113.10 DELETE /api/metrics 502 2037ms
+{"timestamp":"2024-03-15T00:25:18Z","method":"POST","path":"/api/reports/export","status":201,"duration_ms":2411,"ip":"203.0.113.10"}
+1710462319 203.0.113.10 PATCH /api/search 502 966ms "curl/8.5.0"
+15-Mar-2024 00:25:20 10.0.0.7 PUT /api/webhooks/stripe 404 1307ms
+2024/03/15 00:25:21 203.0.113.10 DELETE /api/webhooks/stripe 403 0.114s
+{"time":"2024-03-15T00:25:22Z","http_method":"PUT","url":"/api/health","status_code":403,"response_time_ms":2310,"client_ip":"172.16.0.22"}
+2024/03/15 00:25:23 172.16.0.22 POST /api/webhooks/stripe 401 2782ms
+1710462324 172.16.0.22 HEAD /api/billing 201 831
+Caused by: java.io.IOException: broken pipe
+15-Mar-2024 00:25:26 192.168.1.42 PATCH /api/users/12 403 2.119s
+2024/03/15 00:25:27 172.16.0.22 GET /api/admin - 0.980s
+15-Mar-2024 00:25:28 203.0.113.10 HEAD /api/orders 204 1615ms
+  1710462329 203.0.113.10 DELETE /api/billing 504 1536
+{"time":"2024-03-15T00:25:30Z","http_method":"GET","url":"/api/admin","status_code":200,"response_time_ms":597,"client_ip":"192.168.1.42"}
+{"timestamp":"2024-03-15T00:25:31Z","method":"GET","path":"/api/users/12","status":204,"duration_ms":1377,"ip":"192.168.1.42"}
+2024/03/15 00:25:32 203.0.113.10 PATCH /api/login 504 240
+2024/03/15 00:25:33 192.168.1.42 OPTIONS /api/products 403 1328ms
+2024/03/15 00:25:34 10.0.0.7 POST /api/webhooks/stripe 403 2379ms
+{"timestamp":"2024-03-15T00:25:35Z","method":"OPTIONS","path":"/api/health","status":200,"duration_ms":561,"ip":"203.0.113.10"}
+2024/03/15 00:25:36 192.168.1.42 POST /api/metrics - 2076ms
+1710462337 203.0.113.10 GET /api/metrics - 1.538s
+2024-03-15T00:25:38Z 10.0.0.7 PATCH /api/users/12 204 2086ms "curl/8.5.0"
+{"timestamp":"2024-03-15T00:25:39Z","method":"GET","path":"/api/orders","status":201,"duration_ms":447,"ip":"192.168.1.42"}
+15-Mar-2024 00:25:40 10.0.0.7 DELETE /api/batch/process 201 2299ms
+15-Mar-2024 00:25:41 203.0.113.10 HEAD /api/webhooks/stripe 401 1492ms
+1710462342 203.0.113.10 GET /api/search 200 1.951s
+2024-03-15T00:25:43Z 192.168.1.42 DELETE /api/login 200 2.351s
+2024-03-15T00:25:44Z 192.168.1.42 GET /api/billing 403 65
+2024/03/15 00:25:45 172.16.0.22 PUT /api/users/12 504 2557ms
+1710462346 10.0.0.7 DELETE /api/login 204 2714 "kube-probe/1.29"
+15-Mar-2024 00:25:47 192.168.1.42 PATCH /api/admin 401 2.051s
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:25:49 10.0.0.7 PUT /api/orders 502 1.443s
+2024-03-15T00:25:50Z 10.0.0.7 HEAD /api/users/12 204 2318ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:25:51 172.16.0.22 PUT /api/batch/process 404 607ms
+1710462352 10.0.0.7 POST /api/login 504 1382ms "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:25:53 203.0.113.10 DELETE /api/billing 403 1223
+Exception in thread "worker" java.lang.RuntimeException: boom
+{"timestamp":"2024-03-15T00:25:55Z","method":"PATCH","path":"/api/users/12","status":502,"duration_ms":332,"ip":"10.0.0.7"}
+1710462356 203.0.113.10 HEAD /api/metrics 403 2661
+15-Mar-2024 00:25:57 192.168.1.42 PATCH /api/products 200 1.858s
+1710462358 192.168.1.42 PUT /api/health - 2837
+{"time":"2024-03-15T00:25:59Z","http_method":"PATCH","url":"/api/search","status_code":204,"response_time_ms":926,"client_ip":"192.168.1.42"}
+{"time":"2024-03-15T00:26:00Z","http_method":"PATCH","url":"/api/reports/export","status_code":404,"response_time_ms":2663,"client_ip":"10.0.0.7"}
+  2024/03/15 00:26:01 192.168.1.42 PUT /api/webhooks/stripe 504 2956ms
+1710462362 192.168.1.42 HEAD /api/search 200 469ms
+1710462363 172.16.0.22 POST /api/products 204 2141ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:26:04 203.0.113.10 OPTIONS /api/webhooks/stripe 502 1720ms
+1710462365 172.16.0.22 OPTIONS /api/users/12 204 805
+2024-03-15T00:26:06Z 172.16.0.22 DELETE /api/health 502 168
+{"timestamp":"2024-03-15T00:26:07Z","method":"GET","path":"/api/orders","status":201,"duration_ms":339,"ip":"192.168.1.42"}
+1710462368 172.16.0.22 GET /api/reports/export - 1.985s
+2024-03-15T00:26:09Z 10.0.0.7 PUT /api/webhooks/stripe 201 1460
+	at com.example.Service.run(Service.java:42)
+2024/03/15 00:26:11 172.16.0.22 POST /api/admin 500 2766
+15-Mar-2024 00:26:12 203.0.113.10 OPTIONS /api/search 404 1.088s
+1710462373 192.168.1.42 GET /api/checkout 404 0.512s "kube-probe/1.29"
+2024/03/15 00:26:14 192.168.1.42 DELETE /api/dashboard 200 1771ms "kube-probe/1.29"
+{"timestamp":"2024-03-15T00:26:15Z","method":"DELETE","path":"/api/health","status":204,"duration_ms":77,"ip":"203.0.113.10"}
+15-Mar-2024 00:26:16 10.0.0.7 PATCH /api/webhooks/stripe 403 2.177s
+2024-03-15T00:26:17Z 172.16.0.22 GET /api/checkout 502 0.092s
+2024/03/15 00:26:18 10.0.0.7 DELETE /api/batch/process 204 622
+15-Mar-2024 00:26:19 192.168.1.42 PUT /api/reports/export 200 2551ms
+2024-03-15T00:26:20Z 203.0.113.10 HEAD /api/orders - 0.925s "Mozilla/5.0 (Windows NT 10.0)"
+1710462381 172.16.0.22 HEAD /api/health 502 87ms
+2024-03-15T00:26:22Z 10.0.0.7 POST /api/login 404 249
+2024/03/15 00:26:23 172.16.0.22 HEAD /api/users/12 200 1359ms
+1710462384 192.168.1.42 GET /api/health 204 1012ms
+2024/03/15 00:26:25 192.168.1.42 POST /api/metrics 401 87
+	at com.example.Service.run(Service.java:42)
+totally malformed !!!
+2024/03/15 00:26:28 192.168.1.42 DELETE /api/checkout 403 1.934s
+2024/03/15 00:26:29 10.0.0.7 GET /api/batch/process 404 1262
+15-Mar-2024 00:26:30 10.0.0.7 PUT /api/users/12 201 1295ms "curl/8.5.0"
+	... 8 more
+	at com.example.Service.run(Service.java:42)
+2024-03-15T00:26:33Z 192.168.1.42 PUT /api/products 500 2.113s
+15-Mar-2024 00:26:34 172.16.0.22 OPTIONS /api/reports/export 502 0.336s
+15-Mar-2024 00:26:35 172.16.0.22 PATCH /api/dashboard 404 1452ms
+{"timestamp":"2024-03-15T00:26:36Z","method":"POST","path":"/api/products","status":500,"duration_ms":1344,"ip":"203.0.113.10"}
+
+{"timestamp":"2024-03-15T00:26:38Z","method":"POST","path":"/api/reports/export","status":403,"duration_ms":7,"ip":"192.168.1.42"}
+1710462399 10.0.0.7 HEAD /api/login 404 2834ms
+2024-03-15T00:26:40Z 192.168.1.42 HEAD /api/health 201 1.269s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:26:41Z 192.168.1.42 POST /api/metrics 401 1832ms
+1710462402 172.16.0.22 POST /api/search 204 1050
+1710462403 203.0.113.10 OPTIONS /api/reports/export 201 2169
+totally malformed !!!
+nginx: [error] upstream prematurely closed connection
+2024/03/15 00:26:46 203.0.113.10 PATCH /api/dashboard 504 1811ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710462407 10.0.0.7 POST /api/reports/export - 2060ms
+15-Mar-2024 00:26:48 192.168.1.42 DELETE /api/users/12 504 1756ms
+2024/03/15 00:26:49 172.16.0.22 GET /api/admin 500 0.616s
+1710462410 10.0.0.7 PATCH /api/search 403 2.980s
+1710462411 203.0.113.10 POST /api/batch/process 404 2379
+15-Mar-2024 00:26:52 172.16.0.22 DELETE /api/health 504 2373ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+{"time":"2024-03-15T00:26:53Z","http_method":"PATCH","url":"/api/reports/export","status_code":404,"response_time_ms":2496,"client_ip":"192.168.1.42"}
+15-Mar-2024 00:26:54 172.16.0.22 OPTIONS /api/reports/export 204 1227
+2024/03/15 00:26:55 10.0.0.7 GET /api/dashboard 500 0.069s
+1710462416 203.0.113.10 PATCH /api/search 500 2018
+15-Mar-2024 00:26:57 10.0.0.7 HEAD /api/reports/export 401 491ms
+1710462418 203.0.113.10 HEAD /api/metrics 502 1512ms
+2024/03/15 00:26:59 10.0.0.7 PUT /api/products 404 2.699s
+{"timestamp":"2024-03-15T00:27:00Z","method":"OPTIONS","path":"/api/orders","status":204,"duration_ms":975,"ip":"10.0.0.7"}
+2024/03/15 00:27:01 172.16.0.22 POST /api/checkout 502 60ms
+15-Mar-2024 00:27:02 203.0.113.10 OPTIONS /api/admin 200 1341ms
+2024/03/15 00:27:03 192.168.1.42 OPTIONS /api/billing 204 2094ms
+2024-03-15T00:27:04Z 203.0.113.10 POST /api/dashboard 500 0.635s "kube-probe/1.29"
+1710462425 10.0.0.7 HEAD /api/login 502 2167ms
+1710462426 172.16.0.22 PUT /api/search 504 1974ms
+1710462427 10.0.0.7 OPTIONS /api/webhooks/stripe 204 1.501s
+2024/03/15 00:27:08 192.168.1.42 OPTIONS /api/search 504 1977
+2024/03/15 00:27:09 203.0.113.10 PUT /api/reports/export 401 2.035s
+  2024/03/15 00:27:10 203.0.113.10 PUT /api/users 200 2854
+
+2024-03-15T00:27:12Z 203.0.113.10 HEAD /api/dashboard 204 1064
+1710462433 172.16.0.22 PATCH /api/products 502 1906ms
+  1710462434 203.0.113.10 HEAD /api/users 404 2637ms
+1710462435 192.168.1.42 GET /api/login 500 1.016s
+15-Mar-2024 00:27:16 10.0.0.7 HEAD /api/users/12 504 2012ms "kube-probe/1.29"
+2024-03-15T00:27:17Z 10.0.0.7 GET /api/batch/process 500 454
+2024-03-15T00:27:18Z 172.16.0.22 PUT /api/admin 201 1373ms
+2024-03-15T00:27:19Z 172.16.0.22 OPTIONS /api/reports/export 204 2709ms
+2024/03/15 00:27:20 203.0.113.10 OPTIONS /api/dashboard 403 2009
+totally malformed !!!
+1710462442 172.16.0.22 PUT /api/search 404 2188ms
+15-Mar-2024 00:27:23 203.0.113.10 OPTIONS /api/checkout 404 2.529s
+2024/03/15 00:27:24 172.16.0.22 OPTIONS /api/dashboard 500 1.930s
+2024/03/15 00:27:25 203.0.113.10 OPTIONS /api/health 404 1076ms
+15-Mar-2024 00:27:26 203.0.113.10 PATCH /api/admin 204 260ms
+1710462447 172.16.0.22 PATCH /api/dashboard 200 2458
+1710462448 203.0.113.10 OPTIONS /api/orders 204 2670
+15-Mar-2024 00:27:29 172.16.0.22 PUT /api/admin 404 2317
+2024-03-15T00:27:30Z 10.0.0.7 POST /api/checkout 200 0.344s
+15-Mar-2024 00:27:31 192.168.1.42 DELETE /api/users/12 - 321ms
+1710462452 10.0.0.7 PUT /api/users/12 404 1953ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:27:33Z 192.168.1.42 PUT /api/webhooks/stripe 403 1.316s
+1710462454 192.168.1.42 PATCH /api/dashboard 403 1977ms
+2024-03-15T00:27:35Z 172.16.0.22 OPTIONS /api/search 401 1801ms "Mozilla/5.0 (Windows NT 10.0)"
+{"time":"2024-03-15T00:27:36Z","http_method":"PATCH","url":"/api/metrics","status_code":204,"response_time_ms":2320,"client_ip":"10.0.0.7"}
+{"timestamp":"2024-03-15T00:27:37Z","method":"GET","path":"/api/login","status":401,"duration_ms":572,"ip":"203.0.113.10"}
+	... 8 more
+15-Mar-2024 00:27:39 10.0.0.7 HEAD /api/billing 401 2.009s
+Caused by: java.io.IOException: broken pipe
+2024/03/15 00:27:41 203.0.113.10 PATCH /api/orders 404 2125ms
+{"timestamp":"2024-03-15T00:27:42Z","method":"POST","path":"/api/metrics","status":204,"duration_ms":1413,"ip":"10.0.0.7"}
+	... 8 more
+2024/03/15 00:27:44 203.0.113.10 PATCH /api/admin 201 2700
+2024-03-15T00:27:45Z 203.0.113.10 GET /api/webhooks/stripe 500 2937ms
+15-Mar-2024 00:27:46 10.0.0.7 HEAD /api/reports/export 201 2.316s
+{"time":"2024-03-15T00:27:47Z","http_method":"OPTIONS","url":"/api/admin","status_code":200,"response_time_ms":1468,"client_ip":"192.168.1.42"}
+2024-03-15T00:27:48Z 10.0.0.7 GET /api/users 204 1578ms
+2024/03/15 00:27:49 10.0.0.7 POST /api/users - 1825ms
+2024-03-15T00:27:50Z 192.168.1.42 PATCH /api/batch/process 500 619 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:27:51 172.16.0.22 POST /api/dashboard 204 1.675s
+2024/03/15 00:27:52 10.0.0.7 PATCH /api/health 404 0.424s "curl/8.5.0"
+2024/03/15 00:27:53 192.168.1.42 HEAD /api/admin 504 2897ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+
+2024-03-15T00:27:55Z 203.0.113.10 PUT /api/admin 200 2490ms "Mozilla/5.0 (Windows NT 10.0)"
+  2024-03-15T00:27:56Z 203.0.113.10 GET /api/webhooks/stripe 401 2977ms
+15-Mar-2024 00:27:57 172.16.0.22 POST /api/webhooks/stripe 204 0.564s
+1710462478 172.16.0.22 PUT /api/orders 401 684ms
+2024-03-15T00:27:59Z 192.168.1.42 PUT /api/orders 403 0.632s
+2024-03-15T00:28:00Z 192.168.1.42 PATCH /api/health 404 1863ms
+nginx: [error] upstream prematurely closed connection
+2024-03-15T00:28:02Z 172.16.0.22 HEAD /api/login 500 0.644s
+2024-03-15T16:00:03Z 10.0.0.7 GET /api/truncated
+  2024-03-15T00:28:04Z 172.16.0.22 POST /api/reports/export 404 1.157s
+{"timestamp":"2024-03-15T12:00:05Z","method":"GET"
+1710462486 203.0.113.10 HEAD /api/metrics 201 1237
+1710462487 10.0.0.7 HEAD /api/dashboard 403 622ms
+2024-03-15T00:28:08Z 192.168.1.42 OPTIONS /api/login 504 0.522s
+15-Mar-2024 00:28:09 172.16.0.22 POST /api/products 401 599ms
+2024-03-15T00:28:10Z 203.0.113.10 PATCH /api/login 504 2.020s
+2024-03-15T00:28:11Z 203.0.113.10 GET /api/products 504 2.225s
+2024/03/15 00:28:12 10.0.0.7 PATCH /api/reports/export 401 0.023s
+1710462493 192.168.1.42 GET /api/admin 403 1.512s
+1710462494 203.0.113.10 HEAD /api/login 201 1541ms
+1710462495 192.168.1.42 PUT /api/login 500 1736ms
+1710462496 172.16.0.22 PUT /api/health 201 170ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710462498 192.168.1.42 PUT /api/products 201 1032ms
+{"timestamp":"2024-03-15T00:28:19Z","method":"DELETE","path":"/api/metrics","status":201,"duration_ms":2053,"ip":"203.0.113.10"}
+1710462500 192.168.1.42 GET /api/admin 201 2020
+2024-03-15T00:28:21Z 203.0.113.10 HEAD /api/users/12 401 906ms
+2024/03/15 00:28:22 192.168.1.42 OPTIONS /api/metrics 500 1745ms
+15-Mar-2024 00:28:23 203.0.113.10 OPTIONS /api/admin 204 1035ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024-03-15T00:28:25Z 10.0.0.7 DELETE /api/products 403 2930ms
+nginx: [error] upstream prematurely closed connection
+1710462507 172.16.0.22 GET /api/dashboard 504 2874ms
+15-Mar-2024 00:28:28 203.0.113.10 PATCH /api/users/12 401 2390ms
+1710462509 172.16.0.22 OPTIONS /api/users 502 1.160s
+2024/03/15 00:28:30 172.16.0.22 GET /api/users 504 1366ms
+  2024/03/15 00:28:31 172.16.0.22 OPTIONS /api/products 404 9ms
+  2024-03-15T00:28:32Z 192.168.1.42 DELETE /api/batch/process 404 1.875s
+15-Mar-2024 00:28:33 10.0.0.7 DELETE /api/users 200 47ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+DEBUG not an access log
+2024-03-15T00:28:35Z 172.16.0.22 PUT /api/health 201 1116ms
+{"timestamp":"2024-03-15T00:28:36Z","method":"POST","path":"/api/admin","status":204,"duration_ms":2760,"ip":"192.168.1.42"}
+	... 8 more
+15-Mar-2024 00:28:38 10.0.0.7 POST /api/users 201 1572ms
+15-Mar-2024 00:28:39 192.168.1.42 GET /api/users 500 1809ms
+2024/03/15 00:28:40 10.0.0.7 POST /api/admin 401 2024ms "kube-probe/1.29"
+1710462521 192.168.1.42 POST /api/metrics 500 1.762s
+2024-03-15T00:28:42Z 192.168.1.42 DELETE /api/checkout 404 63ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:28:43Z 203.0.113.10 POST /api/orders 404 1.421s
+	at com.example.Service.run(Service.java:42)
+1710462525 10.0.0.7 POST /api/products 502 1609ms
+2024-03-15T00:28:46Z 172.16.0.22 DELETE /api/login 403 1.310s
+{"time":"2024-03-15T00:28:47Z","http_method":"PATCH","url":"/api/users","status_code":201,"response_time_ms":1737,"client_ip":"203.0.113.10"}
+2024/03/15 00:28:48 203.0.113.10 PATCH /api/search 204 0.093s
+1710462529 172.16.0.22 POST /api/login 200 318ms
+DEBUG not an access log
+  1710462531 172.16.0.22 POST /api/admin 204 1.010s
+1710462532 203.0.113.10 HEAD /api/reports/export 204 1230ms
+	at com.example.Service.run(Service.java:42)
+2024/03/15 00:28:54 203.0.113.10 HEAD /api/batch/process 204 1120ms
+
+{"timestamp":"2024-03-15T00:28:56Z","method":"DELETE","path":"/api/dashboard","status":401,"duration_ms":1971,"ip":"172.16.0.22"}
+15-Mar-2024 00:28:57 192.168.1.42 HEAD /api/users/12 504 2700ms
+1710462538 203.0.113.10 POST /api/search 401 2759
+{"time":"2024-03-15T00:28:59Z","http_method":"PUT","url":"/api/reports/export","status_code":404,"response_time_ms":2806,"client_ip":"172.16.0.22"}
+2024/03/15 00:29:00 172.16.0.22 HEAD /api/users 403 1007
+1710462541 10.0.0.7 GET /api/search 401 467ms
+2024/03/15 00:29:02 203.0.113.10 POST /api/reports/export 204 1284ms
+  1710462543 10.0.0.7 PUT /api/checkout 500 559ms
+2024/03/15 00:29:04 203.0.113.10 PUT /api/login 401 859
+2024/03/15 00:29:05 172.16.0.22 OPTIONS /api/products 404 2963ms
+2024/03/15 00:29:06 172.16.0.22 GET /api/users 204 2391ms
+2024-03-15T00:29:07Z 10.0.0.7 POST /api/metrics 401 0.842s
+2024-03-15T00:29:08Z 10.0.0.7 PATCH /api/dashboard 404 1168ms "kube-probe/1.29"
+15-Mar-2024 00:29:09 192.168.1.42 PATCH /api/orders 201 1405ms
+Caused by: java.io.IOException: broken pipe
+1710462551 10.0.0.7 POST /api/login 201 2275
+2024-03-15T00:29:12Z 192.168.1.42 HEAD /api/admin 403 2422
+2024-03-15T00:29:13Z 10.0.0.7 PUT /api/login 401 2910ms
+15-Mar-2024 00:29:14 172.16.0.22 HEAD /api/products 504 507ms
+2024/03/15 00:29:15 192.168.1.42 OPTIONS /api/billing 504 2506
+2024-03-15T00:29:16Z 172.16.0.22 DELETE /api/dashboard 500 688ms
+2024/03/15 00:29:17 192.168.1.42 PATCH /api/users/12 204 846
+15-Mar-2024 00:29:18 10.0.0.7 OPTIONS /api/users 200 2387ms
+1710462559 172.16.0.22 GET /api/orders 504 1.097s
+2024/03/15 00:29:20 203.0.113.10 PATCH /api/billing 404 1490
+15-Mar-2024 00:29:21 10.0.0.7 PATCH /api/login 504 0.050s
+15-Mar-2024 00:29:22 192.168.1.42 PUT /api/products - 2539
+15-Mar-2024 00:29:23 172.16.0.22 GET /api/batch/process 200 2040 "curl/8.5.0"
+	at com.example.Service.run(Service.java:42)
+DEBUG not an access log
+1710462566 10.0.0.7 PUT /api/orders 204 2564
+  2024-03-15T00:29:27Z 192.168.1.42 OPTIONS /api/login 502 1562ms
+15-Mar-2024 00:29:28 172.16.0.22 DELETE /api/users 200 2.884s
+2024-03-15T00:29:29Z 172.16.0.22 OPTIONS /api/billing 502 2925ms
+2024/03/15 00:29:30 203.0.113.10 POST /api/products 401 336
+{"timestamp":"2024-03-15T00:29:31Z","method":"GET","path":"/api/batch/process","status":204,"duration_ms":528,"ip":"172.16.0.22"}
+2024-03-15T00:29:32Z 172.16.0.22 DELETE /api/dashboard 200 1295ms
+15-Mar-2024 00:29:33 172.16.0.22 PUT /api/users/12 504 2593
+2024/03/15 00:29:34 172.16.0.22 PATCH /api/search 200 0.981s
+{"timestamp":"2024-03-15T00:29:35Z","method":"OPTIONS","path":"/api/users","status":502,"duration_ms":1885,"ip":"192.168.1.42"}
+1710462576 203.0.113.10 POST /api/login 502 1.428s
+1710462577 10.0.0.7 POST /api/products 502 2.483s "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:29:38 10.0.0.7 GET /api/billing 500 1987
+15-Mar-2024 00:29:39 192.168.1.42 HEAD /api/admin 200 1097ms
+2024-03-15T00:29:40Z 192.168.1.42 GET /api/products 403 1925ms
+1710462581 172.16.0.22 GET /api/login 201 2199ms
+2024/03/15 00:29:42 203.0.113.10 POST /api/billing 204 2360ms
+15-Mar-2024 00:29:43 192.168.1.42 POST /api/batch/process 204 1216ms
+2024-03-15T00:29:44Z 192.168.1.42 POST /api/users/12 404 1047
+1710462585 203.0.113.10 PUT /api/admin 401 773ms
+1710462586 203.0.113.10 HEAD /api/batch/process 204 1.075s
+2024/03/15 00:29:47 192.168.1.42 PUT /api/webhooks/stripe 504 2923ms
+15-Mar-2024 00:29:48 192.168.1.42 HEAD /api/checkout 500 1770
+  2024-03-15T00:29:49Z 172.16.0.22 GET /api/reports/export 201 806ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710462590 203.0.113.10 OPTIONS /api/health 204 1877ms
+1710462591 203.0.113.10 HEAD /api/health 204 1139ms
+1710462592 172.16.0.22 HEAD /api/login - 2469ms
+1710462593 10.0.0.7 OPTIONS /api/billing 500 32ms "kube-probe/1.29"
+2024/03/15 00:29:54 203.0.113.10 PUT /api/dashboard 502 2612ms
+15-Mar-2024 00:29:55 10.0.0.7 PATCH /api/orders 500 389
+{"timestamp":"2024-03-15T00:29:56Z","method":"PATCH","path":"/api/users/12","status":200,"duration_ms":1445,"ip":"203.0.113.10"}
+15-Mar-2024 00:29:57 10.0.0.7 GET /api/orders 404 2759ms
+2024-03-15T00:29:58Z 172.16.0.22 HEAD /api/checkout 500 2522ms "kube-probe/1.29"
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:30:00 203.0.113.10 DELETE /api/batch/process 500 2822ms
+15-Mar-2024 00:30:01 172.16.0.22 HEAD /api/billing 500 535ms "Mozilla/5.0 (Windows NT 10.0)"
+1710462602 172.16.0.22 POST /api/billing 504 364
+15-Mar-2024 00:30:03 10.0.0.7 PUT /api/admin 404 1276ms
+15-Mar-2024 00:30:04 192.168.1.42 PUT /api/batch/process 204 1281
+15-Mar-2024 00:30:05 192.168.1.42 DELETE /api/users 502 568
+1710462606 172.16.0.22 POST /api/users 401 0.928s
+1710462607 192.168.1.42 GET /api/users 200 2423ms
+15-Mar-2024 00:30:08 203.0.113.10 DELETE /api/products 404 1.005s
+2024/03/15 00:30:09 192.168.1.42 DELETE /api/users/12 403 743ms
+2024/03/15 00:30:10 172.16.0.22 PUT /api/checkout 504 1785ms
+2024-03-15T00:30:11Z 192.168.1.42 OPTIONS /api/checkout 502 2198
+{"time":"2024-03-15T00:30:12Z","http_method":"PATCH","url":"/api/checkout","status_code":500,"response_time_ms":1090,"client_ip":"203.0.113.10"}
+1710462613 203.0.113.10 POST /api/checkout 404 2619ms
+15-Mar-2024 00:30:14 10.0.0.7 HEAD /api/products 502 1.013s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710462615 203.0.113.10 DELETE /api/orders 404 693
+1710462616 192.168.1.42 PATCH /api/admin 200 2653ms
+2024-03-15T00:30:17Z 203.0.113.10 PATCH /api/batch/process 401 0.952s
+1710462618 192.168.1.42 OPTIONS /api/billing 401 1438ms
+{"time":"2024-03-15T00:30:19Z","http_method":"GET","url":"/api/admin","status_code":403,"response_time_ms":1132,"client_ip":"203.0.113.10"}
+15-Mar-2024 00:30:20 172.16.0.22 OPTIONS /api/billing 204 1367ms
+2024-03-15T00:30:21Z 192.168.1.42 GET /api/billing 204 0.851s
+15-Mar-2024 00:30:22 192.168.1.42 OPTIONS /api/products 200 562ms
+2024-03-15T00:30:23Z 203.0.113.10 HEAD /api/billing 404 796ms
+15-Mar-2024 00:30:24 203.0.113.10 DELETE /api/reports/export 504 0.103s "curl/8.5.0"
+2024-03-15T00:30:25Z 203.0.113.10 HEAD /api/batch/process 403 2.383s
+2024/03/15 00:30:26 192.168.1.42 PUT /api/checkout 401 508ms
+2024/03/15 00:30:27 10.0.0.7 DELETE /api/products 500 619
+{"timestamp":"2024-03-15T00:30:28Z","method":"OPTIONS","path":"/api/webhooks/stripe","status":201,"duration_ms":620,"ip":"172.16.0.22"}
+2024/03/15 00:30:29 10.0.0.7 PUT /api/orders - 1400ms
+2024-03-15T00:30:30Z 10.0.0.7 PUT /api/dashboard 504 2.106s
+2024/03/15 00:30:31 10.0.0.7 PUT /api/health 502 1480ms
+2024/03/15 00:30:32 203.0.113.10 HEAD /api/dashboard 500 1742ms
+2024/03/15 00:30:33 10.0.0.7 PUT /api/admin 504 1053
+2024-03-15T00:30:34Z 10.0.0.7 PATCH /api/search 401 228ms
+15-Mar-2024 00:30:35 203.0.113.10 PUT /api/dashboard 201 1838ms
+2024-03-15T00:30:36Z 203.0.113.10 OPTIONS /api/products 500 872
+2024/03/15 00:30:37 172.16.0.22 PUT /api/users 200 0.600s
+1710462638 203.0.113.10 PUT /api/search 504 1963
+2024/03/15 00:30:39 203.0.113.10 PUT /api/users 401 603
+15-Mar-2024 00:30:40 203.0.113.10 OPTIONS /api/checkout 502 2.410s
+1710462641 172.16.0.22 PATCH /api/batch/process - 0.199s "Mozilla/5.0 (Windows NT 10.0)"
+1710462642 10.0.0.7 HEAD /api/users 204 1.256s
+15-Mar-2024 00:30:43 10.0.0.7 PATCH /api/login 403 1466 "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:30:44 172.16.0.22 POST /api/webhooks/stripe 201 867ms "curl/8.5.0"
+2024/03/15 00:30:45 10.0.0.7 PATCH /api/metrics 500 2388ms
+{"time":"2024-03-15T00:30:46Z","http_method":"PUT","url":"/api/users/12","status_code":204,"response_time_ms":1070,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:30:47 203.0.113.10 DELETE /api/dashboard - 674ms
+PARTIAL: 2024-03-15T16:48
+2024-03-15T00:30:49Z 192.168.1.42 GET /api/users/12 - 724ms
+2024-03-15T00:30:50Z 172.16.0.22 OPTIONS /api/metrics 502 0.511s
+2024/03/15 00:30:51 192.168.1.42 HEAD /api/checkout 500 2.101s
+{"time":"2024-03-15T00:30:52Z","http_method":"PATCH","url":"/api/billing","status_code":500,"response_time_ms":2141,"client_ip":"192.168.1.42"}
+15-Mar-2024 00:30:53 10.0.0.7 PATCH /api/reports/export - 2088
+1710462654 172.16.0.22 DELETE /api/billing 403 1958ms
+2024-03-15T00:30:55Z 172.16.0.22 DELETE /api/users/12 204 994ms
+2024/03/15 00:30:56 203.0.113.10 DELETE /api/search 500 2536ms
+2024/03/15 00:30:57 172.16.0.22 PATCH /api/checkout 500 0.006s
+2024/03/15 00:30:58 192.168.1.42 PUT /api/users 404 2120
+1710462659 203.0.113.10 GET /api/reports/export 404 468ms
+2024/03/15 00:31:00 203.0.113.10 OPTIONS /api/reports/export 504 2744ms
+2024-03-15T00:31:01Z 10.0.0.7 PATCH /api/billing 201 1874ms
+1710462662 192.168.1.42 POST /api/metrics 502 2.422s
+15-Mar-2024 00:31:03 172.16.0.22 GET /api/billing 504 1674ms
+2024-03-15T00:31:04Z 172.16.0.22 PUT /api/metrics 504 1274ms
+totally malformed !!!
+2024-03-15T00:31:06Z 203.0.113.10 DELETE /api/users 504 1414ms
+1710462667 203.0.113.10 HEAD /api/batch/process 401 1120ms
+15-Mar-2024 00:31:08 192.168.1.42 PUT /api/health 200 1973
+2024-03-15T00:31:09Z 10.0.0.7 DELETE /api/checkout 502 215
+15-Mar-2024 00:31:10 192.168.1.42 GET /api/search - 585ms
+2024-03-15T00:31:11Z 10.0.0.7 PUT /api/users 504 2107ms
+2024-03-15T00:31:12Z 172.16.0.22 PATCH /api/reports/export 204 0.255s
+1710462673 172.16.0.22 POST /api/metrics 204 2716
+15-Mar-2024 00:31:14 192.168.1.42 DELETE /api/search 201 770ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+{"timestamp":"2024-03-15T00:31:16Z","method":"PUT","path":"/api/webhooks/stripe","status":404,"duration_ms":2305,"ip":"172.16.0.22"}
+15-Mar-2024 00:31:17 10.0.0.7 PATCH /api/batch/process 401 112 "curl/8.5.0"
+2024-03-15T00:31:18Z 203.0.113.10 GET /api/orders 201 1656
+15-Mar-2024 00:31:19 203.0.113.10 POST /api/admin 403 0.032s
+1710462680 172.16.0.22 POST /api/health 401 2643
+15-Mar-2024 00:31:21 172.16.0.22 POST /api/users 404 958
+DEBUG not an access log
+Caused by: java.io.IOException: broken pipe
+2024-03-15T00:31:24Z 203.0.113.10 PUT /api/metrics 404 1895
+2024/03/15 00:31:25 203.0.113.10 PATCH /api/checkout 504 1.737s
+2024/03/15 00:31:26 203.0.113.10 PATCH /api/checkout 404 2939ms
+2024/03/15 00:31:27 203.0.113.10 GET /api/admin 401 0.940s "kube-probe/1.29"
+2024/03/15 00:31:28 203.0.113.10 POST /api/reports/export 204 2.730s
+{"time":"2024-03-15T00:31:29Z","http_method":"PATCH","url":"/api/metrics","status_code":200,"response_time_ms":2064,"client_ip":"192.168.1.42"}
+totally malformed !!!
+1710462691 10.0.0.7 PATCH /api/dashboard 204 2290ms
+15-Mar-2024 00:31:32 10.0.0.7 GET /api/login 401 0.519s
+2024-03-15T00:31:33Z 203.0.113.10 POST /api/health 403 787ms
+Caused by: java.io.IOException: broken pipe
+2024/03/15 00:31:35 192.168.1.42 DELETE /api/webhooks/stripe 204 251ms
+1710462696 203.0.113.10 HEAD /api/billing 500 2434ms
+1710462697 172.16.0.22 OPTIONS /api/products 204 575ms
+15-Mar-2024 00:31:38 172.16.0.22 PUT /api/users 204 165ms "kube-probe/1.29"
+	... 8 more
+totally malformed !!!
+15-Mar-2024 00:31:41 10.0.0.7 POST /api/batch/process 403 1.589s
+2024-03-15T00:31:42Z 172.16.0.22 GET /api/billing 201 0.998s
+1710462703 192.168.1.42 POST /api/health 403 2199ms
+2024-03-15T00:31:44Z 10.0.0.7 PUT /api/billing 504 2395ms
+2024/03/15 00:31:45 192.168.1.42 HEAD /api/health 401 2176ms
+1710462706 10.0.0.7 DELETE /api/orders 504 2942
+2024-03-15T00:31:47Z 10.0.0.7 HEAD /api/billing 403 1.616s
+15-Mar-2024 00:31:48 172.16.0.22 PATCH /api/checkout 200 2218ms
+2024-03-15T00:31:49Z 10.0.0.7 PUT /api/admin 502 0.514s "curl/8.5.0"
+15-Mar-2024 00:31:50 192.168.1.42 HEAD /api/reports/export 200 2.093s "curl/8.5.0"
+15-Mar-2024 00:31:51 192.168.1.42 POST /api/webhooks/stripe 401 2241ms
+2024-03-15T00:31:52Z 192.168.1.42 GET /api/metrics 502 1562
+{"time":"2024-03-15T00:31:53Z","http_method":"PUT","url":"/api/metrics","status_code":401,"response_time_ms":1637,"client_ip":"172.16.0.22"}
+2024/03/15 00:31:54 203.0.113.10 GET /api/users/12 200 878ms
+15-Mar-2024 00:31:55 10.0.0.7 PUT /api/metrics 403 2807ms
+2024-03-15T00:31:56Z 172.16.0.22 PATCH /api/metrics 403 1290ms
+2024/03/15 00:31:57 192.168.1.42 HEAD /api/checkout 502 2658ms
+2024/03/15 00:31:58 172.16.0.22 POST /api/webhooks/stripe 504 850ms
+15-Mar-2024 00:31:59 10.0.0.7 DELETE /api/orders 404 1890ms
+2024-03-15T00:32:00Z 203.0.113.10 PUT /api/reports/export 500 1476ms "curl/8.5.0"
+1710462721 172.16.0.22 PUT /api/users/12 404 0.110s
+1710462722 203.0.113.10 PATCH /api/webhooks/stripe 504 173ms
+1710462723 10.0.0.7 PATCH /api/users/12 404 1390ms "Mozilla/5.0 (Windows NT 10.0)"
+1710462724 203.0.113.10 DELETE /api/metrics 502 0.135s
+2024/03/15 00:32:05 203.0.113.10 GET /api/metrics 500 1466ms "curl/8.5.0"
+1710462726 172.16.0.22 GET /api/orders 504 1159ms
+{"time":"2024-03-15T00:32:07Z","http_method":"HEAD","url":"/api/metrics","status_code":204,"response_time_ms":1453,"client_ip":"172.16.0.22"}
+1710462728 203.0.113.10 OPTIONS /api/users/12 404 176ms
+1710462729 172.16.0.22 PUT /api/search 404 0.250s "curl/8.5.0"
+2024-03-15T00:32:10Z 203.0.113.10 POST /api/users/12 403 0.363s
+  2024/03/15 00:32:11 192.168.1.42 DELETE /api/users/12 404 2781ms
+1710462732 10.0.0.7 OPTIONS /api/admin 500 378ms "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:32:13 203.0.113.10 HEAD /api/metrics 404 0.283s
+15-Mar-2024 00:32:14 172.16.0.22 OPTIONS /api/metrics - 1901ms
+2024-03-15T00:32:15Z 10.0.0.7 OPTIONS /api/admin 403 2555ms
+15-Mar-2024 00:32:16 172.16.0.22 DELETE /api/batch/process 500 2.937s
+1710462737 172.16.0.22 POST /api/reports/export - 391ms
+totally malformed !!!
+2024-03-15T00:32:19Z 172.16.0.22 PUT /api/metrics 500 1799ms
+2024-03-15T00:32:20Z 172.16.0.22 GET /api/login 504 1766ms
+1710462741 203.0.113.10 PUT /api/checkout 500 697
+2024/03/15 00:32:22 10.0.0.7 POST /api/admin 404 2692 "kube-probe/1.29"
+15-Mar-2024 00:32:23 192.168.1.42 OPTIONS /api/admin 201 903
+2024/03/15 00:32:24 172.16.0.22 OPTIONS /api/search 201 1.308s
+15-Mar-2024 00:32:25 10.0.0.7 PATCH /api/checkout 504 0.568s
+15-Mar-2024 00:32:26 192.168.1.42 POST /api/batch/process 504 2193ms
+15-Mar-2024 00:32:27 192.168.1.42 PUT /api/health 200 0.222s
+{"timestamp":"2024-03-15T00:32:28Z","method":"GET","path":"/api/dashboard","status":204,"duration_ms":1082,"ip":"10.0.0.7"}
+2024-03-15T00:32:29Z 10.0.0.7 PATCH /api/search 404 252ms
+2024/03/15 00:32:30 10.0.0.7 PATCH /api/health 403 1721ms
+2024-03-15T00:32:31Z 203.0.113.10 HEAD /api/checkout 504 2.649s
+2024/03/15 00:32:32 172.16.0.22 PATCH /api/users/12 200 2152ms "kube-probe/1.29"
+15-Mar-2024 00:32:33 203.0.113.10 POST /api/orders 200 1657ms
+15-Mar-2024 00:32:34 172.16.0.22 PUT /api/users/12 502 1.546s
+  15-Mar-2024 00:32:35 172.16.0.22 GET /api/search 500 0.076s
+15-Mar-2024 00:32:36 192.168.1.42 HEAD /api/admin 401 2723
+15-Mar-2024 00:32:37 192.168.1.42 PATCH /api/reports/export 403 2439ms
+  2024/03/15 00:32:38 10.0.0.7 POST /api/batch/process 502 2105ms
+{"time":"2024-03-15T00:32:39Z","http_method":"PUT","url":"/api/batch/process","status_code":200,"response_time_ms":1694,"client_ip":"203.0.113.10"}
+15-Mar-2024 00:32:40 10.0.0.7 OPTIONS /api/reports/export 200 600ms
+2024-03-15T00:32:41Z 192.168.1.42 PATCH /api/users 201 328ms
+	... 8 more
+1710462763 192.168.1.42 HEAD /api/admin - 2459ms
+15-Mar-2024 00:32:44 10.0.0.7 POST /api/checkout 403 0.637s
+1710462765 192.168.1.42 GET /api/users/12 502 1618ms
+15-Mar-2024 00:32:46 10.0.0.7 POST /api/products 502 1415ms
+2024-03-15T00:32:47Z 203.0.113.10 GET /api/login 200 864ms
+DEBUG not an access log
+2024-03-15T16:00:49Z 10.0.0.7 GET /api/truncated
+{"time":"2024-03-15T00:32:50Z","http_method":"PATCH","url":"/api/batch/process","status_code":502,"response_time_ms":178,"client_ip":"10.0.0.7"}
+2024/03/15 00:32:51 10.0.0.7 POST /api/orders 403 1251ms
+15-Mar-2024 00:32:52 203.0.113.10 PATCH /api/orders 502 2266ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:32:53 192.168.1.42 PATCH /api/dashboard 201 2289
+2024/03/15 00:32:54 192.168.1.42 PUT /api/admin 502 2794
+1710462775 10.0.0.7 DELETE /api/admin 201 2.624s
+2024-03-15T00:32:56Z 172.16.0.22 OPTIONS /api/health - 2198ms
+1710462777 172.16.0.22 DELETE /api/search 401 1927ms
+15-Mar-2024 00:32:58 172.16.0.22 PUT /api/health 500 1752 "curl/8.5.0"
+{"timestamp":"2024-03-15T00:32:59Z","method":"POST","path":"/api/users/12","status":201,"duration_ms":158,"ip":"172.16.0.22"}
+1710462780 172.16.0.22 OPTIONS /api/orders 404 541ms
+1710462781 192.168.1.42 POST /api/billing 201 1658
+15-Mar-2024 00:33:02 203.0.113.10 OPTIONS /api/search 201 1255ms
+2024/03/15 00:33:03 203.0.113.10 GET /api/users 401 1.127s
+2024-03-15T00:33:04Z 192.168.1.42 HEAD /api/users 401 1537ms
+15-Mar-2024 00:33:05 203.0.113.10 DELETE /api/health 201 1.554s
+2024-03-15T16:00:06Z 10.0.0.7 GET /api/truncated
+2024-03-15T00:33:07Z 172.16.0.22 OPTIONS /api/orders 404 1776ms
+2024-03-15T00:33:08Z 192.168.1.42 POST /api/checkout 200 2499ms
+1710462789 192.168.1.42 PATCH /api/batch/process 401 1.930s "curl/8.5.0"
+Caused by: java.io.IOException: broken pipe
+1710462791 192.168.1.42 POST /api/search 201 2257ms
+2024/03/15 00:33:12 172.16.0.22 POST /api/users 404 829ms
+2024-03-15T00:33:13Z 192.168.1.42 OPTIONS /api/dashboard 204 1.559s "kube-probe/1.29"
+{"time":"2024-03-15T00:33:14Z","http_method":"HEAD","url":"/api/reports/export","status_code":404,"response_time_ms":1632,"client_ip":"10.0.0.7"}
+  2024-03-15T00:33:15Z 203.0.113.10 PATCH /api/health 201 1.312s
+	... 8 more
+2024/03/15 00:33:17 10.0.0.7 OPTIONS /api/users/12 201 613ms
+{"time":"2024-03-15T00:33:18Z","http_method":"DELETE","url":"/api/reports/export","status_code":401,"response_time_ms":1543,"client_ip":"10.0.0.7"}
+2024/03/15 00:33:19 192.168.1.42 HEAD /api/metrics 201 201ms
+15-Mar-2024 00:33:20 172.16.0.22 OPTIONS /api/users 204 2.132s
+1710462801 172.16.0.22 POST /api/admin 502 1288ms
+2024/03/15 00:33:22 192.168.1.42 OPTIONS /api/webhooks/stripe 502 2674ms
+15-Mar-2024 00:33:23 172.16.0.22 PUT /api/health 504 663
+1710462804 203.0.113.10 PUT /api/webhooks/stripe 201 1.253s
+15-Mar-2024 00:33:25 192.168.1.42 DELETE /api/orders 404 1.966s
+2024/03/15 00:33:26 10.0.0.7 PATCH /api/reports/export 404 1407ms "curl/8.5.0"
+15-Mar-2024 00:33:27 10.0.0.7 OPTIONS /api/users/12 - 2.304s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+1710462808 203.0.113.10 GET /api/login 403 2249
+{"timestamp":"2024-03-15T00:33:29Z","method":"HEAD","path":"/api/orders","status":201,"duration_ms":1684,"ip":"172.16.0.22"}
+1710462810 203.0.113.10 POST /api/users/12 - 634ms
+15-Mar-2024 00:33:31 172.16.0.22 DELETE /api/dashboard 200 865ms
+1710462812 203.0.113.10 DELETE /api/metrics 401 646ms
+1710462813 192.168.1.42 HEAD /api/checkout 401 270
+	... 8 more
+  15-Mar-2024 00:33:35 10.0.0.7 PUT /api/health 200 1863ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:33:36Z 203.0.113.10 PATCH /api/users/12 - 151
+2024-03-15T00:33:37Z 203.0.113.10 HEAD /api/users 401 1.553s
+2024/03/15 00:33:38 203.0.113.10 PUT /api/metrics 200 2593ms
+15-Mar-2024 00:33:39 172.16.0.22 HEAD /api/billing 500 1.718s
+2024-03-15T00:33:40Z 203.0.113.10 HEAD /api/checkout 404 2180ms "kube-probe/1.29"
+2024/03/15 00:33:41 203.0.113.10 PATCH /api/users 404 1725ms
+15-Mar-2024 00:33:42 10.0.0.7 DELETE /api/products 403 2391ms
+1710462823 192.168.1.42 DELETE /api/batch/process 201 1.638s "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:33:44 192.168.1.42 GET /api/login 500 1554ms
+{"time":"2024-03-15T00:33:45Z","http_method":"POST","url":"/api/checkout","status_code":403,"response_time_ms":180,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:33:46 10.0.0.7 PATCH /api/search 403 1465ms
+15-Mar-2024 00:33:47 10.0.0.7 DELETE /api/health - 1924ms
+{"time":"2024-03-15T00:33:48Z","http_method":"PUT","url":"/api/reports/export","status_code":403,"response_time_ms":474,"client_ip":"10.0.0.7"}
+2024-03-15T00:33:49Z 203.0.113.10 GET /api/billing 204 2138ms
+2024-03-15T00:33:50Z 192.168.1.42 HEAD /api/health 500 1.038s
+1710462831 10.0.0.7 PUT /api/batch/process 201 2058ms
+2024/03/15 00:33:52 172.16.0.22 OPTIONS /api/batch/process 401 2800ms
+2024/03/15 00:33:53 10.0.0.7 HEAD /api/reports/export 504 278
+15-Mar-2024 00:33:54 172.16.0.22 PUT /api/users 502 2023ms
+15-Mar-2024 00:33:55 10.0.0.7 HEAD /api/search 500 1126
+1710462836 203.0.113.10 PATCH /api/orders 200 2107ms
+1710462837 203.0.113.10 POST /api/reports/export 403 373ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:33:58 10.0.0.7 DELETE /api/products 500 0.450s
+2024/03/15 00:33:59 172.16.0.22 PUT /api/reports/export - 1295ms
+15-Mar-2024 00:34:00 192.168.1.42 GET /api/health 403 2.354s
+2024-03-15T00:34:01Z 172.16.0.22 GET /api/products 502 1250
+2024-03-15T00:34:02Z 172.16.0.22 OPTIONS /api/batch/process 401 121
+15-Mar-2024 00:34:03 203.0.113.10 OPTIONS /api/orders 502 2.169s
+PARTIAL: 2024-03-15T16:04
+15-Mar-2024 00:34:05 203.0.113.10 DELETE /api/users 204 318ms
+15-Mar-2024 00:34:06 10.0.0.7 PUT /api/webhooks/stripe 404 191ms
+2024/03/15 00:34:07 203.0.113.10 PATCH /api/reports/export 403 0.582s
+2024/03/15 00:34:08 10.0.0.7 GET /api/login 204 2046ms
+2024-03-15T00:34:09Z 172.16.0.22 PATCH /api/checkout 500 511ms
+1710462850 203.0.113.10 DELETE /api/login 401 1500ms
+15-Mar-2024 00:34:11 172.16.0.22 OPTIONS /api/login 504 1834ms
+2024/03/15 00:34:12 203.0.113.10 PUT /api/batch/process 403 2760ms
+15-Mar-2024 00:34:13 10.0.0.7 GET /api/health 500 2077ms
+{"time":"2024-03-15T00:34:14Z","http_method":"PUT","url":"/api/dashboard","status_code":404,"response_time_ms":2688,"client_ip":"10.0.0.7"}
+{"timestamp":"2024-03-15T00:34:15Z","method":"PUT","path":"/api/search","status":403,"duration_ms":2981,"ip":"10.0.0.7"}
+1710462856 203.0.113.10 POST /api/reports/export 200 372ms "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:34:17 203.0.113.10 GET /api/billing 201 1.755s
+2024-03-15T00:34:18Z 10.0.0.7 DELETE /api/admin 504 536 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+15-Mar-2024 00:34:19 203.0.113.10 OPTIONS /api/checkout 401 1.400s
+Caused by: java.io.IOException: broken pipe
+2024/03/15 00:34:21 192.168.1.42 PATCH /api/users 204 2985ms
+2024/03/15 00:34:22 172.16.0.22 HEAD /api/orders - 1106
+1710462863 192.168.1.42 HEAD /api/webhooks/stripe 204 1124
+1710462864 172.16.0.22 POST /api/login 500 1315
+2024/03/15 00:34:25 172.16.0.22 POST /api/batch/process 504 637
+2024-03-15T00:34:26Z 172.16.0.22 DELETE /api/batch/process 502 299ms
+1710462867 192.168.1.42 GET /api/admin 404 1601ms
+nginx: [error] upstream prematurely closed connection
+1710462869 10.0.0.7 PATCH /api/webhooks/stripe 204 1800ms
+15-Mar-2024 00:34:30 192.168.1.42 PATCH /api/products 504 1554ms
+1710462871 192.168.1.42 PATCH /api/checkout 201 2899ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:34:32 172.16.0.22 DELETE /api/metrics 500 1179ms
+2024-03-15T00:34:33Z 203.0.113.10 HEAD /api/billing 200 2795ms
+2024-03-15T00:34:34Z 172.16.0.22 OPTIONS /api/admin 403 1785ms "kube-probe/1.29"
+2024/03/15 00:34:35 10.0.0.7 OPTIONS /api/checkout 500 2630ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:34:36Z 10.0.0.7 OPTIONS /api/batch/process 403 1209ms "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:34:37 172.16.0.22 GET /api/admin 502 1893ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:34:38 172.16.0.22 OPTIONS /api/billing 404 1032ms
+1710462879 10.0.0.7 PATCH /api/login 502 1192ms
+2024/03/15 00:34:40 172.16.0.22 HEAD /api/webhooks/stripe 500 1605ms
+2024-03-15T00:34:41Z 10.0.0.7 HEAD /api/batch/process 502 1606ms
+	at com.example.Service.run(Service.java:42)
+2024/03/15 00:34:43 192.168.1.42 OPTIONS /api/health 404 665ms
+15-Mar-2024 00:34:44 192.168.1.42 OPTIONS /api/health 404 1507
+2024/03/15 00:34:45 192.168.1.42 PUT /api/health 502 2946ms
+2024/03/15 00:34:46 192.168.1.42 DELETE /api/orders 403 2954ms
+15-Mar-2024 00:34:47 172.16.0.22 POST /api/metrics 500 2963ms
+1710462888 172.16.0.22 OPTIONS /api/products 401 2499
+1710462889 172.16.0.22 GET /api/webhooks/stripe 401 251ms
+{"timestamp":"2024-03-15T00:34:50Z","method":"HEAD","path":"/api/reports/export","status":401,"duration_ms":79,"ip":"10.0.0.7"}
+15-Mar-2024 00:34:51 172.16.0.22 PATCH /api/billing - 52
+2024-03-15T00:34:52Z 10.0.0.7 GET /api/checkout 204 2581ms
+DEBUG not an access log
+15-Mar-2024 00:34:54 203.0.113.10 DELETE /api/dashboard 404 0.351s "curl/8.5.0"
+2024-03-15T00:34:55Z 10.0.0.7 GET /api/search 502 1423ms
+1710462896 172.16.0.22 HEAD /api/admin 401 162
+2024/03/15 00:34:57 10.0.0.7 PATCH /api/users/12 500 609ms "curl/8.5.0"
+{"timestamp":"2024-03-15T00:34:58Z","method":"DELETE","path":"/api/dashboard","status":201,"duration_ms":2383,"ip":"10.0.0.7"}
+1710462899 203.0.113.10 POST /api/login 502 2649
+{"timestamp":"2024-03-15T12:00:00Z","method":"GET"
+15-Mar-2024 00:35:01 10.0.0.7 DELETE /api/dashboard 403 1837
+1710462902 10.0.0.7 PUT /api/batch/process 502 2.614s
+2024-03-15T00:35:03Z 172.16.0.22 PUT /api/orders 500 1236ms
+15-Mar-2024 00:35:04 192.168.1.42 OPTIONS /api/health 500 1.783s
+2024-03-15T00:35:05Z 172.16.0.22 OPTIONS /api/products 200 2757ms "Mozilla/5.0 (Windows NT 10.0)"
+1710462906 172.16.0.22 HEAD /api/users 404 1639ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710462908 172.16.0.22 POST /api/admin 401 1451
+2024/03/15 00:35:09 192.168.1.42 HEAD /api/checkout 504 1188ms
+2024/03/15 00:35:10 10.0.0.7 PUT /api/search 403 1.953s
+2024-03-15T00:35:11Z 192.168.1.42 PUT /api/products 201 2814
+2024/03/15 00:35:12 192.168.1.42 PUT /api/dashboard 500 2789ms
+2024/03/15 00:35:13 192.168.1.42 HEAD /api/checkout 200 2216ms
+  2024-03-15T00:35:14Z 172.16.0.22 POST /api/metrics 201 180ms
+1710462915 192.168.1.42 DELETE /api/login 500 2180
+1710462916 203.0.113.10 HEAD /api/billing 403 226
+nginx: [error] upstream prematurely closed connection
+1710462918 172.16.0.22 DELETE /api/metrics 401 2369ms
+1710462919 192.168.1.42 OPTIONS /api/admin 200 1199
+1710462920 172.16.0.22 POST /api/login 504 2295ms
+15-Mar-2024 00:35:21 10.0.0.7 DELETE /api/users/12 502 2360
+15-Mar-2024 00:35:22 172.16.0.22 HEAD /api/users/12 500 382ms
+15-Mar-2024 00:35:23 10.0.0.7 POST /api/users 204 1624ms
+{"timestamp":"2024-03-15T00:35:24Z","method":"PATCH","path":"/api/health","status":504,"duration_ms":1132,"ip":"10.0.0.7"}
+2024-03-15T00:35:25Z 203.0.113.10 GET /api/users 204 2146ms
+2024-03-15T00:35:26Z 10.0.0.7 PUT /api/search 200 2859ms
+2024/03/15 00:35:27 203.0.113.10 PUT /api/users/12 404 2198 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:35:28Z 172.16.0.22 GET /api/health 404 1965
+1710462929 203.0.113.10 POST /api/admin 401 2964
+2024/03/15 00:35:30 203.0.113.10 OPTIONS /api/users/12 401 0.270s
+	at com.example.Service.run(Service.java:42)
+15-Mar-2024 00:35:32 203.0.113.10 HEAD /api/reports/export 404 1438
+{"timestamp":"2024-03-15T00:35:33Z","method":"GET","path":"/api/admin","status":401,"duration_ms":1052,"ip":"10.0.0.7"}
+1710462934 172.16.0.22 DELETE /api/batch/process 504 522ms
+  2024/03/15 00:35:35 203.0.113.10 OPTIONS /api/login 500 2628ms "kube-probe/1.29"
+1710462936 172.16.0.22 POST /api/search 502 0.746s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:35:37Z 203.0.113.10 DELETE /api/products 504 467ms
+2024-03-15T00:35:38Z 192.168.1.42 OPTIONS /api/webhooks/stripe 502 857ms
+15-Mar-2024 00:35:39 172.16.0.22 PATCH /api/batch/process 200 114
+2024-03-15T00:35:40Z 10.0.0.7 HEAD /api/products 204 1.442s
+1710462941 192.168.1.42 OPTIONS /api/search 200 1465ms
+15-Mar-2024 00:35:42 10.0.0.7 GET /api/products 201 510
+PARTIAL: 2024-03-15T16:43
+2024/03/15 00:35:44 172.16.0.22 HEAD /api/billing 204 2727
+2024/03/15 00:35:45 192.168.1.42 PATCH /api/reports/export 403 2470
+2024-03-15T00:35:46Z 192.168.1.42 PATCH /api/users 504 1303
+{"time":"2024-03-15T00:35:47Z","http_method":"PUT","url":"/api/billing","status_code":502,"response_time_ms":382,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:35:48 10.0.0.7 POST /api/dashboard 401 1763
+1710462949 192.168.1.42 PATCH /api/users/12 403 1.371s
+15-Mar-2024 00:35:50 10.0.0.7 HEAD /api/metrics 502 649
+{"timestamp":"2024-03-15T00:35:51Z","method":"HEAD","path":"/api/products","status":504,"duration_ms":1780,"ip":"10.0.0.7"}
+2024-03-15T00:35:52Z 192.168.1.42 OPTIONS /api/products 201 1.444s
+2024-03-15T00:35:53Z 203.0.113.10 HEAD /api/products 502 0.493s
+2024/03/15 00:35:54 10.0.0.7 GET /api/reports/export 500 2807ms
+15-Mar-2024 00:35:55 203.0.113.10 OPTIONS /api/reports/export - 1.645s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:35:56Z 192.168.1.42 POST /api/admin 204 1.689s
+2024-03-15T00:35:57Z 192.168.1.42 POST /api/checkout 500 1532ms "curl/8.5.0"
+2024-03-15T00:35:58Z 10.0.0.7 OPTIONS /api/checkout 403 1482ms
+1710462959 192.168.1.42 POST /api/orders 502 1.172s
+2024/03/15 00:36:00 203.0.113.10 POST /api/users/12 201 589ms
+2024-03-15T00:36:01Z 172.16.0.22 DELETE /api/search 504 2.742s
+15-Mar-2024 00:36:02 172.16.0.22 HEAD /api/reports/export 500 287ms
+15-Mar-2024 00:36:03 172.16.0.22 DELETE /api/health 500 2388ms
+2024-03-15T00:36:04Z 172.16.0.22 DELETE /api/reports/export 401 0.318s
+2024-03-15T00:36:05Z 10.0.0.7 HEAD /api/metrics 404 210ms
+15-Mar-2024 00:36:06 203.0.113.10 PUT /api/billing 502 1324ms
+2024/03/15 00:36:07 203.0.113.10 PUT /api/search 204 2086ms
+1710462968 10.0.0.7 PUT /api/webhooks/stripe 504 1145ms
+2024-03-15T00:36:09Z 10.0.0.7 OPTIONS /api/metrics 200 1282ms
+PARTIAL: 2024-03-15T16:10
+15-Mar-2024 00:36:11 192.168.1.42 GET /api/reports/export 401 0.094s
+15-Mar-2024 00:36:12 203.0.113.10 POST /api/products 404 1566ms
+15-Mar-2024 00:36:13 203.0.113.10 HEAD /api/users 504 717
+1710462974 192.168.1.42 OPTIONS /api/health 500 978ms
+2024-03-15T00:36:15Z 172.16.0.22 DELETE /api/health 401 1148ms
+1710462976 192.168.1.42 PATCH /api/search 502 1.629s
+2024/03/15 00:36:17 10.0.0.7 DELETE /api/products 502 2346ms "Mozilla/5.0 (Windows NT 10.0)"
+  15-Mar-2024 00:36:18 172.16.0.22 POST /api/orders 403 1704
+{"timestamp":"2024-03-15T12:00:19Z","method":"GET"
+1710462980 203.0.113.10 HEAD /api/login 403 2685ms
+2024-03-15T00:36:21Z 172.16.0.22 DELETE /api/orders 204 2236 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:36:22 203.0.113.10 PATCH /api/login 200 1.856s
+{"timestamp":"2024-03-15T00:36:23Z","method":"GET","path":"/api/metrics","status":403,"duration_ms":730,"ip":"172.16.0.22"}
+{"timestamp":"2024-03-15T00:36:24Z","method":"OPTIONS","path":"/api/search","status":403,"duration_ms":1501,"ip":"192.168.1.42"}
+2024-03-15T00:36:25Z 192.168.1.42 HEAD /api/batch/process 200 1.636s
+2024/03/15 00:36:26 172.16.0.22 OPTIONS /api/dashboard 200 1.326s
+15-Mar-2024 00:36:27 172.16.0.22 GET /api/batch/process 401 2.167s
+15-Mar-2024 00:36:28 203.0.113.10 OPTIONS /api/reports/export 404 1.279s
+2024-03-15T00:36:29Z 172.16.0.22 GET /api/batch/process - 2012
+15-Mar-2024 00:36:30 203.0.113.10 POST /api/products 504 879ms
+{"timestamp":"2024-03-15T00:36:31Z","method":"PATCH","path":"/api/search","status":403,"duration_ms":1132,"ip":"203.0.113.10"}
+DEBUG not an access log
+2024/03/15 00:36:33 172.16.0.22 DELETE /api/billing 401 2256ms
+{"time":"2024-03-15T00:36:34Z","http_method":"GET","url":"/api/search","status_code":403,"response_time_ms":613,"client_ip":"10.0.0.7"}
+{"time":"2024-03-15T00:36:35Z","http_method":"DELETE","url":"/api/webhooks/stripe","status_code":504,"response_time_ms":605,"client_ip":"172.16.0.22"}
+2024-03-15T00:36:36Z 203.0.113.10 PATCH /api/checkout 500 1.235s
+2024/03/15 00:36:37 10.0.0.7 HEAD /api/dashboard - 2.232s
+2024/03/15 00:36:38 10.0.0.7 PATCH /api/reports/export 201 290
+2024-03-15T00:36:39Z 203.0.113.10 DELETE /api/users/12 200 2726ms
+{"time":"2024-03-15T00:36:40Z","http_method":"DELETE","url":"/api/dashboard","status_code":404,"response_time_ms":262,"client_ip":"10.0.0.7"}
+1710463001 192.168.1.42 DELETE /api/billing 200 255ms
+2024/03/15 00:36:42 192.168.1.42 GET /api/orders 201 1993ms "curl/8.5.0"
+15-Mar-2024 00:36:43 192.168.1.42 PATCH /api/health 504 305ms
+2024-03-15T00:36:44Z 10.0.0.7 PUT /api/batch/process 204 1610ms
+2024/03/15 00:36:45 192.168.1.42 GET /api/products 502 2275ms
+{"timestamp":"2024-03-15T00:36:46Z","method":"PATCH","path":"/api/search","status":403,"duration_ms":2839,"ip":"10.0.0.7"}
+2024-03-15T16:00:47Z 10.0.0.7 GET /api/truncated
+DEBUG not an access log
+1710463009 172.16.0.22 DELETE /api/metrics 200 0.452s
+2024-03-15T00:36:50Z 172.16.0.22 PUT /api/checkout 404 317ms
+2024-03-15T00:36:51Z 172.16.0.22 OPTIONS /api/search 204 1754ms "Mozilla/5.0 (Windows NT 10.0)"
+15-Mar-2024 00:36:52 192.168.1.42 HEAD /api/health 401 0.172s
+2024/03/15 00:36:53 192.168.1.42 GET /api/search 500 2.236s
+15-Mar-2024 00:36:54 10.0.0.7 OPTIONS /api/batch/process 200 1177ms
+2024/03/15 00:36:55 192.168.1.42 HEAD /api/users/12 404 1825ms
+2024/03/15 00:36:56 10.0.0.7 OPTIONS /api/health 504 0.383s
+2024/03/15 00:36:57 10.0.0.7 GET /api/billing 500 1.185s
+
+15-Mar-2024 00:36:59 172.16.0.22 GET /api/users/12 401 151
+1710463020 172.16.0.22 PUT /api/users/12 403 854ms
+2024/03/15 00:37:01 10.0.0.7 PATCH /api/users - 1.128s
+{"time":"2024-03-15T00:37:02Z","http_method":"PUT","url":"/api/login","status_code":401,"response_time_ms":1671,"client_ip":"203.0.113.10"}
+2024-03-15T00:37:03Z 192.168.1.42 POST /api/batch/process 204 2024ms "kube-probe/1.29"
+2024/03/15 00:37:04 192.168.1.42 DELETE /api/dashboard 403 1296ms
+15-Mar-2024 00:37:05 172.16.0.22 PATCH /api/users/12 201 1558
+{"time":"2024-03-15T00:37:06Z","http_method":"OPTIONS","url":"/api/products","status_code":401,"response_time_ms":970,"client_ip":"203.0.113.10"}
+2024/03/15 00:37:07 192.168.1.42 PATCH /api/reports/export 404 2170ms
+2024-03-15T00:37:08Z 10.0.0.7 OPTIONS /api/orders 204 603 "curl/8.5.0"
+15-Mar-2024 00:37:09 10.0.0.7 POST /api/metrics - 10 "Mozilla/5.0 (Windows NT 10.0)"
+{"timestamp":"2024-03-15T00:37:10Z","method":"PUT","path":"/api/health","status":403,"duration_ms":2584,"ip":"10.0.0.7"}
+{"timestamp":"2024-03-15T00:37:11Z","method":"POST","path":"/api/dashboard","status":204,"duration_ms":2729,"ip":"192.168.1.42"}
+15-Mar-2024 00:37:12 192.168.1.42 POST /api/dashboard 403 2.115s "Mozilla/5.0 (Windows NT 10.0)"
+{"time":"2024-03-15T00:37:13Z","http_method":"POST","url":"/api/billing","status_code":204,"response_time_ms":2102,"client_ip":"203.0.113.10"}
+{"timestamp":"2024-03-15T12:00:14Z","method":"GET"
+15-Mar-2024 00:37:15 172.16.0.22 HEAD /api/products 403 1.948s
+{"timestamp":"2024-03-15T00:37:16Z","method":"PATCH","path":"/api/products","status":502,"duration_ms":705,"ip":"10.0.0.7"}
+2024-03-15T00:37:17Z 10.0.0.7 HEAD /api/checkout 504 201ms
+
+{"timestamp":"2024-03-15T00:37:19Z","method":"HEAD","path":"/api/webhooks/stripe","status":204,"duration_ms":1282,"ip":"172.16.0.22"}
+2024-03-15T00:37:20Z 10.0.0.7 PUT /api/users/12 502 2929
+{"timestamp":"2024-03-15T00:37:21Z","method":"GET","path":"/api/admin","status":204,"duration_ms":2191,"ip":"192.168.1.42"}
+2024/03/15 00:37:22 172.16.0.22 POST /api/batch/process 504 2475ms
+2024/03/15 00:37:23 203.0.113.10 PATCH /api/health - 864ms
+2024-03-15T00:37:24Z 203.0.113.10 PATCH /api/users/12 500 0.316s
+2024/03/15 00:37:25 203.0.113.10 OPTIONS /api/products 200 2262
+2024/03/15 00:37:26 10.0.0.7 POST /api/metrics - 1977ms
+1710463047 192.168.1.42 GET /api/health 403 2417ms "curl/8.5.0"
+2024/03/15 00:37:28 203.0.113.10 PUT /api/webhooks/stripe 404 1335ms
+1710463049 10.0.0.7 POST /api/reports/export 504 43ms
+PARTIAL: 2024-03-15T16:30
+{"time":"2024-03-15T00:37:31Z","http_method":"POST","url":"/api/login","status_code":401,"response_time_ms":2202,"client_ip":"203.0.113.10"}
+
+2024/03/15 00:37:33 172.16.0.22 DELETE /api/metrics 502 2.148s
+totally malformed !!!
+totally malformed !!!
+	... 8 more
+2024/03/15 00:37:37 192.168.1.42 DELETE /api/search 504 916ms
+{"timestamp":"2024-03-15T00:37:38Z","method":"PATCH","path":"/api/products","status":504,"duration_ms":2790,"ip":"192.168.1.42"}
+1710463059 203.0.113.10 PUT /api/reports/export - 2.692s "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024/03/15 00:37:40 203.0.113.10 DELETE /api/reports/export 502 0.102s
+15-Mar-2024 00:37:41 203.0.113.10 PATCH /api/products 403 289ms
+15-Mar-2024 00:37:42 10.0.0.7 OPTIONS /api/checkout 504 1240
+2024/03/15 00:37:43 10.0.0.7 DELETE /api/search 200 1786ms
+{"timestamp":"2024-03-15T00:37:44Z","method":"GET","path":"/api/login","status":200,"duration_ms":71,"ip":"203.0.113.10"}
+15-Mar-2024 00:37:45 172.16.0.22 POST /api/batch/process - 922
+2024-03-15T00:37:46Z 203.0.113.10 GET /api/dashboard 401 1862ms
+2024-03-15T00:37:47Z 203.0.113.10 GET /api/login - 0.179s
+2024/03/15 00:37:48 192.168.1.42 PATCH /api/webhooks/stripe 204 1175
+2024-03-15T00:37:49Z 172.16.0.22 PUT /api/billing 504 1404ms
+1710463070 10.0.0.7 PATCH /api/login 201 2264ms
+2024-03-15T00:37:51Z 10.0.0.7 PUT /api/checkout 404 1441ms
+2024-03-15T16:00:52Z 10.0.0.7 GET /api/truncated
+15-Mar-2024 00:37:53 192.168.1.42 GET /api/dashboard 500 752ms
+2024/03/15 00:37:54 172.16.0.22 GET /api/users/12 201 2524ms
+{"time":"2024-03-15T00:37:55Z","http_method":"DELETE","url":"/api/users/12","status_code":502,"response_time_ms":2024,"client_ip":"172.16.0.22"}
+2024-03-15T00:37:56Z 192.168.1.42 HEAD /api/webhooks/stripe 404 2966
+  2024-03-15T00:37:57Z 172.16.0.22 OPTIONS /api/batch/process 404 1961ms
+15-Mar-2024 00:37:58 172.16.0.22 HEAD /api/users/12 200 2.444s
+{"time":"2024-03-15T00:37:59Z","http_method":"PATCH","url":"/api/admin","status_code":500,"response_time_ms":98,"client_ip":"172.16.0.22"}
+15-Mar-2024 00:38:00 10.0.0.7 GET /api/products - 501ms
+{"timestamp":"2024-03-15T00:38:01Z","method":"PATCH","path":"/api/checkout","status":404,"duration_ms":1410,"ip":"10.0.0.7"}
+1710463082 172.16.0.22 GET /api/billing - 285ms
+15-Mar-2024 00:38:03 203.0.113.10 PATCH /api/batch/process 404 2931ms
+15-Mar-2024 00:38:04 10.0.0.7 HEAD /api/users 201 2804
+15-Mar-2024 00:38:05 10.0.0.7 OPTIONS /api/webhooks/stripe 200 2552ms
+1710463086 192.168.1.42 GET /api/billing 401 2771
+DEBUG not an access log
+Exception in thread "worker" java.lang.RuntimeException: boom
+15-Mar-2024 00:38:09 172.16.0.22 HEAD /api/orders 201 1230ms
+15-Mar-2024 00:38:10 203.0.113.10 HEAD /api/health 401 926ms "kube-probe/1.29"
+2024-03-15T00:38:11Z 192.168.1.42 GET /api/dashboard 401 894ms
+  2024/03/15 00:38:12 10.0.0.7 DELETE /api/health 200 2809ms
+15-Mar-2024 00:38:13 172.16.0.22 POST /api/admin 201 1251ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:38:14Z 172.16.0.22 GET /api/admin 201 2608
+2024-03-15T00:38:15Z 192.168.1.42 HEAD /api/users/12 200 689
+{"timestamp":"2024-03-15T12:00:16Z","method":"GET"
+2024/03/15 00:38:17 10.0.0.7 OPTIONS /api/reports/export 502 148ms
+2024/03/15 00:38:18 10.0.0.7 DELETE /api/checkout 204 2558
+2024-03-15T00:38:19Z 172.16.0.22 PUT /api/search 204 1622ms
+2024/03/15 00:38:20 10.0.0.7 PUT /api/reports/export 200 2820
+2024-03-15T00:38:21Z 192.168.1.42 HEAD /api/checkout 200 856ms
+15-Mar-2024 00:38:22 172.16.0.22 OPTIONS /api/webhooks/stripe 403 941ms
+2024-03-15T16:00:23Z 10.0.0.7 GET /api/truncated
+1710463104 192.168.1.42 HEAD /api/reports/export 502 1382
+{"timestamp":"2024-03-15T00:38:25Z","method":"DELETE","path":"/api/users","status":200,"duration_ms":2181,"ip":"203.0.113.10"}
+2024/03/15 00:38:26 192.168.1.42 HEAD /api/products 404 1721ms
+  2024-03-15T00:38:27Z 172.16.0.22 GET /api/health 201 1954ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:38:28Z 192.168.1.42 POST /api/checkout 404 2994ms
+15-Mar-2024 00:38:29 172.16.0.22 PATCH /api/billing 200 2631
+15-Mar-2024 00:38:30 10.0.0.7 OPTIONS /api/products 401 848ms
+{"timestamp":"2024-03-15T00:38:31Z","method":"PATCH","path":"/api/orders","status":204,"duration_ms":2604,"ip":"172.16.0.22"}
+2024-03-15T00:38:32Z 10.0.0.7 GET /api/metrics 200 1159
+15-Mar-2024 00:38:33 10.0.0.7 POST /api/search 404 1378ms "kube-probe/1.29"
+15-Mar-2024 00:38:34 192.168.1.42 PUT /api/users/12 404 1146ms
+2024-03-15T00:38:35Z 203.0.113.10 DELETE /api/login 201 1913
+2024-03-15T00:38:36Z 203.0.113.10 PATCH /api/webhooks/stripe 204 2730ms
+1710463117 203.0.113.10 HEAD /api/webhooks/stripe 200 1.384s
+{"time":"2024-03-15T00:38:38Z","http_method":"GET","url":"/api/users","status_code":500,"response_time_ms":901,"client_ip":"192.168.1.42"}
+{"time":"2024-03-15T00:38:39Z","http_method":"PUT","url":"/api/products","status_code":204,"response_time_ms":172,"client_ip":"203.0.113.10"}
+15-Mar-2024 00:38:40 10.0.0.7 DELETE /api/users/12 504 1524ms
+2024/03/15 00:38:41 203.0.113.10 PATCH /api/login 403 2122ms
+2024-03-15T00:38:42Z 203.0.113.10 GET /api/orders 401 2975ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+2024-03-15T00:38:43Z 172.16.0.22 OPTIONS /api/admin 403 1.229s
+{"time":"2024-03-15T00:38:44Z","http_method":"DELETE","url":"/api/admin","status_code":504,"response_time_ms":2186,"client_ip":"10.0.0.7"}
+2024/03/15 00:38:45 192.168.1.42 DELETE /api/products 204 765ms
+15-Mar-2024 00:38:46 192.168.1.42 DELETE /api/health 200 0.030s
+15-Mar-2024 00:38:47 203.0.113.10 GET /api/products - 1.332s
+15-Mar-2024 00:38:48 172.16.0.22 GET /api/dashboard 500 1370ms "curl/8.5.0"
+2024-03-15T00:38:49Z 203.0.113.10 HEAD /api/users 502 2839
+1710463130 192.168.1.42 HEAD /api/products 204 0.920s
+1710463131 192.168.1.42 DELETE /api/metrics 502 1916ms
+2024-03-15T00:38:52Z 172.16.0.22 DELETE /api/search 500 419ms
+2024/03/15 00:38:53 10.0.0.7 PUT /api/dashboard 500 1.800s
+2024-03-15T00:38:54Z 203.0.113.10 PATCH /api/checkout - 1.746s
+2024-03-15T00:38:55Z 203.0.113.10 PATCH /api/checkout 200 2904ms
+2024-03-15T00:38:56Z 203.0.113.10 OPTIONS /api/metrics 200 2959ms
+2024/03/15 00:38:57 172.16.0.22 OPTIONS /api/checkout 504 2141ms
+15-Mar-2024 00:38:58 172.16.0.22 POST /api/orders 403 1967ms
+15-Mar-2024 00:38:59 172.16.0.22 GET /api/users/12 401 1719ms
+2024-03-15T00:39:00Z 172.16.0.22 POST /api/search 500 2549ms
+15-Mar-2024 00:39:01 10.0.0.7 PATCH /api/search 201 803
+2024-03-15T00:39:02Z 203.0.113.10 POST /api/health 403 843ms
+2024-03-15T00:39:03Z 192.168.1.42 DELETE /api/batch/process 204 2860
+1710463144 172.16.0.22 PATCH /api/admin 403 646ms
+2024/03/15 00:39:05 10.0.0.7 OPTIONS /api/checkout 401 1157ms
+1710463146 10.0.0.7 HEAD /api/checkout 504 1068
+2024/03/15 00:39:07 172.16.0.22 HEAD /api/dashboard 401 0.598s
+{"time":"2024-03-15T00:39:08Z","http_method":"OPTIONS","url":"/api/dashboard","status_code":201,"response_time_ms":2375,"client_ip":"203.0.113.10"}
+2024/03/15 00:39:09 192.168.1.42 POST /api/metrics 502 810 "curl/8.5.0"
+1710463150 192.168.1.42 OPTIONS /api/orders 404 2.229s
+1710463151 192.168.1.42 DELETE /api/billing 404 2.449s
+1710463152 203.0.113.10 PATCH /api/users - 1375ms
+2024/03/15 00:39:13 10.0.0.7 PUT /api/orders 502 1227ms
+2024/03/15 00:39:14 10.0.0.7 HEAD /api/batch/process 403 2710ms
+15-Mar-2024 00:39:15 10.0.0.7 HEAD /api/orders 200 1.893s
+1710463156 203.0.113.10 GET /api/users 200 2330ms
+{"timestamp":"2024-03-15T00:39:17Z","method":"POST","path":"/api/checkout","status":504,"duration_ms":1613,"ip":"192.168.1.42"}
+15-Mar-2024 00:39:18 172.16.0.22 DELETE /api/health - 2174ms
+2024-03-15T00:39:19Z 172.16.0.22 HEAD /api/login 403 0.775s
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710463161 203.0.113.10 PUT /api/users/12 201 1.489s
+1710463162 192.168.1.42 POST /api/checkout 403 2465ms
+  1710463163 10.0.0.7 OPTIONS /api/products 404 1271ms
+{"timestamp":"2024-03-15T00:39:24Z","method":"DELETE","path":"/api/search","status":404,"duration_ms":2209,"ip":"10.0.0.7"}
+  2024-03-15T00:39:25Z 172.16.0.22 GET /api/dashboard 200 1348ms
+{"timestamp":"2024-03-15T00:39:26Z","method":"PATCH","path":"/api/billing","status":404,"duration_ms":1604,"ip":"172.16.0.22"}
+15-Mar-2024 00:39:27 172.16.0.22 POST /api/checkout 500 2171
+1710463168 10.0.0.7 GET /api/admin 401 1395
+  2024/03/15 00:39:29 203.0.113.10 HEAD /api/users/12 401 1842
+2024/03/15 00:39:30 10.0.0.7 POST /api/admin 403 2873 "curl/8.5.0"
+{"timestamp":"2024-03-15T00:39:31Z","method":"DELETE","path":"/api/search","status":404,"duration_ms":2399,"ip":"10.0.0.7"}
+2024/03/15 00:39:32 203.0.113.10 DELETE /api/orders 204 1598ms
+{"time":"2024-03-15T00:39:33Z","http_method":"PATCH","url":"/api/users/12","status_code":201,"response_time_ms":657,"client_ip":"192.168.1.42"}
+2024/03/15 00:39:34 172.16.0.22 POST /api/metrics 200 242ms "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:39:35Z 10.0.0.7 GET /api/checkout 201 1.913s
+2024/03/15 00:39:36 10.0.0.7 OPTIONS /api/billing 502 159 "curl/8.5.0"
+2024-03-15T00:39:37Z 192.168.1.42 PUT /api/users/12 200 0.915s
+2024/03/15 00:39:38 192.168.1.42 DELETE /api/webhooks/stripe 204 2677ms
+2024-03-15T00:39:39Z 192.168.1.42 DELETE /api/users 502 1202ms
+1710463180 10.0.0.7 DELETE /api/batch/process 502 1720
+{"time":"2024-03-15T00:39:41Z","http_method":"OPTIONS","url":"/api/health","status_code":502,"response_time_ms":33,"client_ip":"10.0.0.7"}
+15-Mar-2024 00:39:42 10.0.0.7 GET /api/reports/export 504 426ms
+
+{"time":"2024-03-15T00:39:44Z","http_method":"POST","url":"/api/batch/process","status_code":403,"response_time_ms":797,"client_ip":"172.16.0.22"}
+{"timestamp":"2024-03-15T12:00:45Z","method":"GET"
+
+2024-03-15T00:39:47Z 172.16.0.22 PATCH /api/reports/export 500 1638ms
+	at com.example.Service.run(Service.java:42)
+1710463189 172.16.0.22 POST /api/webhooks/stripe 204 2099ms
+15-Mar-2024 00:39:50 192.168.1.42 PUT /api/checkout 502 787
+2024-03-15T00:39:51Z 203.0.113.10 DELETE /api/products 404 1579ms
+2024/03/15 00:39:52 10.0.0.7 PATCH /api/webhooks/stripe 201 1.146s
+2024-03-15T00:39:53Z 203.0.113.10 PUT /api/orders 504 1752ms
+2024/03/15 00:39:54 192.168.1.42 PATCH /api/dashboard 200 1.073s
+2024/03/15 00:39:55 192.168.1.42 POST /api/batch/process 200 2315ms "curl/8.5.0"
+1710463196 192.168.1.42 PATCH /api/users/12 504 233
+2024-03-15T00:39:57Z 10.0.0.7 PATCH /api/products 500 1575 "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+	at com.example.Service.run(Service.java:42)
+2024/03/15 00:39:59 10.0.0.7 OPTIONS /api/login 201 1236ms
+{"timestamp":"2024-03-15T00:40:00Z","method":"POST","path":"/api/products","status":204,"duration_ms":2586,"ip":"10.0.0.7"}
+2024/03/15 00:40:01 10.0.0.7 HEAD /api/health 201 1500ms
+15-Mar-2024 00:40:02 172.16.0.22 PUT /api/users/12 404 1410
+2024/03/15 00:40:03 203.0.113.10 PUT /api/batch/process 504 2.429s
+2024-03-15T00:40:04Z 192.168.1.42 DELETE /api/health 502 1129ms "Mozilla/5.0 (Windows NT 10.0)"
+1710463205 172.16.0.22 GET /api/search 201 1934 "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T16:00:06Z 10.0.0.7 GET /api/truncated
+Caused by: java.io.IOException: broken pipe
+2024-03-15T00:40:08Z 192.168.1.42 PATCH /api/search 204 0.970s "kube-probe/1.29"
+{"time":"2024-03-15T00:40:09Z","http_method":"HEAD","url":"/api/users","status_code":401,"response_time_ms":2633,"client_ip":"203.0.113.10"}
+
+2024-03-15T00:40:11Z 192.168.1.42 HEAD /api/health 500 0.320s
+2024/03/15 00:40:12 172.16.0.22 GET /api/products 204 933
+2024/03/15 00:40:13 203.0.113.10 PATCH /api/reports/export 500 2352ms
+{"timestamp":"2024-03-15T00:40:14Z","method":"GET","path":"/api/webhooks/stripe","status":401,"duration_ms":247,"ip":"203.0.113.10"}
+2024/03/15 00:40:15 10.0.0.7 OPTIONS /api/products 502 1.953s
+15-Mar-2024 00:40:16 192.168.1.42 HEAD /api/health 504 1502ms
+1710463217 203.0.113.10 HEAD /api/products 500 2604ms
+15-Mar-2024 00:40:18 10.0.0.7 PUT /api/login 500 1109ms
+2024/03/15 00:40:19 192.168.1.42 PUT /api/checkout 404 1382ms
+2024/03/15 00:40:20 192.168.1.42 DELETE /api/dashboard 201 2224ms
+1710463221 203.0.113.10 POST /api/reports/export 401 1662
+2024/03/15 00:40:22 192.168.1.42 HEAD /api/admin 403 1.129s "curl/8.5.0"
+{"timestamp":"2024-03-15T00:40:23Z","method":"POST","path":"/api/admin","status":403,"duration_ms":346,"ip":"192.168.1.42"}
+1710463224 172.16.0.22 PUT /api/billing 403 919ms "kube-probe/1.29"
+2024-03-15T00:40:25Z 192.168.1.42 POST /api/users/12 403 2829
+15-Mar-2024 00:40:26 10.0.0.7 GET /api/checkout 401 2382ms
+{"time":"2024-03-15T00:40:27Z","http_method":"DELETE","url":"/api/reports/export","status_code":204,"response_time_ms":1572,"client_ip":"172.16.0.22"}
+2024-03-15T00:40:28Z 10.0.0.7 PUT /api/health 404 567ms
+15-Mar-2024 00:40:29 192.168.1.42 PATCH /api/health 500 35ms
+  1710463230 192.168.1.42 DELETE /api/metrics 204 1.407s
+2024-03-15T00:40:31Z 203.0.113.10 GET /api/metrics 201 1.971s
+2024-03-15T00:40:32Z 10.0.0.7 PUT /api/billing 204 1.329s
+2024-03-15T16:00:33Z 10.0.0.7 GET /api/truncated
+15-Mar-2024 00:40:34 192.168.1.42 DELETE /api/metrics 500 1.925s
+  2024-03-15T00:40:35Z 10.0.0.7 POST /api/health 401 0.847s
+{"timestamp":"2024-03-15T00:40:36Z","method":"POST","path":"/api/search","status":401,"duration_ms":154,"ip":"192.168.1.42"}
+2024/03/15 00:40:37 192.168.1.42 GET /api/users/12 401 1310
+1710463238 172.16.0.22 GET /api/orders 504 1217 "Mozilla/5.0 (Windows NT 10.0)"
+2024/03/15 00:40:39 10.0.0.7 PUT /api/health 401 2941ms
+15-Mar-2024 00:40:40 192.168.1.42 OPTIONS /api/admin 500 112ms
+2024-03-15T00:40:41Z 172.16.0.22 GET /api/billing 200 268ms
+1710463242 203.0.113.10 PUT /api/users 502 964
+2024/03/15 00:40:43 10.0.0.7 DELETE /api/login - 0.869s
+15-Mar-2024 00:40:44 203.0.113.10 GET /api/login - 2448ms
+1710463245 10.0.0.7 OPTIONS /api/batch/process 401 1005ms
+2024/03/15 00:40:46 192.168.1.42 POST /api/health 500 1921
+15-Mar-2024 00:40:47 192.168.1.42 PUT /api/orders 403 1216ms
+1710463248 192.168.1.42 PATCH /api/admin 500 2149ms
+Exception in thread "worker" java.lang.RuntimeException: boom
+1710463250 10.0.0.7 DELETE /api/billing 204 1615ms
+2024/03/15 00:40:51 203.0.113.10 DELETE /api/checkout 403 1.997s
+2024/03/15 00:40:52 203.0.113.10 GET /api/users/12 200 1677
+1710463253 203.0.113.10 PUT /api/dashboard 500 1.063s
+2024/03/15 00:40:54 172.16.0.22 HEAD /api/orders 204 668ms
+
+Exception in thread "worker" java.lang.RuntimeException: boom
+2024/03/15 00:40:57 10.0.0.7 POST /api/webhooks/stripe 204 0.773s
+15-Mar-2024 00:40:58 192.168.1.42 DELETE /api/billing 401 1435ms
+{"time":"2024-03-15T00:40:59Z","http_method":"HEAD","url":"/api/users/12","status_code":504,"response_time_ms":1621,"client_ip":"10.0.0.7"}
+2024/03/15 00:41:00 10.0.0.7 GET /api/admin 502 107ms
+2024-03-15T00:41:01Z 192.168.1.42 GET /api/products 204 2849ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+{"time":"2024-03-15T00:41:02Z","http_method":"OPTIONS","url":"/api/users/12","status_code":401,"response_time_ms":702,"client_ip":"192.168.1.42"}
+{"time":"2024-03-15T00:41:03Z","http_method":"OPTIONS","url":"/api/products","status_code":403,"response_time_ms":1878,"client_ip":"192.168.1.42"}
+1710463264 203.0.113.10 OPTIONS /api/products 502 0.159s
+2024/03/15 00:41:05 172.16.0.22 PATCH /api/users/12 502 1378ms
+{"time":"2024-03-15T00:41:06Z","http_method":"PUT","url":"/api/webhooks/stripe","status_code":502,"response_time_ms":284,"client_ip":"192.168.1.42"}
+	... 8 more
+2024/03/15 00:41:08 172.16.0.22 PATCH /api/dashboard 403 647ms
+2024/03/15 00:41:09 10.0.0.7 PATCH /api/orders 401 2494ms
+{"time":"2024-03-15T00:41:10Z","http_method":"PATCH","url":"/api/orders","status_code":504,"response_time_ms":702,"client_ip":"172.16.0.22"}
+15-Mar-2024 00:41:11 172.16.0.22 GET /api/orders 502 1684
+2024-03-15T00:41:12Z 192.168.1.42 PATCH /api/orders 403 0.255s
+15-Mar-2024 00:41:13 10.0.0.7 GET /api/health 201 458ms "kube-probe/1.29"
+15-Mar-2024 00:41:14 172.16.0.22 DELETE /api/reports/export 404 2660ms
+	at com.example.Service.run(Service.java:42)
+1710463276 10.0.0.7 OPTIONS /api/products 204 188ms
+15-Mar-2024 00:41:17 172.16.0.22 PATCH /api/orders 404 1428ms
+2024/03/15 00:41:18 172.16.0.22 GET /api/search 201 2099ms "Mozilla/5.0 (Windows NT 10.0)"
+  2024/03/15 00:41:19 10.0.0.7 DELETE /api/admin 504 1297
+15-Mar-2024 00:41:20 10.0.0.7 PATCH /api/dashboard 404 502
+15-Mar-2024 00:41:21 192.168.1.42 DELETE /api/webhooks/stripe 404 41ms
+2024-03-15T00:41:22Z 10.0.0.7 OPTIONS /api/dashboard 504 1.011s
+2024/03/15 00:41:23 10.0.0.7 POST /api/login 404 2.037s
+2024/03/15 00:41:24 172.16.0.22 OPTIONS /api/products 404 851
+15-Mar-2024 00:41:25 10.0.0.7 GET /api/metrics 403 0.271s
+2024/03/15 00:41:26 10.0.0.7 PATCH /api/products 500 1091
+1710463287 203.0.113.10 POST /api/orders 500 2.195s
+2024/03/15 00:41:28 10.0.0.7 PUT /api/login 200 217ms "curl/8.5.0"
+2024/03/15 00:41:29 10.0.0.7 DELETE /api/users 204 2138ms
+15-Mar-2024 00:41:30 203.0.113.10 POST /api/products 504 1555ms
+1710463291 10.0.0.7 PUT /api/admin 504 2334
+
+  1710463293 172.16.0.22 HEAD /api/admin 201 1.953s
+2024-03-15T00:41:34Z 192.168.1.42 PUT /api/login 201 1.279s
+2024-03-15T00:41:35Z 10.0.0.7 PATCH /api/dashboard 403 0.240s
+2024-03-15T00:41:36Z 10.0.0.7 PATCH /api/orders 404 929ms
+2024-03-15T00:41:37Z 192.168.1.42 PUT /api/orders - 2727 "Mozilla/5.0 (Windows NT 10.0)"
+2024-03-15T00:41:38Z 10.0.0.7 GET /api/users 200 987ms "kube-probe/1.29"
+2024-03-15T00:41:39Z 203.0.113.10 GET /api/users/12 504 2.415s
+15-Mar-2024 00:41:40 172.16.0.22 PUT /api/orders 500 1487ms "curl/8.5.0"
+2024-03-15T00:41:41Z 172.16.0.22 HEAD /api/products 404 405ms
+2024-03-15T00:41:42Z 192.168.1.42 PATCH /api/batch/process 502 625
+15-Mar-2024 00:41:43 10.0.0.7 PATCH /api/batch/process 200 780ms
+15-Mar-2024 00:41:44 10.0.0.7 DELETE /api/reports/export 403 2050 "curl/8.5.0"
+15-Mar-2024 00:41:45 10.0.0.7 DELETE /api/batch/process 500 2.806s
+2024/03/15 00:41:46 192.168.1.42 HEAD /api/products 200 1.241s
+2024-03-15T00:41:47Z 10.0.0.7 POST /api/reports/export 401 1768ms
+15-Mar-2024 00:41:48 172.16.0.22 OPTIONS /api/login - 1107ms "Mozilla/5.0 (Macintosh; Intel Mac OS X)" "https://app.example.com/"
+	... 8 more
+1710463310 192.168.1.42 POST /api/health 401 2122
+2024-03-15T00:41:51Z 192.168.1.42 PUT /api/admin 204 2842ms
+2024-03-15T00:41:52Z 10.0.0.7 PUT /api/checkout 403 508ms
+15-Mar-2024 00:41:53 10.0.0.7 PATCH /api/dashboard 504 2254
+1710463314 172.16.0.22 POST /api/dashboard 201 2517ms "Mozilla/5.0 (Windows NT 10.0)"
+{"timestamp":"2024-03-15T00:41:55Z","method":"HEAD","path":"/api/checkout","status":401,"duration_ms":2442,"ip":"203.0.113.10"}
+2024-03-15T00:41:56Z 172.16.0.22 PATCH /api/checkout 201 714ms "kube-probe/1.29"
+2024/03/15 00:41:57 192.168.1.42 POST /api/dashboard 200 1418ms
+15-Mar-2024 00:41:58 203.0.113.10 HEAD /api/products 502 2.734s
+1710463319 172.16.0.22 HEAD /api/health 500 1.163s
+2024/03/15 00:42:00 10.0.0.7 OPTIONS /api/orders 404 2451ms "Mozilla/5.0 (Windows NT 10.0)"
+{"timestamp":"2024-03-15T00:42:01Z","method":"POST","path":"/api/products","status":401,"duration_ms":1780,"ip":"192.168.1.42"}
+1710463322 203.0.113.10 PATCH /api/search 403 1168ms "kube-probe/1.29"
+1710463323 172.16.0.22 HEAD /api/login 403 1132ms
+  1710463324 172.16.0.22 POST /api/checkout 504 1.978s
+15-Mar-2024 00:42:05 192.168.1.42 PATCH /api/metrics 502 1.168s

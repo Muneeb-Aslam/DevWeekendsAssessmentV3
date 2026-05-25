@@ -1,0 +1,38 @@
+2024-03-15T16:00:01Z 192.168.1.42 GET /api/health 200 12ms
+2024-03-15T16:00:02Z 10.0.0.7 GET /api/users 200 98ms
+
+2024-03-15T16:00:04Z 172.16.0.22 POST /api/login 401 89ms
+
+2024-03-15T16:00:06Z 192.168.1.42 GET /api/dashboard 200 128ms
+2024-03-15T16:00:07Z 10.0.0.7 GET /api/prod
+2024-03-15T16:00:08Z POST /api/orders 201 210ms
+192.168.1.42 GET /api/broken 200 142ms
+2024-03-15T16:00:10Z 172.16.0.22 GET 200 55ms
+totally not a log line at all!!!
+2024-03-15T16:00:12Z 10.0.0.7 GET /api/recovered 200 67ms
+Exception in thread "main" java.lang.RuntimeException: upstream timeout
+	at com.example.ApiGateway.route(ApiGateway.java:142)
+	at com.example.ApiGateway.handle(ApiGateway.java:89)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.read(SocketInputStream.java:168)
+2024-03-15T16:00:15Z 192.168.1.42 GET /api/after-crash 200 54ms
+	... 12 more
+2024-03-15T16:00:17Z 10.0.0.7 POST /api/checkout 200 312ms
+PARTIAL WRITE: 2024-03-15T16:00:18Z 172.16.
+2024-03-15T16:00:19Z 192.168.1.42 GET /api/invoices 200 178ms
+{"timestamp":"2024-03-15T16:00:20Z","method":"GET","path":"/api/metrics"
+{"timestamp":"2024-03-15T16:00:21Z","method":"GET","path":"/api/config","status":200,"duration_ms":18}
+2024-03-15T16:00:22Z 10.0.0.7 GET /api/features 200 27ms
+DEBUG [main] org.example.Service - this is not access log format
+2024-03-15T16:00:24Z 172.16.0.22 GET /api/teams 200 118ms
+2024-03-15T16:00:25Z 192.168.1.42 GET /api/admin 403 41ms
+nginx: [error] upstream prematurely closed connection
+2024-03-15T16:00:27Z 10.0.0.7 POST /api/webhooks 500 890ms
+2024-03-15T16:00:28Z 172.16.0.22 GET /api/reports 504 2104ms
+2024-03-15T16:00:29Z 192.168.1.42 GET /api/export 200 2847ms
+2024-03-15T16:00:30Z 10.0.0.7 HEAD /api/health 200 8ms
+2024-03-15T16:00:31Z 172.16.0.22 OPTIONS /api/users 204 5ms
+2024-03-15T16:00:32Z 192.168.1.42 GET /api/users/404 404 34ms
+2024-03-15T16:00:33Z 10.0.0.7 GET /api/ping 200 11ms
+2024-03-15T16:00:34Z 172.16.0.22 GET /api/version 200 9ms
+2024-03-15T16:00:35Z 192.168.1.42 POST /api/feedback 201 88ms
