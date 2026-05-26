@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Log Analyzer
 
-## Getting Started
+Upload a server log file and get a summary: parsed vs skipped lines, status codes, top endpoints, and slowest requests.
 
-First, run the development server:
+## Test live
+
+1. Open [https://assessmentv3.vercel.app](https://assessmentv3.vercel.app)
+2. Drag and drop a log file (or click to browse)
+3. Click **Analyze log**
+4. Review the results below the upload panel
+
+## Run locally
+
+**Requirements:** Node.js 20+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and upload a log file the same way as above.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Sample log files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Included in [`sample-logs-files/`](sample-logs-files/):
 
-## Learn More
+| File                                    |
+| --------------------------------------- |
+| `00-manual-smoke-test.log`              |
+| `01-standard-access.log`                |
+| `02-mixed-timestamps.log`               |
+| `03-durations-and-status-anomalies.log` |
+| `04-json-mixed-format.log`              |
+| `05-malformed-noise.log`                |
+| `06-high-volume.log`                    |
+| `07-all-use-cases-mixed.log`            |
 
-To learn more about Next.js, take a look at the following resources:
+**Accepted formats:** `.log`, `.txt`, `.json`, `.csv` — max **10MB**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Generate new test logs (optional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm generate-log              # 5,000-line high-volume file
+pnpm generate-log:all          # all use cases in one file
+pnpm generate-log:large        # 20,000 lines
+```

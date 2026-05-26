@@ -4,16 +4,10 @@ import {
   CheckCircle2,
   Clock,
   FileText,
-  Gauge,
   XCircle,
 } from "lucide-react";
 
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Table,
   TableBody,
@@ -73,19 +67,10 @@ const SUMMARY_CARDS: SummaryCardConfig[] = [
     getSubtext: () => "Malformed lines",
   },
   {
-    key: "avg",
-    title: "Avg latency",
-    icon: Gauge,
-    getValue: (data) => `${data.speed.avgMs}ms`,
-    getSubtext: (data) =>
-      `p50 ${data.speed.p50Ms}ms · p95 ${data.speed.p95Ms}ms`,
-  },
-  {
     key: "range",
     title: "Time range",
     icon: Clock,
-    getValue: (data) =>
-      data.overview.timeRange.start ? "Detected" : "N/A",
+    getValue: (data) => (data.overview.timeRange.start ? "Detected" : "N/A"),
     getSubtext: (data) => {
       if (!data.overview.timeRange.start || !data.overview.timeRange.end) {
         return "No timestamps";
@@ -162,32 +147,34 @@ export function AnalysisResults({ data }: AnalysisResultsProps): ReactElement {
           </CardHeader>
           <CardContent className="min-w-0 px-4 pb-4 pt-0">
             {data.topEndpoints.length === 0 ? (
-              <p className="text-sm text-muted-foreground">No endpoints found.</p>
+              <p className="text-sm text-muted-foreground">
+                No endpoints found.
+              </p>
             ) : (
               <div className="max-w-full overflow-x-auto">
                 <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className="h-8">Path</TableHead>
-                    <TableHead className="h-8 text-right">Req</TableHead>
-                    <TableHead className="h-8 text-right">Avg</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {data.topEndpoints.map((endpoint) => (
-                    <TableRow key={endpoint.path}>
-                      <TableCell className="max-w-[180px] truncate py-2 font-mono text-xs">
-                        {endpoint.path}
-                      </TableCell>
-                      <TableCell className="py-2 text-right text-sm">
-                        {endpoint.count.toLocaleString()}
-                      </TableCell>
-                      <TableCell className="py-2 text-right text-sm">
-                        {endpoint.avgMs}ms
-                      </TableCell>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="h-8">Path</TableHead>
+                      <TableHead className="h-8 text-right">Req</TableHead>
+                      <TableHead className="h-8 text-right">Avg</TableHead>
                     </TableRow>
-                  ))}
-                </TableBody>
+                  </TableHeader>
+                  <TableBody>
+                    {data.topEndpoints.map((endpoint) => (
+                      <TableRow key={endpoint.path}>
+                        <TableCell className="max-w-[180px] truncate py-2 font-mono text-xs">
+                          {endpoint.path}
+                        </TableCell>
+                        <TableCell className="py-2 text-right text-sm">
+                          {endpoint.count.toLocaleString()}
+                        </TableCell>
+                        <TableCell className="py-2 text-right text-sm">
+                          {endpoint.avgMs}ms
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
                 </Table>
               </div>
             )}
@@ -206,28 +193,28 @@ export function AnalysisResults({ data }: AnalysisResultsProps): ReactElement {
             ) : (
               <div className="max-w-full overflow-x-auto">
                 <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className="h-8">Path</TableHead>
-                    <TableHead className="h-8">Status</TableHead>
-                    <TableHead className="h-8 text-right">Duration</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {data.slowestRequests.map((entry) => (
-                    <TableRow key={`${entry.lineNumber}-${entry.path}`}>
-                      <TableCell className="max-w-[180px] truncate py-2 font-mono text-xs">
-                        {entry.path}
-                      </TableCell>
-                      <TableCell className="py-2 text-sm">
-                        {entry.status ?? "—"}
-                      </TableCell>
-                      <TableCell className="py-2 text-right text-sm">
-                        {formatResponseTime(entry.responseTimeMs)}
-                      </TableCell>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="h-8">Path</TableHead>
+                      <TableHead className="h-8">Status</TableHead>
+                      <TableHead className="h-8 text-right">Duration</TableHead>
                     </TableRow>
-                  ))}
-                </TableBody>
+                  </TableHeader>
+                  <TableBody>
+                    {data.slowestRequests.map((entry) => (
+                      <TableRow key={`${entry.lineNumber}-${entry.path}`}>
+                        <TableCell className="max-w-[180px] truncate py-2 font-mono text-xs">
+                          {entry.path}
+                        </TableCell>
+                        <TableCell className="py-2 text-sm">
+                          {entry.status ?? "—"}
+                        </TableCell>
+                        <TableCell className="py-2 text-right text-sm">
+                          {formatResponseTime(entry.responseTimeMs)}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
                 </Table>
               </div>
             )}

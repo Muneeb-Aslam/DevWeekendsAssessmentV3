@@ -1,0 +1,22 @@
+2024-03-15T14:23:01Z GET /api/users 200 142ms
+2024/03/15 14:23:02 10.0.0.7 POST /api/login 401 89ms
+15-Mar-2024 14:23:03 172.16.0.22 GET /api/users/12 200 53ms
+1710512581 192.168.1.42 GET /api/health 200 14ms
+  2024-03-15T14:23:05Z 10.0.0.7 GET /api/ping 200 11ms
+2024-03-15T14:23:06Z 192.168.1.42 GET  0.142s
+2024-03-15T14:23:07Z 10.0.0.7 GET /api/bare-ms 200 142
+2024-03-15T14:23:08Z 172.16.0.22 POST /api/login / 76ms
+2024-03-15T14:23:09Z 192.168.1.42 GET /api/users 200 98ms "Mozilla/5.0 (Windows NT 10.0)" "https://app.example.com/dashboard"
+{"timestamp":"2024-03-15T14:23:10Z","method":"GET","path":"/api/json-standard","status":200,"duration_ms":33,"ip":"10.0.0.7"}
+{"time":"2024-03-15T14:23:11Z","http_method":"POST","url":"/api/json-alt-fields","status_code":201,"response_time_ms":210,"client_ip":"192.168.1.42"}
+2024-03-15T14:23:12Z 10.0.0.7 GET /api/admin 403 41ms
+2024-03-15T14:23:13Z 172.16.0.22 POST /api/batch/process 504 2104ms
+2024-03-15T14:23:14Z 192.168.1.42 GET /api/reports/export 500 2847ms
+2024-03-15T14:23:15Z 10.0.0.7 HEAD /api/health 200 8ms
+2024-03-15T14:23:16Z 172.16.0.22 OPTIONS  204 5ms
+
+totally malformed line
+PARTIAL: 2024-03-15T16:00:18Z 172.16.
+Exception in thread "main" java.lang.RuntimeException: upstream timeout
+	at com.example.ApiGateway.route(ApiGateway.java:142)
+{"timestamp":"2024-03-15T16:00:20Z","method":"GET","path":"/api/broken-json"
