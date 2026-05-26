@@ -19,8 +19,7 @@ import {
 } from "@/lib/validate-log-file";
 import { cn } from "@/lib/utils";
 
-const ACCEPTED_FILE_TYPES =
-  ".log,.txt,.json,.csv,text/plain,application/json,text/csv";
+const ACCEPTED_FILE_TYPES = ".log,.txt,.csv,text/plain,text/csv";
 
 type FileUploadFormProps = {
   onAnalyze?: (file: File) => void;
@@ -135,7 +134,7 @@ export function FileUploadForm({
           Upload log file
         </CardTitle>
         <CardDescription className="text-xs sm:text-sm">
-          .log, .txt, .json, .csv — max {formatMaxFileSize()}
+          .log, .txt, .csv — max {formatMaxFileSize()}
         </CardDescription>
       </CardHeader>
       <CardContent>

@@ -4,7 +4,7 @@ Upload a server log file and get a summary: parsed vs skipped lines, status code
 
 ## Test live
 
-1. Open [https://assessmentv3.vercel.app](https://assessmentv3.vercel.app)
+1. Open [https://dev-weekends-assessment-v3.vercel.app/](https://dev-weekends-assessment-v3.vercel.app/)
 2. Drag and drop a log file (or click to browse)
 3. Click **Analyze log**
 4. Review the results below the upload panel
